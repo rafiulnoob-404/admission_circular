@@ -64,13 +64,29 @@ input.big{font-family:'KS',sans-serif;font-size:16px;padding:10px 12px}
 .btn:active{transform:translateY(1px)}
 .btn.sec{background:#fff;color:var(--red);border:1px solid #EFCBCF;box-shadow:none}
 .warn{font-size:11.5px;color:#8A6A6E;line-height:1.6}
+/* ৮.৫px ফ্লোর: সব ছোট লেখা এর উপরে থাকবে */
+.tiny-floor,.kpi .k,.item .un,.chk-line,.badge2{font-size:max(11.5px,8.5px)}
 
 /* ফলাফল */
+/* ন্যূনতম ফন্ট ৮.৫px — নিচে আলাদা করে সব ছোট সাইজ ৮.৫px-এ তোলা হয়েছে */
 .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
 .kpi{background:#fff;border:1px solid #EFE6E6;border-radius:14px;padding:11px 14px}
 .kpi .k{font-family:'KS',sans-serif;font-size:11.5px;color:#6B5757}
 .kpi .v{font-family:'KS',sans-serif;font-size:20px;color:#3A2222;margin-top:2px}
 .kpi.ok .v{color:#256A45}.kpi.no .v{color:#B4444F}
+
+/* ── ১৩) ফলাফল রিভিল ── */
+@keyframes rowIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes dotIn{from{transform:scale(0)}to{transform:scale(1)}}
+.item{animation:rowIn .55s cubic-bezier(.22,.61,.36,1) backwards}
+.item .chk-line{animation:rowIn .5s cubic-bezier(.22,.61,.36,1) backwards}
+.item .chk-line .ic{animation:dotIn .45s cubic-bezier(.22,.61,.36,1) backwards}
+@keyframes kpiPop{0%{transform:scale(1)}45%{transform:scale(1.18)}100%{transform:scale(1)}}
+.kpi.done .v{animation:kpiPop .45s cubic-bezier(.22,.61,.36,1);color:inherit}
+.kpi.done{}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
 .item{background:#fff;border:1px solid #EFE6E6;border-radius:14px;overflow:hidden}
 .item .ih{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;
   border-left:4px solid #CFCFCF;flex-wrap:wrap}
@@ -200,6 +216,23 @@ var STORE = 'elig-input-v2';
 function bn(v){return String(v).replace(/[0-9]/g,function(d){return '০১২৩৪৫৬৭৮৯'[+d]});}
 function num(v){var n=parseFloat(String(v).replace(/[০-৯]/g,function(d){return '০১২৩৪৫৬৭৮৯'.indexOf(d)}));return isFinite(n)?n:NaN;}
 function fmt(n){return bn((Math.round(n*100)/100).toFixed(2));}
+/* ১৪) KPI কাউন্ট-আপ */
+function countUp(node, target, delay){
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    node.textContent = bn(target); return;
+  }
+  setTimeout(function(){
+    var t0 = performance.now(), dur = 1100;
+    function step(now){
+      var p = Math.min((now - t0) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);          // easeOutCubic
+      node.textContent = bn(Math.round(target * e));
+      if (p < 1) requestAnimationFrame(step);
+      else node.parentNode.classList.add('done');   // শেষে হালকা পপ
+    }
+    requestAnimationFrame(step);
+  }, delay || 0);
+}
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
 
 /* --- সিলেক্ট ভরানো --- */
@@ -336,7 +369,9 @@ function run(){
   [['যোগ্য','pass',count.pass],['অযোগ্য','fail',count.fail],['নিয়ম নেই','',count.unknown]].forEach(function(k){
     var box=el('div','kpi '+(k[1]==='fail'?'no':k[1]==='pass'?'ok':''));
     box.appendChild(el('div','k',k[0]+' (ইউনিট)'));
-    box.appendChild(el('div','v',bn(k[2])));
+    var vEl = el('div','v',bn(0));
+    box.appendChild(vEl);
+    countUp(vEl, k[2], 300 + sm.children.length * 250);
     sm.appendChild(box);
   });
 
@@ -380,12 +415,26 @@ function run(){
       swl.appendChild(el('span','', '<b>বিভাগ পরিবর্তন:</b> '+sw));
       box.appendChild(swl);
     }
+    /* ১৩) স্ট্যাগার্ড: প্রতিটি ইউনিট-কার্ড ও তার ভেতরের চেক-লাইন */
+    var ni = wrap.children.length;
+    box.style.animationDelay = Math.min(ni * 70, 900) + 'ms';
+    [].forEach.call(box.querySelectorAll('.chk-line'), function (ln, j) {
+      ln.style.animationDelay = Math.round(Math.min(ni * 70, 900) + 120 + j * 60) + 'ms';
+    });
+    [].forEach.call(box.querySelectorAll('.chk-line .ic'), function (d, j) {
+      d.style.animationDelay = Math.round(Math.min(ni * 70, 900) + 160 + j * 60) + 'ms';
+    });
     wrap.appendChild(box);
   });
 
   document.getElementById('result').hidden=false;
   save(d);
-  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+  /* অটো-স্ক্রল: অ্যানিমেশন মিস না হয় — ১.২s পরে, কোমলভাবে */
+  var res = document.getElementById('result');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  setTimeout(function(){
+    res.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+  }, 2100);   /* KPI কাউন্ট + কার্ড রিভিল শেষ হওয়ার পরে */
 }
 
 /* --- localStorage --- */
@@ -426,6 +475,5 @@ document.getElementById('resetBtn').addEventListener('click',function(){
 });
 refresh();
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a56c390c19e07ccd',t:'MTc5NDA1MzMwMQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a56c390c19e07ccd',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

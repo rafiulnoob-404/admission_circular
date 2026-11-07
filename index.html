@@ -60,6 +60,27 @@ body{font-family:'AI',sans-serif;color:var(--ink);padding:20px 18px 46px;
   100%{box-shadow:0 0 0 0 rgba(224,86,97,0)}
 }
 .upd .bd{font-family:'AI',sans-serif}
+/* ── টাইপরাইটার ট্যাগলাইন ── */
+.tagline{font-family:'KS',sans-serif;font-size:11px;color:#8A6A6A;min-height:1.3em;line-height:1.45}
+.tagline .caret{display:inline-block;width:2px;height:1em;margin-left:2px;background:#B4444F;
+  vertical-align:-.12em;animation:blink .85s steps(1) infinite}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+
+/* ── ১) স্ট্যাগার্ড এন্ট্রি ── */
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pagehead{animation:rise .55s cubic-bezier(.22,.61,.36,1) backwards}
+.toolbar,.actbar{animation:rise .55s cubic-bezier(.22,.61,.36,1) .08s backwards}
+
+/* ── ২) স্ক্রল রিভিল (JS ইনডেক্স দেয়) ── */
+article.card{animation:rise .5s cubic-bezier(.22,.61,.36,1) backwards;
+  animation-delay:calc(var(--i,0) * 40ms + .14s)}
+article.card.rev{animation:none;opacity:0}
+article.card.rev.in{animation:rise .5s cubic-bezier(.22,.61,.36,1) forwards;opacity:1}
+@media (hover:hover){
+  article.card{transition:transform .18s ease, box-shadow .18s ease}
+  article.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(90,30,35,.45)}
+}
+
 /* Elig//যোগ্যতা CTA বাটন (হেডারে) */
 .elig-cta{display:inline-flex;align-items:center;gap:7px;text-decoration:none;cursor:pointer;
   font-family:'KS',sans-serif;font-size:11.5px;line-height:1;color:#fff;
@@ -69,6 +90,13 @@ body{font-family:'AI',sans-serif;color:var(--ink);padding:20px 18px 46px;
   transition:transform .14s ease, box-shadow .14s ease, background .14s ease}
 .elig-cta svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;
   stroke-linecap:round;stroke-linejoin:round;transition:transform .16s ease}
+.elig-cta{position:relative;isolation:isolate;overflow:hidden}
+.elig-cta::after{content:"";position:absolute;inset:-150%;z-index:-1;opacity:.85;
+  background:conic-gradient(from 0deg,transparent 0deg,transparent 250deg,
+    rgba(255,255,255,.85) 300deg,#FFE8B0 330deg,transparent 360deg);
+  animation:ringSweep 4.2s linear infinite}
+@keyframes ringSweep{to{transform:rotate(360deg)}}
+.elig-cta:hover::after{animation-duration:2.2s}
 .elig-cta:hover{background:linear-gradient(135deg,#D05A65 0%,#BE4A55 55%,#A53944 100%);
   transform:translateY(-1px);box-shadow:0 8px 18px -7px rgba(180,68,79,.95)}
 .elig-cta:hover svg{transform:translateX(3px)}
@@ -95,7 +123,7 @@ body.cols2 .cards{grid-template-columns:1fr 1fr;gap:14px}
 .btn.ghost:hover{background:#FFF6F6}
 .btn.busy{pointer-events:none;opacity:.6}
 .btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
-.hint{font-size:10.2px;color:var(--ink2)}
+.hint{font-size:10.5px;color:var(--ink2)}
 
 /* ---------------- কার্ড ---------------- */
 .card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--edge);
@@ -223,6 +251,14 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
   body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
 }
 @media print{.actbar{display:none !important}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  article.card{opacity:1 !important;transform:none !important}
+}
+html.no-anim *,html.no-anim *::before,html.no-anim *::after{
+  animation:none !important;transition:none !important;animation-delay:0s !important}
+html.no-anim article.card,html.no-anim article.card.rev{
+  opacity:1 !important;transform:none !important}
 
 @media screen and (max-width:700px){
   .lists{grid-template-columns:1fr}
@@ -236,11 +272,12 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
 
 @page{size:A4 portrait;margin:7mm}
 @media print{
-  body{padding:0;background:#fff;font-size:9px}
+  body{padding:0;background:#fff;font-size:9.5px}
   .pagehead,.toolbar,.legendbar{display:none}
   .wrap{max-width:none}
   .cards,.card{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .card{break-inside:avoid;box-shadow:none;border-radius:9px}
+  .card,.card.rev{break-inside:avoid;box-shadow:none;border-radius:9px;
+    opacity:1 !important;transform:none !important;animation:none !important}
   .p-sky,.p-apricot,.p-butter,.p-lilac,.p-teal,.p-sand,.p-fern,.p-lime,.p-rose,.p-mint,.p-plum{}
   body.cols2 .cards{grid-template-columns:1fr 1fr;gap:5mm}
   .cards{grid-template-columns:1fr 1fr;gap:5mm}
@@ -342,6 +379,7 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
   <header class="pagehead">
     <div class="ttl">
       <h1>ভর্তি পরীক্ষার তথ্য <b>ফ্ল্যাশ কার্ড</b> — ২০২৬-২৭</h1>
+      <div class="tagline"><span id="typeTxt"></span><span class="caret" aria-hidden="true"></span></div>
     </div>
     <div class="meta">
       <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৭ নভেম্বর ২০২৬</span></span>
@@ -1085,6 +1123,59 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
     });
   }
 
+  /* ---------- ৯) টাইপরাইটার ট্যাগলাইন ---------- */
+  (function typeSlogan() {
+    var elT = document.getElementById('typeTxt');
+    if (!elT) return;
+    var lines = [
+      '১৫টি বিশ্ববিদ্যালয় ও মেডিকেল — এক জায়গায়, এক নজরে',
+      'যোগ্যতা, আবেদনের সময়, ফি — সব এক কার্ডে',
+      'SSC ও HSC GPA দিয়ে যোগ্যতা যাচাই করুন'
+    ];
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      elT.textContent = lines[0];
+      var c0 = document.querySelector('.tagline .caret'); if (c0) c0.style.display = 'none';
+      return;
+    }
+    var li = 0, ci = 0, del = false;
+    function tick() {
+      var txt = lines[li];
+      if (!del) {
+        ci++; elT.textContent = txt.slice(0, ci);
+        if (ci === txt.length) { del = true; return setTimeout(tick, 2100); }
+        return setTimeout(tick, 38);
+      }
+      ci--; elT.textContent = txt.slice(0, ci);
+      if (ci === 0) { del = false; li = (li + 1) % lines.length; return setTimeout(tick, 420); }
+      setTimeout(tick, 16);
+    }
+    setTimeout(tick, 700);
+  })();
+
+  /* ---------- ২) স্ক্রল রিভিল (একবারই) ---------- */
+  (function revealCards() {
+    var list = [].slice.call(document.querySelectorAll('article.card'));
+    list.forEach(function (c, i) { c.style.setProperty('--i', i % 4); });
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    list.forEach(function (c) {
+      if (c.getBoundingClientRect().top > window.innerHeight * 0.9) {
+        c.classList.add('rev');     // স্ক্রিনের নিচে থাকা কার্ডগুলো আগে লুকানো
+        io.observe(c);
+      }
+    });
+  })();
+
+  /* ---------- ক্যানভাস/প্রিন্টের সময় অ্যানিমেশন বন্ধ ---------- */
+  window.freezeAnim = function (on) {
+    document.documentElement.classList.toggle('no-anim', !!on);
+  };
+
   autoLayout();
   window.addEventListener('resize', function () {
     clearTimeout(window.__al); window.__al = setTimeout(autoLayout, 120);
@@ -1180,6 +1271,7 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
         function finishPDF() {
           document.body.className = savedCols;
           autoLayout();
+          window.freezeAnim(false);
           pdfBtns.forEach(function (x) { x.classList.remove('busy'); });
         }
         /* মোবাইলেও ১২৮০px প্রস্থে রেন্ডার — নাহলে ছবি সরু ও ঝাপসা হয় */
@@ -1187,6 +1279,7 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
         var scale = (window.innerWidth < 700) ? 1.6 : 2;
         var h2cOpts = { scale: scale, backgroundColor: '#FFFFFF', useCORS: true,
                         windowWidth: W, windowHeight: Math.max(root.scrollHeight + 260, 900) };
+        window.freezeAnim(true);
         html2canvas(root, h2cOpts).then(function (canvas) {
           var pdf = new jspdf.jsPDF('p', 'mm', 'a4');
           var pw = 210, ph = 297, m = 6, iw = pw - m * 2;
@@ -1227,14 +1320,16 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
       btn.classList.add('busy');
       toast('ছবি তৈরি হচ্ছে…');
       window.loadLibs(function () {
+        window.freezeAnim(true);
         var cOpts = { scale: 3, backgroundColor: '#FFFFFF', useCORS: true,
                        windowWidth: 1240, windowHeight: Math.max(card.scrollHeight + 200, 700) };
         html2canvas(card, cOpts).then(function (canvas) {
           canvasToBlob(canvas, 'image/png', 1, function (blob) {
             btn.classList.remove('busy');
+            window.freezeAnim(false);
             saveBlob(blob, file + '-admission-2026-27.png');
           });
-        }).catch(function () { btn.classList.remove('busy'); fail(); });
+        }).catch(function () { btn.classList.remove('busy'); window.freezeAnim(false); fail(); });
       });
     });
   });
@@ -2705,5 +2800,5 @@ col.k-ufee{width:11%} col.k-udetail{width:38%}
  ]
 }
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a56c3af67ffb7ccd',t:'MTc5NDA1MzM3OQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a56c3af67ffb7ccd',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
