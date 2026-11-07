@@ -104,6 +104,21 @@ article.card.rev.in{animation:rise .5s cubic-bezier(.22,.61,.36,1) forwards;opac
 .elig-cta:active{transform:translateY(1px);box-shadow:0 3px 8px -6px rgba(180,68,79,.9)}
 .elig-cta:focus-visible{outline:2px solid #B4444F;outline-offset:2px}
 
+/* ক্যালেন্ডার CTA বাটন (হেডারে, Elig//এর পাশে) */
+.cal-cta{display:inline-flex;align-items:center;gap:7px;text-decoration:none;cursor:pointer;
+  font-family:'KS',sans-serif;font-size:11.5px;line-height:1;color:#1F5980;
+  background:linear-gradient(135deg,#FFFFFF 0%,#F3F9FF 55%,#E4F1FD 100%);
+  border:1px solid #C9E2F4;border-radius:999px;padding:8px 14px 8px 13px;
+  box-shadow:0 5px 12px -8px rgba(31,89,128,.55), 0 1px 0 rgba(255,255,255,.9) inset;
+  transition:transform .14s ease, box-shadow .14s ease, background .14s ease}
+.cal-cta svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.9;
+  stroke-linecap:round;stroke-linejoin:round;transition:transform .16s ease}
+.cal-cta:hover{background:linear-gradient(135deg,#F7FBFF 0%,#E6F2FE 55%,#D6E9FA 100%);
+  transform:translateY(-1px);box-shadow:0 8px 18px -8px rgba(31,89,128,.5)}
+.cal-cta:hover svg{transform:translateY(-1px)}
+.cal-cta:active{transform:translateY(1px);box-shadow:0 3px 8px -6px rgba(31,89,128,.6)}
+.cal-cta:focus-visible{outline:2px solid #2F6E9E;outline-offset:2px}
+
 /* ---------------- কার্ড গ্ৰিড (ল্যান্ডস্কেপ) ---------------- */
 .wrap{max-width:1260px;margin:0 auto}
 .cards{display:grid;grid-template-columns:1fr;gap:16px;align-items:start}
@@ -122,6 +137,9 @@ body.cols2 .cards{grid-template-columns:1fr 1fr;gap:14px}
 .btn.alt:hover{background:#1E5638}
 .btn.ghost{background:#fff;color:#8C2F3B;border:1px solid #EFCBCF;box-shadow:0 4px 10px -8px rgba(180,68,79,.8)}
 .btn.ghost:hover{background:#FFF6F6}
+.btn.cal{background:#2F6E9E;box-shadow:0 6px 14px -8px rgba(47,110,158,.9);text-decoration:none;
+  display:inline-flex;align-items:center;gap:7px}
+.btn.cal:hover{background:#26608C}
 .btn.busy{pointer-events:none;opacity:.6}
 .btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
 .hint{font-size:10.5px;color:var(--ink2)}
@@ -406,6 +424,8 @@ html.no-anim article.card,html.no-anim article.card.rev{
 @media screen and (max-width:380px){
   .bnname{font-size:14px}
   .val,.lb-items li,.elist li{font-size:13px}
+  .actbar .btn{font-size:11px;gap:5px;padding:11px 6px}
+  .cal-cta,.elig-cta{font-size:11px;padding:7px 11px}
 }
 
 </style>
@@ -422,6 +442,10 @@ html.no-anim article.card,html.no-anim article.card.rev{
         <span> Elig//যোগ্যতা যাচাই</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m0 0l-5-5m5 5l-5 5"/></svg>
       </a>
+      <a class="cal-cta" href="calendar.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3 9h18M4 5h16v16H4zM8 13h2M14 13h2M8 17h2M14 17h2"/></svg>
+        পরীক্ষার ক্যালেন্ডার
+      </a>
     </div>
   </header>
 
@@ -430,6 +454,10 @@ html.no-anim article.card,html.no-anim article.card.rev{
       <a class="btn alt" href="eligibility.html">
         <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
         Elig//যোগ্যতা যাচাই
+      </a>
+      <a class="btn cal" href="calendar.html">
+        <svg viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M4 5h16v16H4z"/></svg>
+        পরীক্ষার ক্যালেন্ডার
       </a>
       <button class="btn" id="printPdfBtn" type="button">
         <svg viewBox="0 0 24 24"><path d="M7 8V3h10v5M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>
@@ -441,7 +469,7 @@ html.no-anim article.card,html.no-anim article.card.rev{
       </button>
       <span class="hint">PDF সেভ → প্রিন্ট ডায়ালগে Destination: "Save as PDF" · Margins: Default · Background graphics: ON</span>
     </div>
-    <div class="actbar" role="toolbar" aria-label="ডাউনলোড">
+    <div class="actbar" role="toolbar" aria-label="দ্রুত অ্যাকশন">
       <button class="btn" id="printPdfBtnM" type="button">
         <svg viewBox="0 0 24 24"><path d="M7 8V3h10v5M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>
         PDF সেভ
@@ -450,6 +478,10 @@ html.no-anim article.card,html.no-anim article.card.rev{
         <svg viewBox="0 0 24 24"><path d="M12 3v11m0 0l4-4m-4 4l-4-4M5 20h14"/></svg>
         A4 PDF
       </button>
+      <a class="btn cal" href="calendar.html">
+        <svg viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M4 5h16v16H4z"/></svg>
+        ক্যালেন্ডার
+      </a>
     </div>
     <section class="cards">
 
