@@ -96,14 +96,8 @@ body.cols2 .cards{grid-template-columns:1fr 1fr;gap:14px}
   background:#B4444F;color:#fff;font-family:'KS',sans-serif;font-size:11px;padding:9px 15px;
   box-shadow:0 6px 14px -8px rgba(180,68,79,.9);transition:transform .14s ease,background .14s ease}
 .btn:hover{background:#9E3742}
-.btn.alt{background:#256A45;box-shadow:0 6px 14px -8px rgba(37,106,69,.9);text-decoration:none;
-  display:inline-flex;align-items:center;gap:7px}
-.btn.alt:hover{background:#1E5638}
 .btn.ghost{background:#fff;color:#8C2F3B;border:1px solid #EFCBCF;box-shadow:0 4px 10px -8px rgba(180,68,79,.8)}
 .btn.ghost:hover{background:#FFF6F6}
-.btn.cal{background:#2F6E9E;box-shadow:0 6px 14px -8px rgba(47,110,158,.9);text-decoration:none;
-  display:inline-flex;align-items:center;gap:7px}
-.btn.cal:hover{background:#26608C}
 .btn.busy{pointer-events:none;opacity:.6}
 .btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;stroke-linecap:round}
 .hint{font-size:10.5px;color:var(--ink2)}
@@ -473,14 +467,6 @@ html.no-anim article.card,html.no-anim article.card.rev{
 
   <main class="wrap">
     <div class="toolbar">
-      <a class="btn alt" href="eligibility.html">
-        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-        Elig//যোগ্যতা যাচাই
-      </a>
-      <a class="btn cal" href="calendar.html">
-        <svg viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M4 5h16v16H4z"/></svg>
-        পরীক্ষার ক্যালেন্ডার
-      </a>
       <button class="btn" id="printPdfBtn" type="button">
         <svg viewBox="0 0 24 24"><path d="M7 8V3h10v5M6 18H4v-7h16v7h-2M7 14h10v7H7z"/></svg>
         PDF সেভ (প্রিন্ট)
@@ -500,10 +486,6 @@ html.no-anim article.card,html.no-anim article.card.rev{
         <svg viewBox="0 0 24 24"><path d="M12 3v11m0 0l4-4m-4 4l-4-4M5 20h14"/></svg>
         A4 PDF
       </button>
-      <a class="btn cal" href="calendar.html">
-        <svg viewBox="0 0 24 24"><path d="M7 2v3M17 2v3M3 9h18M4 5h16v16H4z"/></svg>
-        ক্যালেন্ডার
-      </a>
     </div>
     <section class="cards">
 
@@ -767,7 +749,7 @@ html.no-anim article.card,html.no-anim article.card.rev{
     
     
     <div class="grid">
-        <div class="f wide eligfield"><div class="lbl"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z"/><path d="M9 12l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.6"/></svg></span> Elig//যোগ্যতা</div><ul class="lb-items elist"><li><b>বিজ্ঞান বিভাগ:</b> <span class="en">SSC</span> + <span class="en">HSC</span> মোট ≥ ৭.০ (৪র্থ বিষয়সহ), আলাদাভাবে ≥ ৩.৫</li><li><b>মানবিক বিভাগ:</b> <span class="en">SSC</span> + <span class="en">HSC</span> মোট ≥ ৬.৫ (৪র্থ বিষয়সহ), আলাদাভাবে ≥ ৩.০, ব্যবসায় (বি ইউনিট)-এর শর্ত এখনো চূড়ান্ত হয়নি</li><li><b>যোগ্যতা শিথিল:</b> ২০২৬-২৭-এ শর্ত কমানো হয়েছে — মানবিকে মোট ৬.৫০ (আগে ৭.০০), বিজ্ঞানে ৭.০০ (আগে ৭.৫০)</li><li><b>বিভাগ পরিবর্তন:</b> ইউনিট বিভাগভিত্তিক: বিজ্ঞানী ৭.০০ ট্র্যাকেই আবেদন; ভর্তির পর কলা-সমাজবিজ্ঞান বিষয় নেওয়া যায়</li></ul></div>
+        <div class="f wide eligfield"><div class="lbl"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z"/><path d="M9 12l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.6"/></svg></span> Elig//যোগ্যতা</div><ul class="lb-items elist"><li><b>বিজ্ঞান বিভাগ:</b> <span class="en">SSC</span> + <span class="en">HSC</span> মোট ≥ ৭.০ (৪র্থ বিষয়সহ), আলাদাভাবে ≥ ৩.৫</li><li><b>মানবিক বিভাগ:</b> <span class="en">SSC</span> + <span class="en">HSC</span> মোট ≥ ৬.৫ (৪র্থ বিষয়সহ), আলাদাভাবে ≥ ৩.০, ব্যবসায় (বি ইউনিট)-এর শর্ত এখনো চূড়ান্ত হয়নি</li><li><b>বিভাগ পরিবর্তন:</b> ইউনিট বিভাগভিত্তিক: বিজ্ঞানী ৭.০০ ট্র্যাকেই আবেদন; ভর্তির পর কলা-সমাজবিজ্ঞান বিষয় নেওয়া যায়</li></ul></div>
         <div class="f">
         <div class="lbl"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></svg></span>পরীক্ষা কেন্দ্র</div>
         <div class="val">৭ বিভাগীয় শহর — রাজশাহী, ঢাকা, চট্টগ্রাম, খুলনা, সিলেট, ময়মনসিংহ, রংপুর</div>
@@ -2018,11 +2000,11 @@ html.no-anim article.card,html.no-anim article.card.rev{
    "seats": null,
    "centers": "৭ বিভাগীয় শহর — রাজশাহী, ঢাকা, চট্টগ্রাম, খুলনা, সিলেট, ময়মনসিংহ, রংপুর",
    "fee": null,
-   "elig_label": "SSC + HSC মোট GPA: বিজ্ঞান ৭.০০ (প্রত্যেকে ≥ ৩.৫০) · মানবিক ৬.৫০ (প্রত্যেকে ≥ ৩.০০) — ২০২৬-২৭-এ শিথিল করা হয়েছে; ব্যবসায় (বি ইউনিট)-এর শর্ত এখনো চূড়ান্ত হয়নি।",
+   "elig_label": "SSC + HSC মোট GPA: বিজ্ঞান ৭.০০ (প্রত্যেকে ≥ ৩.৫০) · মানবিক ৬.৫০ (প্রত্যেকে ≥ ৩.০০); ব্যবসায় (বি ইউনিট)-এর শর্ত এখনো চূড়ান্ত হয়নি।",
    "shortlist_date": null,
    "result_date": null,
    "site": "admission.ru.ac.bd",
-   "note": "যোগ্যতা শিথিল (২০২৬-২৭): মানবিকে ৩.০০/মোট ৬.৫০, বিজ্ঞানে ৩.৫০/মোট ৭.০০; বি ইউনিটের শর্ত এখনো চূড়ান্ত হয়নি",
+   "note": "বি ইউনিটের (বাণিজ্য) যোগ্যতা এখনো চূড়ান্ত হয়নি",
    "year_label": "২০২৬-২৭",
    "palette": "apricot",
    "unit_list": [
@@ -2055,7 +2037,7 @@ html.no-anim article.card,html.no-anim article.card.rev{
      "combined_min": 7.0,
      "ssc_gpa_min": null,
      "subject_sum": null,
-     "extra": "২০২৬-২৭-এ শিথিল — আগে মোট ৭.৫০ ছিল"
+     "extra": null
     },
     {
      "unit": "মানবিক বিভাগ",
@@ -2068,7 +2050,7 @@ html.no-anim article.card,html.no-anim article.card.rev{
      "combined_min": 6.5,
      "ssc_gpa_min": null,
      "subject_sum": null,
-     "extra": "২০২৬-২৭-এ শিথিল — আগে মোট ৭.০০ ছিল; ব্যবসায় (বি ইউনিট)-এর শর্ত এখনো চূড়ান্ত হয়নি"
+     "extra": "ব্যবসায় (বি ইউনিট)-এর শর্ত এখনো চূড়ান্ত হয়নি"
     }
    ],
    "switch_note": "ইউনিট বিভাগভিত্তিক: বিজ্ঞানী ৭.০০ ট্র্যাকেই আবেদন; ভর্তির পর কলা-সমাজবিজ্ঞান বিষয় নেওয়া যায়",

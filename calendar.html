@@ -464,7 +464,7 @@ col.c-d{width:19%} col.c-u{width:28%} col.c-x{width:37%} col.c-l{width:16%}
 <header class="pagehead">
   <div class="ttl">
     <h1>ভর্তি পরীক্ষার <b>ক্যালেন্ডার</b> — ২০২৬-২৭</h1>
-    <div class="tagline">সব বিশ্ববিদ্যালয়ের পরীক্ষার তারিখ, এক তালিকায়</div>
+    <div class="tagline"><span id="typeTxt"></span><span class="caret" aria-hidden="true"></span></div>
   </div>
   <div class="meta">
     <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৭ নভেম্বর ২০২৬</span></span>
@@ -560,4 +560,30 @@ function render(){
  document.getElementById("tbd").innerHTML=t;}
 ["q","uni","hp"].forEach(function(id){document.getElementById(id).addEventListener("input",render)});
 render();
-</script></body></html>
+</script><script>
+/* হেডারের টাইপরাইটার — index.html-এর সাথে হুবহু একই টাইমিং */
+(function () {
+  var elT = document.getElementById('typeTxt');
+  if (!elT) return;
+  var lines = ['সব বিশ্ববিদ্যালয়ের পরীক্ষার তারিখ, এক তালিকায়', 'সার্চ করুন — বিশ্ববিদ্যালয় বা ইউনিট', 'আগের তারিখ লুকিয়ে শুধু সামনের পরীক্ষা দেখুন'];
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    elT.textContent = lines[0];
+    var c = document.querySelector('.tagline .caret'); if (c) c.style.display = 'none';
+    return;
+  }
+  var li = 0, ci = 0, del = false;
+  function tick() {
+    var txt = lines[li];
+    if (!del) {
+      ci++; elT.textContent = txt.slice(0, ci);
+      if (ci === txt.length) { del = true; return setTimeout(tick, 2100); }
+      return setTimeout(tick, 38);
+    }
+    ci--; elT.textContent = txt.slice(0, ci);
+    if (ci === 0) { del = false; li = (li + 1) % lines.length; return setTimeout(tick, 420); }
+    setTimeout(tick, 16);
+  }
+  setTimeout(tick, 700);
+})();
+</script>
+</body></html>
