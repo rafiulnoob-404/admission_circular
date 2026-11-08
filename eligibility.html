@@ -167,7 +167,7 @@ input.big{font-family:'KS',sans-serif;font-size:16px;padding:10px 12px}
 <header class="pagehead">
   <div class="ttl">
     <h1>Elig//যোগ্যতা <b>যাচাই</b> — ২০২৬-২৭</h1>
-    <div class="tagline">SSC ও HSC-র GPA বসান — কোন কোন ইউনিটে আবেদন করতে পারবেন দেখুন</div>
+    <div class="tagline"><span id="typeTxt"></span><span class="caret" aria-hidden="true"></span></div>
   </div>
   <div class="meta">
     <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৭ নভেম্বর ২০২৬</span></span>
@@ -524,6 +524,32 @@ document.getElementById('resetBtn').addEventListener('click',function(){
   location.reload();
 });
 refresh();
+</script>
+<script>
+/* হেডারের টাইপরাইটার — index.html-এর সাথে হুবহু একই টাইমিং */
+(function () {
+  var elT = document.getElementById('typeTxt');
+  if (!elT) return;
+  var lines = ['SSC ও HSC-র GPA বসান — কোন কোন ইউনিটে আবেদন করতে পারবেন দেখুন', 'মাত্র কয়েক সেকেন্ডে যোগ্যতা যাচাই', 'ইউনিটভিত্তিক শর্ত — এক নজরে'];
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    elT.textContent = lines[0];
+    var c = document.querySelector('.tagline .caret'); if (c) c.style.display = 'none';
+    return;
+  }
+  var li = 0, ci = 0, del = false;
+  function tick() {
+    var txt = lines[li];
+    if (!del) {
+      ci++; elT.textContent = txt.slice(0, ci);
+      if (ci === txt.length) { del = true; return setTimeout(tick, 2100); }
+      return setTimeout(tick, 38);
+    }
+    ci--; elT.textContent = txt.slice(0, ci);
+    if (ci === 0) { del = false; li = (li + 1) % lines.length; return setTimeout(tick, 420); }
+    setTimeout(tick, 16);
+  }
+  setTimeout(tick, 700);
+})();
 </script>
 </body>
 </html>

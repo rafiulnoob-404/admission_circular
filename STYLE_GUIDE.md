@@ -120,7 +120,7 @@
 | `article.card` | `rise` (উঠে আসা) | ০.৫৫s · ডিলে `i*40ms + 140ms` |
 | `.rev` | স্ক্রলে `rise` | `in` ক্লাস যোগ হলে |
 | Elig CTA hover | `ringSweep` (conic) | hover ২.২s · নিজে ৪.২s |
-| হেডার ট্যাগলাইন | টাইপরাইটার | ৩৮ms টাইপ / ১৬ms মুছে / ২১০০ms হোল্ড |
+| হেডার ট্যাগলাইন (তিন পেজেই একই) | টাইপরাইটার | ৩৮ms টাইপ / ১৬ms মুছে / ২১০০ms হোল্ড |
 | `eligibility` `.item` | `rowIn` | ০.৫৫s · স্ট্যাগার্ড `min(i*70, 900)`ms |
 | `.chk-line` | `rowIn` | ০.৫s · +১২০ + `j*60`ms |
 | `.ic` | `dotIn` | ০.৪৫s · +১৬০ms |
