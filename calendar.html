@@ -457,6 +457,23 @@ col.c-d{width:19%} col.c-u{width:28%} col.c-x{width:37%} col.c-l{width:16%}
   .headnav{width:100%}
   .hbtn{padding:8px 12px}
 }
+/* ── ইউজিসি নোটিশ স্ট্রিপ (তিন পেজেই এক) ── */
+.notice{max-width:var(--pagemax,1260px);margin:0 auto 14px;display:flex;align-items:flex-start;gap:9px;
+  padding:10px 14px;border-radius:14px;font-family:'KS',sans-serif;font-size:12px;line-height:1.6;
+  color:#7A5F17;background:linear-gradient(135deg,#FFFDF2 0%,#FFF7DC 55%,#FDF0CB 100%);
+  border:1px solid #EBDFAE;animation:rise .55s cubic-bezier(.22,.61,.36,1) .05s backwards}
+.notice .ic{flex:0 0 auto;display:inline-flex;margin-top:1px}
+.notice .ic svg{width:14px;height:14px;fill:none;stroke:#B08A22;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.notice .nt{min-width:0}
+.notice b{font-weight:400;color:#6A5210}
+.notice .nl{flex:0 0 auto;margin-left:auto;color:#8A5A17;text-decoration:none;
+  border-bottom:1px solid #E3CE9A;white-space:nowrap;font-size:12px}
+.notice .nl:hover{border-bottom-color:#8A5A17}
+.notice .nl:focus-visible{outline:2px solid #B08A22;outline-offset:2px;border-radius:4px}
+@media screen and (max-width:700px){.notice{flex-wrap:wrap;gap:5px 8px;padding:9px 12px}
+  .notice .nl{margin-left:23px}}
+@media (prefers-reduced-motion:reduce){.notice{animation:none}}
+@media print{.notice{display:none !important}}
 @media (prefers-reduced-motion:reduce){.pagehead{animation:none}.hbtn.red::after{animation:none}}
 @media print{.pagehead{display:none !important}}
 </style></head><body>
@@ -467,7 +484,7 @@ col.c-d{width:19%} col.c-u{width:28%} col.c-x{width:37%} col.c-l{width:16%}
     <div class="tagline"><span id="typeTxt"></span><span class="caret" aria-hidden="true"></span></div>
   </div>
   <div class="meta">
-    <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৭ নভেম্বর ২০২৬</span></span>
+    <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৯ নভেম্বর ২০২৬</span></span>
     <nav class="headnav" aria-label="প্রধান মেনু">
       <a class="hbtn base" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>সব কার্ড</a>
       <a class="hbtn red" href="eligibility.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m0 0l-5-5m5 5l-5 5"/></svg>Elig//যোগ্যতা যাচাই</a>
@@ -475,16 +492,22 @@ col.c-d{width:19%} col.c-u{width:28%} col.c-x{width:37%} col.c-l{width:16%}
     </nav>
   </div>
 </header>
+<aside class="notice" role="note">
+  <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 7.6v5"/><path d="M12 16.2v.2"/><circle cx="12" cy="12" r="9"/></svg></span>
+  <span class="nt"><b>ইউজিসির সিদ্ধান্ত (৯ নভেম্বর ২০২৬):</b> পাবলিক বিশ্ববিদ্যালয়ে আবেদন জানুয়ারি ২০২৭ থেকে, ভর্তি পরীক্ষা শুরু ফেব্রুয়ারি ২০২৭ থেকে — রমজানে কোনো পরীক্ষা নয়। ঢাবি ও বুয়েট আগে ঘোষিত সূচিতেই পরীক্ষা নেবে; এমবিবিএস-বিডিএস ১৮ ডিসেম্বর ২০২৬।</span>
+  <a class="nl" href="https://bangla.bdnews24.com/campus/yvymoe50a1" target="_blank" rel="noopener">সূত্র ↗</a>
+</aside>
 <div class="toolbar"><input id="q" type="search" placeholder="খুঁজুন (বিশ্ববিদ্যালয়/ইউনিট)"><select id="uni"><option value="">সব বিশ্ববিদ্যালয়</option></select>
 <label><input id="hp" type="checkbox" checked> আগের তারিখ লুকান</label></div>
 <div class="cards" id="cards"></div>
 <div style="height:14px"></div>
 <div class="cards" id="tbd"></div>
-<p class="hint" style="margin-top:14px">তথ্যসূত্র: admission-calendar.com ও rafiulnoob-404.github.io/admission_circular। তারিখ পরিবর্তন হতে পারে — আবেদনের আগে অফিসিয়াল বিজ্ঞপ্তি দেখুন।</p>
+<p class="hint" style="margin-top:14px">তথ্যসূত্র: admission-calendar.com ও rafiulnoob-404.github.io/admission_circular। ইউজিসির ৯ নভেম্বর ২০২৬-এর সিদ্ধান্তে পাবলিক বিশ্ববিদ্যালয়ে পরীক্ষা ফেব্রুয়ারি ২০২৭ থেকে শুরু হওয়ার কথা; ঢাবি ও বুয়েট আগের সূচিতেই থাকছে, বাকি বিশ্ববিদ্যালয়ের তারিখ বদলাতে পারে — আবেদনের আগে অফিসিয়াল বিজ্ঞপ্তি দেখুন।</p>
 </div>
 <script>
 var EV=[
- {s:"2026-12-04",u:"মেডিকেল ও ডেন্টাল (MBBS/BDS)",n:"সমন্বিত ভর্তি পরীক্ষা",t:"স্থগিত",w:1},
+ {s:"2027-02-01",u:"সব পাবলিক বিশ্ববিদ্যালয় (ইউজিসি)",n:"আবেদন জানুয়ারি ২০২৭ থেকে · ভর্তি পরীক্ষা ফেব্রুয়ারি ২০২৭ থেকে",t:"নির্দেশনা",w:1},
+ {s:"2026-12-18",u:"মেডিকেল ও ডেন্টাল (MBBS/BDS)",n:"সমন্বিত ভর্তি পরীক্ষা · নতুন তারিখ",w:1},
  {s:"2026-12-05",u:"ঢাকা বিশ্ববিদ্যালয়",n:"আইবিএ ইউনিট · সকাল ১০:০০–১২:০০"},
  {s:"2026-12-12",u:"ঢাকা বিশ্ববিদ্যালয়",n:"বিজ্ঞান ইউনিট · সকাল ১১:০০–১২:৩০"},
  {s:"2026-12-17",u:"খুলনা বিশ্ববিদ্যালয়",n:"সি ইউনিট (কলা, সামাজিক বিজ্ঞান, আইন, শিক্ষা, চারুকলা) ও ডি ইউনিট (ব্যবসায়)"},

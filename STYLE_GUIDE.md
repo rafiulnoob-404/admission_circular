@@ -84,6 +84,7 @@
 | সোর্স বক্স | `.srcbox` | `source_url.url` থাকলে | বাদ |
 | ফুটার | `.foot` | সবসময় (সাইট + ডাউনলোড আইকন) | — |
 
+- **পেজে একবার** `.notice` — সবার জন্য প্রযোজ্য নীতি/সিদ্ধান্ত (হেডারের নিচে, ১২px, হালকা অ্যাম্বার, প্রিন্টে বাদ)
 - ঘর কখনো ভুয়া তথ্যে ভরে না; অজানা হলে **ঘর ফাঁকা**
 - তথ্য না থাকলে "এখনো ঘোষণা হয়নি"-জাতীয় লেখা, ড্যাশ নয়
 
@@ -91,7 +92,7 @@
 
 ## ৪. রেফ-কার্ড বনাম সাধারণ কার্ড
 
-**কখন রেফ:** যাচাইযোগ্য সোর্স লিংক আছে (এখন DU · BUET · KUET · RU · JU · MIST)
+**কখন রেফ:** যাচাইযোগ্য সোর্স লিংক আছে (এখন MED · DU · BUET · KUET · RU · JU · MIST)
 
 | | রেফ (`card.ref`) | সাধারণ |
 |---|---|---|
@@ -164,4 +165,4 @@
 `.hero-date` `.dstrip` `.drow` `.dlab` `.dval` `.unit-table` `.sub-table` `.lb-items` `.lb-title`
 `.grid` `.f` `.lbl` `.val` `.eligfield` `.blank` `.srcbox` `.src-h` `.src-k.off/.news` `.src-q`
 `.src-x` `.src-a` `.src-d` `.foot` `.site` `.sitelnk` `.dlbtn` `.actbar` `.toast`
-`.rev` `.in` `.no-anim` · eligibility: `.item` `.chk-line` `.kpi` `.done`
+`.rev` `.in` `.no-anim` · পেজ-লেভেল: `.notice` `.nt` `.nl` (ইউজিসি স্ট্রিপ, তিন পেজে এক) · eligibility: `.item` `.chk-line` `.kpi` `.done`

@@ -158,6 +158,23 @@ input.big{font-family:'KS',sans-serif;font-size:16px;padding:10px 12px}
   .headnav{width:100%}
   .hbtn{padding:8px 12px}
 }
+/* ── ইউজিসি নোটিশ স্ট্রিপ (তিন পেজেই এক) ── */
+.notice{max-width:var(--pagemax,1260px);margin:0 auto 14px;display:flex;align-items:flex-start;gap:9px;
+  padding:10px 14px;border-radius:14px;font-family:'KS',sans-serif;font-size:12px;line-height:1.6;
+  color:#7A5F17;background:linear-gradient(135deg,#FFFDF2 0%,#FFF7DC 55%,#FDF0CB 100%);
+  border:1px solid #EBDFAE;animation:rise .55s cubic-bezier(.22,.61,.36,1) .05s backwards}
+.notice .ic{flex:0 0 auto;display:inline-flex;margin-top:1px}
+.notice .ic svg{width:14px;height:14px;fill:none;stroke:#B08A22;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.notice .nt{min-width:0}
+.notice b{font-weight:400;color:#6A5210}
+.notice .nl{flex:0 0 auto;margin-left:auto;color:#8A5A17;text-decoration:none;
+  border-bottom:1px solid #E3CE9A;white-space:nowrap;font-size:12px}
+.notice .nl:hover{border-bottom-color:#8A5A17}
+.notice .nl:focus-visible{outline:2px solid #B08A22;outline-offset:2px;border-radius:4px}
+@media screen and (max-width:700px){.notice{flex-wrap:wrap;gap:5px 8px;padding:9px 12px}
+  .notice .nl{margin-left:23px}}
+@media (prefers-reduced-motion:reduce){.notice{animation:none}}
+@media print{.notice{display:none !important}}
 @media (prefers-reduced-motion:reduce){.pagehead{animation:none}.hbtn.red::after{animation:none}}
 @media print{.pagehead{display:none !important}}
 </style>
@@ -170,7 +187,7 @@ input.big{font-family:'KS',sans-serif;font-size:16px;padding:10px 12px}
     <div class="tagline"><span id="typeTxt"></span><span class="caret" aria-hidden="true"></span></div>
   </div>
   <div class="meta">
-    <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৭ নভেম্বর ২০২৬</span></span>
+    <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">৯ নভেম্বর ২০২৬</span></span>
     <nav class="headnav" aria-label="প্রধান মেনু">
       <a class="hbtn base" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>সব কার্ড</a>
       <a class="hbtn red" aria-current="page" href="eligibility.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m0 0l-5-5m5 5l-5 5"/></svg>Elig//যোগ্যতা যাচাই</a>
@@ -178,6 +195,11 @@ input.big{font-family:'KS',sans-serif;font-size:16px;padding:10px 12px}
     </nav>
   </div>
 </header>
+<aside class="notice" role="note">
+  <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 7.6v5"/><path d="M12 16.2v.2"/><circle cx="12" cy="12" r="9"/></svg></span>
+  <span class="nt"><b>ইউজিসির সিদ্ধান্ত (৯ নভেম্বর ২০২৬):</b> পাবলিক বিশ্ববিদ্যালয়ে আবেদন জানুয়ারি ২০২৭ থেকে, ভর্তি পরীক্ষা শুরু ফেব্রুয়ারি ২০২৭ থেকে — রমজানে কোনো পরীক্ষা নয়। ঢাবি ও বুয়েট আগে ঘোষিত সূচিতেই পরীক্ষা নেবে; এমবিবিএস-বিডিএস ১৮ ডিসেম্বর ২০২৬।</span>
+  <a class="nl" href="https://bangla.bdnews24.com/campus/yvymoe50a1" target="_blank" rel="noopener">সূত্র ↗</a>
+</aside>
 
 <main class="wrap">
 
@@ -249,6 +271,17 @@ input.big{font-family:'KS',sans-serif;font-size:16px;padding:10px 12px}
     <button class="btn sec" type="button" id="resetBtn">রিসেট</button>
     <span class="warn">এটি নির্দেশক হিসাব — চূড়ান্ত যাচাই অফিসিয়াল ভর্তি বিজ্ঞপ্তিতে করুন।</span>
   </div>
+
+  <!-- হালনাগাদ সূচি (৯ নভেম্বর ২০২৬) -->
+  <section class="panel">
+    <div class="ph"><span class="t">হালনাগাদ সূচি</span><span class="badge">৯ নভেম্বর ২০২৬</span></div>
+    <div class="pb">
+      <div class="hint">• <b>ঢাবি:</b> আবেদন ১১ নভেম্বর ২০২৬ (দুপুর ১২টা) → ২৫ নভেম্বর ২০২৬ (রাত ১১:৫৯); ইউনিটভিত্তিক পরীক্ষা ৫–২৬ ডিসেম্বর ২০২৬ (আইবিএ ৫ ডিসে)।</div>
+      <div class="hint">• <b>মেডিকেল-ডেন্টাল:</b> পরীক্ষা ৪ ডিসেম্বর থেকে পিছিয়ে <b>১৮ ডিসেম্বর ২০২৬</b> — আবেদনের সময়সূচি বিজ্ঞপ্তিতে জানানো হবে।</div>
+      <div class="hint">• <b>ইউজিসি:</b> পাবলিক বিশ্ববিদ্যালয়ে আবেদন জানুয়ারি ২০২৭ থেকে, পরীক্ষা ফেব্রুয়ারি ২০২৭ থেকে — ঢাবি ও বুয়েট আগের সূচিতেই থাকছে।</div>
+      <div class="hint">• HSC ২০২৬-এ ১–২ বিষয়ে ফেল করা শিক্ষার্থীদের সাপ্লিমেন্টারি পরীক্ষা ১ ডিসেম্বর ২০২৬ থেকে শুরু; তারা মেডিকেলের ১৮ ডিসেম্বরের পরীক্ষায় বসতে পারবে কি না, তা মন্ত্রণালয়ের সিদ্ধান্তের ওপর নির্ভর করছে।</div>
+    </div>
+  </section>
 
   <section class="wrap" id="result" hidden>
     <div class="summary" id="summary"></div>
