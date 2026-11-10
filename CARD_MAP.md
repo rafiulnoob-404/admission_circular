@@ -1,7 +1,7 @@
 # CARD MAP — কোনটা কোথায় বসে + GPA ↔ eligibility ফ্লো
 
 > শুধু পয়েন্ট। কোথায় কী বসবে, কোন অর্ডারে, আর Elig//যোগ্যতা কীভাবে GPA থেকে আসে।
-> আপডেট: ৭ নভেম্বর ২০২৬
+> আপডেট: ৯ নভেম্বর ২০২৬
 
 > **এই রিপোতে:** আলাদা `build_cards.py` / `build_eligibility.py` / `unis.json` নেই — `index.html`-এর
 > ভেতরে `card-data` JSON মিরর + রেডি মার্কআপ, আর `eligibility.html`-এ `UNIS` অবজেক্ট আছে।
