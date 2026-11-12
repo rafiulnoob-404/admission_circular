@@ -25,11 +25,11 @@ class Notices(unittest.TestCase):
             for href in ['index.html', 'eligibility.html', 'calendar.html']:
                 self.assertIn('href="' + href + '"', page)
 
-    def test_kuet_disagreement_and_seat_table(self):
+    def test_kuet_official_prospectus_and_seat_table(self):
         page = (ROOT / 'kuet-admission.html').read_text(encoding='utf-8')
-        for phrase in ['৮ জানুয়ারি', '৯ জানুয়ারি', 'বিকাল ৫টা', 'রাত ৯টা', '২১ জানুয়ারি', '২২ জানুয়ারি',
-                       'https://thedailycampus.com/admission-updates/281355', 'https://admission.kuet.ac.bd/',
-                       'https://students.bd/en/notice/kuet-admission-circular-2026-2027']:
+        for phrase in ['৮ জানুয়ারি', 'বিকাল ৫টা', '২১ জানুয়ারি', '২৫%',
+                       'https://admission.kuet.ac.bd/',
+                       'https://admission.kuet.ac.bd/uploads/notices/2.Prospectus-Ban.pdf']:
             self.assertIn(phrase, page)
         table = page.split('aria-label="বিভাগ ও আসন সারণি"')[1].split('</table>')[0]
         rows = re.findall(r'<tr><td>(.*?)</tr>', table)
@@ -37,7 +37,7 @@ class Notices(unittest.TestCase):
         nums = [int(re.findall(r'<td>(.*?)</td>', row)[-1].translate(str.maketrans('০১২৩৪৫৬৭৮৯', '0123456789'))) for row in rows]
         self.assertEqual(sum(nums), 1100)
         self.assertIn('সংরক্ষিত', page)
-        self.assertIn('সংবাদে ৯ জানুয়ারি', CALENDAR)
+        self.assertIn('অফিসিয়াল নির্দেশিকা · সকাল ৯:৩০–১২:৩০', CALENDAR)
         self.assertNotIn('"কুয়েট (KUET)"', re.search(r'var VER=\[(.*?)\]', CALENDAR).group(1))
 
     def test_jnu_notice_versus_older_gpa_report(self):

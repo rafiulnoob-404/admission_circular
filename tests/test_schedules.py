@@ -47,9 +47,9 @@ class Schedules(unittest.TestCase):
             self.assertEqual(UNIS[short]['elig_rules'], [])
             self.assertEqual(next(e for e in entries if e['short'] == short)['rules'], [])
 
-    def test_all_16_cards_remain(self):
-        self.assertEqual(len(UNIS), 16)
-        self.assertEqual(len(re.findall(r'<article\b[^>]*data-file=', INDEX)), 16)
+    def test_all_19_cards_remain(self):
+        self.assertEqual(len(UNIS), 19)
+        self.assertEqual(len(re.findall(r'<article\b[^>]*data-file=', INDEX)), 19)
 
 
 if __name__ == '__main__':
