@@ -1,4 +1,4 @@
-"""Regression checks for the 11 November schedule update (stdlib only)."""
+"""Regression checks for the 11 and 14 November schedule updates (stdlib only)."""
 import json
 import re
 import unittest
@@ -39,7 +39,7 @@ class Schedules(unittest.TestCase):
             events = re.findall(r'\{s:"(\d{4}-\d\d-\d\d)"[^\n]*u:"' + re.escape(university) + r'"', CALENDAR)
             self.assertEqual(sorted(events), dates)
         self.assertNotIn('2027-01-24",e:"2027-01-26",u:"যশোর', CALENDAR)
-        self.assertIn('গুচ্ছ (GST) — যবিপ্রবিসহ', CALENDAR)
+        self.assertIn('গুচ্ছ (GST) — ২০ বিশ্ববিদ্যালয়', CALENDAR)
 
     def test_unverified_eligibility_is_not_automatically_judged(self):
         entries = json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIGIBILITY).group(1))
@@ -47,9 +47,40 @@ class Schedules(unittest.TestCase):
             self.assertEqual(UNIS[short]['elig_rules'], [])
             self.assertEqual(next(e for e in entries if e['short'] == short)['rules'], [])
 
-    def test_all_19_cards_remain(self):
-        self.assertEqual(len(UNIS), 19)
-        self.assertEqual(len(re.findall(r'<article\b[^>]*data-file=', INDEX)), 19)
+    def test_all_cards_remain_and_new_ones_are_mirrored(self):
+        self.assertEqual(len(UNIS), 22)
+        self.assertEqual(len(re.findall(r'<article\b[^>]*data-file=', INDEX)), 22)
+        order = re.findall(r'<article\b[^>]*data-file="([^"]+)"', INDEX)
+        self.assertEqual(order, [u['short'] for u in DATA['universities']])
+        checker = json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIGIBILITY).group(1))
+        self.assertEqual([e['short'] for e in checker], order)
+        switch = json.loads(re.search(r'var SWITCH = (\{.*?\});', ELIGIBILITY).group(1))
+        for short in ['AGRI', 'HSTU', 'AAUB']:
+            with self.subTest(short=short):
+                self.assertEqual(UNIS[short]['elig_rules'], [])
+                self.assertEqual(next(e for e in checker if e['short'] == short)['rules'], [])
+                self.assertIn(short, switch)
+                self.assertIn('class="refpill"', card(short))
+                self.assertNotIn('hero-date', card(short))
+                self.assertIn(UNIS[short]['source_url']['url'], card(short))
+
+    def test_new_universities_dates_reach_the_calendar(self):
+        for date, university in [('2027-01-02', 'কৃষি গুচ্ছ (৯ বিশ্ববিদ্যালয়)'),
+                                 ('2027-01-24', 'হাবিপ্রবি (HSTU)'),
+                                 ('2027-01-30', 'অ্যাভিয়েশন অ্যান্ড অ্যারোস্পেস বিশ্ববিদ্যালয় (AAUB)')]:
+            with self.subTest(university=university):
+                self.assertRegex(CALENDAR, r'\{s:"' + date + r'"[^\n]*u:"' + re.escape(university) + r'"')
+
+    def test_14_november_corrections(self):
+        self.assertEqual(DATA['updated'], '১৪ নভেম্বর ২০২৬')
+        self.assertEqual(UNIS['AAUB']['source_url']['kind'], 'official')
+        self.assertEqual(UNIS['KhU']['apply_start'], '৫ জানুয়ারি ২০২৭')
+        self.assertIn('৫ জানুয়ারি ২০২৭', card('KhU'))
+        self.assertIn('১৬,০৯৩', card('GST'))
+        self.assertIn('১,২০০', card('DU'))
+        for page in [INDEX, CALENDAR, ELIGIBILITY]:
+            self.assertIn('সর্বশেষ আপডেট: <span class="bd">১৪ নভেম্বর ২০২৬</span>', page)
+            self.assertIn('সর্বশেষ (১৪ নভেম্বর ২০২৬):', page)
 
 
 if __name__ == '__main__':
