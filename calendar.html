@@ -484,7 +484,7 @@ col.c-d{width:19%} col.c-u{width:28%} col.c-x{width:37%} col.c-l{width:16%}
     <div class="tagline"><span id="typeTxt"></span><span class="caret" aria-hidden="true"></span></div>
   </div>
   <div class="meta">
-    <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">১৪ নভেম্বর ২০২৬</span></span>
+    <span class="upd"><span class="dot"></span>সর্বশেষ আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span></span>
     <nav class="headnav" aria-label="প্রধান মেনু">
       <a class="hbtn base" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>সব কার্ড</a>
       <a class="hbtn red" href="eligibility.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m0 0l-5-5m5 5l-5 5"/></svg>Elig//যোগ্যতা যাচাই</a>
@@ -494,17 +494,20 @@ col.c-d{width:19%} col.c-u{width:28%} col.c-x{width:37%} col.c-l{width:16%}
 </header>
 <aside class="notice" role="note">
   <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 7.6v5"/><path d="M12 16.2v.2"/><circle cx="12" cy="12" r="9"/></svg></span>
-  <span class="nt"><b>সর্বশেষ (১৪ নভেম্বর ২০২৬):</b> ইউজিসির “জানুয়ারি থেকে আবেদন, ফেব্রুয়ারি থেকে পরীক্ষা” প্রস্তাব সব বিশ্ববিদ্যালয় মানেনি — ঢাবি, বুয়েট ও জাবি আগের সূচিতেই; রাবি, চবি, কুবি, খুবি, এমআইএসটি ও অ্যাভিয়েশন বিশ্ববিদ্যালয় পিছিয়েছে। এইচএসসি পুনঃনিরীক্ষণের ফল ২৩ নভেম্বর; শিক্ষামন্ত্রী ঢাবিকে ২৫ নভেম্বরের আবেদনের সময় বাড়ানোর অনুরোধ করেছেন।</span>
-  <a class="nl" href="https://campustimes.press/article/public-university/72607" target="_blank" rel="noopener">সূত্র ↗</a>
+  <span class="nt"><b>সর্বশেষ (১১ নভেম্বর ২০২৬):</b> ঢাবি ও কুয়েটে আবেদন শুরু; রাবি, চবি, খুবি ও এমআইএসটির পুনর্নির্ধারিত সূচি কার্ড ও ক্যালেন্ডারে দেখুন।</span>
+  <a class="nl" href="https://www.jugantor.com/campus/1182745" target="_blank" rel="noopener">সূত্র ↗</a>
 </aside>
 <div class="toolbar"><input id="q" type="search" placeholder="খুঁজুন (বিশ্ববিদ্যালয়/ইউনিট)"><select id="uni"><option value="">সব বিশ্ববিদ্যালয়</option></select>
 <label><input id="hp" type="checkbox" checked> আগের তারিখ লুকান</label></div>
+<div class="cards" id="applications" aria-label="আবেদনের সময়সূচি"></div>
+<div style="height:14px"></div>
 <div class="cards" id="cards"></div>
 <div style="height:14px"></div>
 <div class="cards" id="tbd"></div>
 <p class="hint" style="margin-top:14px">তারিখ পরিবর্তন হতে পারে। <a href="kuet-admission.html">কুয়েটের অফিসিয়াল নির্দেশিকা</a> এবং <a href="jnu-admission.html">জবির বিস্তারিত বিজ্ঞপ্তি</a> দেখুন। সূত্র ও বিস্তারিত প্রতিটি বিশ্ববিদ্যালয়ের কার্ডে দেখুন; আবেদনের আগে সংশ্লিষ্ট প্রতিষ্ঠানের অফিসিয়াল বিজ্ঞপ্তি যাচাই করুন।</p>
 </div>
 <script>
+var APPLICATIONS = [{"u": "ঢাকা বিশ্ববিদ্যালয়", "s": "2026-11-11", "e": "2026-11-25", "start": "১১ নভেম্বর ২০২৬ · দুপুর ১২টা", "end": "২৫ নভেম্বর ২০২৬ · রাত ১১:৫৯", "url": "https://admission.eis.du.ac.bd/"}, {"u": "কুয়েট (KUET)", "s": "2026-11-10", "e": "2026-12-10", "start": "১০ নভেম্বর ২০২৬ · সকাল ১০টা", "end": "১০ ডিসেম্বর ২০২৬ · বিকাল ৫টা", "url": "https://admission.kuet.ac.bd/notices/2.Prospectus-Ban.pdf"}, {"u": "রাজশাহী বিশ্ববিদ্যালয়", "s": "2026-11-15", "e": "2026-11-30", "start": "১৫ নভেম্বর ২০২৬ · দুপুর ১২টা", "end": "৩০ নভেম্বর ২০২৬ · রাত ১১:৫৯", "url": "https://admission.ru.ac.bd/"}, {"u": "জগন্নাথ বিশ্ববিদ্যালয়", "s": "2026-11-25", "e": "2026-12-10", "start": "২৫ নভেম্বর ২০২৬ · দুপুর ১২টা", "end": "১০ ডিসেম্বর ২০২৬ · রাত ১১:৫৯", "url": "https://www.jugantor.com/campus/1182704"}, {"u": "চট্টগ্রাম বিশ্ববিদ্যালয়", "s": "2026-12-10", "e": "2027-01-10", "start": "১০ ডিসেম্বর ২০২৬", "end": "১০ জানুয়ারি ২০২৭ · ফি ১২ জানুয়ারি পর্যন্ত", "url": "https://thedailycampus.com/admission-updates/281628"}, {"u": "কুমিল্লা বিশ্ববিদ্যালয়", "s": "2026-12-10", "e": "2026-12-31", "start": "১০ ডিসেম্বর ২০২৬", "end": "৩১ ডিসেম্বর ২০২৬", "url": "https://www.kalerkantho.com/online/campus-online/2026/11/11/1766162"}, {"u": "মিস্ট (MIST)", "s": "2027-01-05", "e": "2027-01-21", "start": "৫ জানুয়ারি ২০২৭", "end": "২১ জানুয়ারি ২০২৭", "url": "https://www.prothomalo.com/education/admission/j38130qb5f"}, {"u": "বুয়েট (BUET)", "s": "2026-11-21", "e": null, "start": "২১ নভেম্বর ২০২৬ (সংবাদ)", "end": "শেষ তারিখ বিজ্ঞপ্তিতে", "url": "https://www.jugantor.com/campus/1182745"}];
 var EV=[
  {s:"2027-01-29",u:"বাংলাদেশ টেক্সটাইল বিশ্ববিদ্যালয় (BUTEX)",n:"বিএসসি টেক্সটাইল ইঞ্জিনিয়ারিং · সংবাদ অনুযায়ী",t:"সংবাদ"},
  {s:"2027-01-23",u:"চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (CUET)",n:"পরীক্ষার তারিখ — সম্ভাব্য",t:"সম্ভাব্য"},
@@ -525,7 +528,7 @@ var EV=[
  {s:"2027-01-01",u:"জগন্নাথ বিশ্ববিদ্যালয়",n:"ইউনিট A · সকাল ১০:০০–১১:০০"},
  {s:"2027-01-01",u:"বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস (BUP)",n:"FBS-Unit (১ ও ৯ জানুয়ারি)"},
  {s:"2027-01-02",u:"বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস (BUP)",n:"FASS-Unit"},
- {s:"2027-01-02",u:"কৃষি গুচ্ছ (৯ বিশ্ববিদ্যালয়)",n:"সমন্বিত ভর্তি পরীক্ষা · পেছানোর সিদ্ধান্ত প্রক্রিয়াধীন",t:"সংবাদ"},
+ {s:"2027-01-02",u:"কৃষি গুচ্ছ (৯ বিশ্ববিদ্যালয়)",n:"সমন্বিত ভর্তি পরীক্ষা · সম্ভাব্য",t:"সংবাদ"},
  {s:"2027-01-08",u:"কুয়েট (KUET)",n:"অফিসিয়াল নির্দেশিকা · সকাল ৯:৩০–১২:৩০"},
  {s:"2027-01-08",u:"জগন্নাথ বিশ্ববিদ্যালয়",n:"ইউনিট E · সকাল ১০:০০–১১:৩০"},
  {s:"2027-01-08",u:"বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস (BUP)",n:"FSSS, FST, ইঞ্জিনিয়ারিং ও মেডিক্যাল স্টাডিজ অনুষদ"},
@@ -542,11 +545,11 @@ var EV=[
  {s:"2027-01-30",u:"অ্যাভিয়েশন অ্যান্ড অ্যারোস্পেস বিশ্ববিদ্যালয় (AAUB)",n:"স্নাতক ভর্তি পরীক্ষা · বিএএফ শাহীন কলেজ (ঢাকা) ও লালমনিরহাট ক্যাম্পাস"},
  {s:"2027-02-03",u:"চট্টগ্রাম বিশ্ববিদ্যালয়",n:"B1 ইউনিট"},
  {s:"2027-02-04",u:"চট্টগ্রাম বিশ্ববিদ্যালয়",n:"B2 ইউনিট"},
- {s:"2027-02-05",u:"চট্টগ্রাম বিশ্ববিদ্যালয়",n:"B ইউনিট · খুবির সি ইউনিটের সঙ্গে একই দিনে, ইউজিসি সমন্বয় করছে"},
- {s:"2027-02-05",u:"কুমিল্লা বিশ্ববিদ্যালয়",n:"A ইউনিট"},
+ {s:"2027-02-05",u:"চট্টগ্রাম বিশ্ববিদ্যালয়",n:"B ইউনিট · খুবির সি ইউনিটের সঙ্গে একই দিনে"},
+ {s:"2027-02-05",u:"কুমিল্লা বিশ্ববিদ্যালয়",n:"A ইউনিট · সকাল ১১:০০"},
  {s:"2027-02-06",u:"চট্টগ্রাম বিশ্ববিদ্যালয়",n:"D ইউনিট"},
- {s:"2027-02-06",u:"কুমিল্লা বিশ্ববিদ্যালয়",n:"B ইউনিট"},
- {s:"2027-02-07",u:"কুমিল্লা বিশ্ববিদ্যালয়",n:"C ইউনিট"},
+ {s:"2027-02-06",u:"কুমিল্লা বিশ্ববিদ্যালয়",n:"B ইউনিট · বিকেল ৩:০০"},
+ {s:"2027-02-07",u:"কুমিল্লা বিশ্ববিদ্যালয়",n:"C ইউনিট · সকাল ১১:০০"},
  {s:"2027-02-08",u:"চট্টগ্রাম বিশ্ববিদ্যালয়",n:"D1 ইউনিট"},
  {s:"2027-03-19",u:"গুচ্ছ (GST) — ২০ বিশ্ববিদ্যালয়",n:"বি ইউনিট (মানবিক) · সকাল ১১:০০–১২:০০"},
  {s:"2027-03-20",u:"গুচ্ছ (GST) — ২০ বিশ্ববিদ্যালয়",n:"সি ইউনিট (বাণিজ্য) ১১:০০–১২:০০ · ডি ইউনিট (আর্কিটেকচার) ৩:০০–৪:০০"},
@@ -571,6 +574,20 @@ function render(){
   if(hp&&past)return;if(uv&&e.u!==uv)return;
   if(q&&(e.u+" "+e.n).toLowerCase().indexOf(q)<0)return;
   var k=sd.getFullYear()*12+sd.getMonth();if(!g[k]){g[k]=[];keys.push(k)}g[k].push({e:e,sd:sd,ed:ed,past:past});});
+ var appRows=APPLICATIONS.filter(function(a){
+  if(uv&&a.u!==uv)return false;
+  if(q&&(a.u+' আবেদন '+a.start+' '+a.end).toLowerCase().indexOf(q)<0)return false;
+  if(hp&&a.e&&pd(a.e)<today)return false;
+  return true;
+ }).sort(function(a,b){return a.s.localeCompare(b.s)});
+ var appOut='';
+ if(appRows.length){
+  appOut='<article class="card p-mint"><div class="top"><div class="toprow"><div class="names"><h2 class="bnname">আবেদনের সময়সূচি</h2><div class="enname">APPLICATION WINDOWS</div></div></div></div>'+
+    '<table class="unit-table"><thead><tr><th>প্রতিষ্ঠান</th><th>শুরু</th><th>শেষ</th><th>তথ্যসূত্র</th></tr></thead><tbody>';
+  appRows.forEach(function(a){appOut+='<tr class="urow"><td>'+a.u+'</td><td>'+a.start+'</td><td>'+a.end+'</td><td><a href="'+a.url+'" target="_blank" rel="noopener">দেখুন ↗</a></td></tr>';});
+  appOut+='</tbody></table></article>';
+ }
+ document.getElementById('applications').innerHTML=appOut;
  var out="";
  keys.forEach(function(k){
   var y=Math.floor(k/12),m=k%12,rows=g[k],p=PAL[m%PAL.length];

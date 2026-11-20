@@ -26,7 +26,7 @@ class Schedules(unittest.TestCase):
 
     def test_application_windows_and_sources(self):
         for short, text in {'RU': '১৫ – ৩০ নভেম্বর ২০২৬', 'CU': '১০ ডিসেম্বর ২০২৬ – ১০ জানুয়ারি ২০২৭',
-                            'JnU': '২৫ নভেম্বর – ১০ ডিসেম্বর ২০২৬', 'CoU': '১০–৩১ ডিসেম্বর ২০২৬',
+                            'JnU': '২৫ নভেম্বর ২০২৬ দুপুর ১২টা – ১০ ডিসেম্বর ২০২৬ রাত ১১:৫৯', 'CoU': '১০–৩১ ডিসেম্বর ২০২৬',
                             'MIST': '২১ জানুয়ারি ২০২৭'}.items():
             with self.subTest(short=short):
                 self.assertIn(text, card(short))
@@ -71,16 +71,16 @@ class Schedules(unittest.TestCase):
             with self.subTest(university=university):
                 self.assertRegex(CALENDAR, r'\{s:"' + date + r'"[^\n]*u:"' + re.escape(university) + r'"')
 
-    def test_14_november_corrections(self):
-        self.assertEqual(DATA['updated'], '১৪ নভেম্বর ২০২৬')
+    def test_current_schedule_corrections(self):
+        self.assertEqual(DATA['updated'], '১১ নভেম্বর ২০২৬')
         self.assertEqual(UNIS['AAUB']['source_url']['kind'], 'official')
-        self.assertEqual(UNIS['KhU']['apply_start'], '৫ জানুয়ারি ২০২৭')
-        self.assertIn('৫ জানুয়ারি ২০২৭', card('KhU'))
+        self.assertIsNone(UNIS['KhU']['apply_start'])
+        self.assertIn('আবেদনের সময়সূচি পরে জানানো হবে', card('KhU'))
         self.assertIn('১৬,০৯৩', card('GST'))
         self.assertIn('১,২০০', card('DU'))
         for page in [INDEX, CALENDAR, ELIGIBILITY]:
-            self.assertIn('সর্বশেষ আপডেট: <span class="bd">১৪ নভেম্বর ২০২৬</span>', page)
-            self.assertIn('সর্বশেষ (১৪ নভেম্বর ২০২৬):', page)
+            self.assertIn('সর্বশেষ আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span>', page)
+            self.assertIn('সর্বশেষ (১১ নভেম্বর ২০২৬):', page)
 
 
 if __name__ == '__main__':
