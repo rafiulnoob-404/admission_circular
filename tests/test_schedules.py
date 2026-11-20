@@ -43,7 +43,7 @@ class Schedules(unittest.TestCase):
 
     def test_unverified_eligibility_is_not_automatically_judged(self):
         entries = json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIGIBILITY).group(1))
-        for short in ['RU', 'MIST']:
+        for short in ['JU', 'MIST']:
             self.assertEqual(UNIS[short]['elig_rules'], [])
             self.assertEqual(next(e for e in entries if e['short'] == short)['rules'], [])
 

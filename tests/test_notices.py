@@ -29,7 +29,7 @@ class Notices(unittest.TestCase):
         page = (ROOT / 'kuet-admission.html').read_text(encoding='utf-8')
         for phrase in ['৮ জানুয়ারি', 'বিকাল ৫টা', '২১ জানুয়ারি', '২৫%',
                        'https://admission.kuet.ac.bd/',
-                       'https://admission.kuet.ac.bd/uploads/notices/2.Prospectus-Ban.pdf']:
+                       'https://admission.kuet.ac.bd/notices/2.Prospectus-Ban.pdf']:
             self.assertIn(phrase, page)
         table = page.split('aria-label="বিভাগ ও আসন সারণি"')[1].split('</table>')[0]
         rows = re.findall(r'<tr><td>(.*?)</tr>', table)
