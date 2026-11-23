@@ -1,0 +1,1956 @@
+{
+  "updated": "১১ নভেম্বর ২০২৬",
+  "universities": [
+    {
+      "name_bn": "মেডিকেল ও ডেন্টাল কলেজ (এমবিবিএস ও বিডিএস)",
+      "name_en": "MEDICAL & DENTAL COLLEGES · MBBS / BDS",
+      "short": "MED",
+      "unit": "এমবিবিএস ও বিডিএস — সমন্বিত ভর্তি পরীক্ষা",
+      "exam_type": "পরীক্ষার ধরন বিজ্ঞপ্তিতে",
+      "exam_date": "১৮ ডিসেম্বর ২০২৬",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "বিজ্ঞপ্তি প্রকাশের পর · ১৫–১৮ নভেম্বর ২০২৬-এর মধ্যে শুরুর সম্ভাবনা",
+      "class_start": null,
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": null,
+      "elig_label": "২০২৫–২৬-এ বিজ্ঞান শাখায় SSC+HSC মোট GPA ৮.৫০; প্রতি পরীক্ষায় অন্তত ৪.০০। ২০২৬–২৭-এর শর্ত বিজ্ঞপ্তিতে।",
+      "elig_items": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "dgme.teletalk.com.bd",
+      "note": "১৮ ডিসেম্বর পরীক্ষা; আবেদন ১৫–১৮ নভেম্বর শুরু হতে পারে (সংবাদ)। পূর্ণাঙ্গ বিজ্ঞপ্তি অপেক্ষমাণ।",
+      "year_label": "২০২৬-২৭",
+      "palette": "teal",
+      "unit_list": null,
+      "unit_last_label": null,
+      "list_blocks": [],
+      "elig_rules": [],
+      "switch_note": "২০২৬–২৭ শিক্ষাবর্ষের পূর্ণাঙ্গ শর্ত বিজ্ঞপ্তিতে দেখুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "প্রথম আলো (সংবাদ)",
+        "url": "https://www.prothomalo.com/education/examination/23hvivuqlo",
+        "text": "চিকিৎসক ও দন্ত চিকিৎসক ভর্তি পরীক্ষা ১৮ ডিসেম্বর অনুষ্ঠিত হবে",
+        "as_of": "৮ নভেম্বর ২০২৬",
+        "extra": "৪ ডিসেম্বরের পরীক্ষা পিছিয়ে ১৮ ডিসেম্বর · অধিদপ্তরের মহাপরিচালকের বরাতে: বিজ্ঞপ্তি শিগগিরই, ১৫–১৮ নভেম্বরের মধ্যে অনলাইন আবেদন শুরুর সম্ভাবনা",
+        "extra_url": "https://www.amarsangbad.com/education/news/364199"
+      },
+      "details_page": "medical-admission.html",
+      "elig_summary": "২০২৫–২৬-এ বিজ্ঞান শাখায় SSC+HSC মোট GPA ৮.৫০; প্রতি পরীক্ষায় অন্তত ৪.০০। ২০২৬–২৭-এর শর্ত বিজ্ঞপ্তিতে।",
+      "exam_sort_date": "2026-12-18",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "৮ নভেম্বর ২০২৬",
+        "official_url": "https://dgme.gov.bd/",
+        "news_url": "https://www.prothomalo.com/education/examination/23hvivuqlo"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা ও বিজ্ঞান বিষয়ের শর্ত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "মেডিকেল ও ডেন্টাল কলেজ (এমবিবিএস ও বিডিএস)"
+    },
+    {
+      "name_bn": "গুচ্ছভুক্ত সাধারণ ও বিজ্ঞান-প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "GST CLUSTER · PUBLIC UNIVERSITIES",
+      "short": "GST",
+      "unit": "এ (বিজ্ঞান), বি (মানবিক), সি (বাণিজ্য), ডি (আর্কিটেকচার) — ৪ ইউনিট",
+      "exam_type": "MCQ (OMR)",
+      "exam_date": "১৯–২৭ মার্চ ২০২৭",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": null,
+      "class_start": null,
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "সারাদেশ (আয়োজক: পবিপ্রবি)",
+      "fee": null,
+      "elig_label": "আগের তথ্য: এ মোট ৭.০০, পৃথক ৩.২৫; বি ৬.০০, পৃথক ৩.০০; সি ৬.২৫, পৃথক ৩.০০। ডি ও নতুন শর্ত বিজ্ঞপ্তিতে দেখুন।",
+      "elig_items": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "gstadmission.ac.bd",
+      "note": "২০টি পূর্ববর্তী সদস্য; আরও ৪টির অংশগ্রহণ ইউজিসির অনুমোদনসাপেক্ষ। আসন ও আবেদন বিজ্ঞপ্তিতে।",
+      "year_label": "২০২৬-২৭",
+      "palette": "plum",
+      "unit_list": [
+        {
+          "name": "বি ইউনিট (মানবিক)",
+          "exam_date": "১৯ মার্চ ২০২৭, শুক্রবার",
+          "exam_time": null,
+          "fee": null
+        },
+        {
+          "name": "সি ইউনিট (বাণিজ্য)",
+          "exam_date": "২০ মার্চ ২০২৭, শনিবার",
+          "exam_time": null,
+          "fee": null
+        },
+        {
+          "name": "ডি ইউনিট (আর্কিটেকচার)",
+          "exam_date": "২০ মার্চ ২০২৭, শনিবার",
+          "exam_time": null,
+          "fee": null
+        },
+        {
+          "name": "এ ইউনিট (বিজ্ঞান)",
+          "exam_date": "২৭ মার্চ ২০২৭, শনিবার",
+          "exam_time": null,
+          "fee": null
+        }
+      ],
+      "unit_last_label": "পরীক্ষার সময়",
+      "list_blocks": [],
+      "elig_rules": [],
+      "switch_note": "২০২৬–২৭-এর পূর্ণাঙ্গ বিজ্ঞপ্তিতে শর্ত যাচাই করুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "শিক্ষা সংবাদ — গুচ্ছের সদস্য",
+        "url": "https://shikshasangbad.com/admission/25430/",
+        "text": "যবিপ্রবি গুচ্ছে; নতুন চার বিশ্ববিদ্যালয়ের অংশগ্রহণ ইউজিসির অনুমোদনসাপেক্ষ।",
+        "as_of": "৭ নভেম্বর ২০২৬",
+        "extra": "পরীক্ষার তারিখ ১৯, ২০ ও ২৭ মার্চ — সেপ্টেম্বরের সংবাদ অনুযায়ী।",
+        "extra_url": "https://shikshasangbad.com/admission/20059/"
+      },
+      "details_page": "gst-admission.html",
+      "elig_summary": "আগের তথ্য: এ মোট ৭.০০, পৃথক ৩.২৫; বি ৬.০০, পৃথক ৩.০০; সি ৬.২৫, পৃথক ৩.০০। ডি ও নতুন শর্ত বিজ্ঞপ্তিতে দেখুন।",
+      "exam_sort_date": "2027-03-19",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১৯ সেপ্টেম্বর ২০২৬",
+        "official_url": "https://gstadmission.ac.bd/",
+        "news_url": "https://shikshasangbad.com/admission/20059/"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "গুচ্ছভুক্ত সাধারণ ও বিজ্ঞান-প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "কৃষি গুচ্ছভুক্ত বিশ্ববিদ্যালয়",
+      "name_en": "AGRICULTURAL UNIVERSITIES CLUSTER",
+      "short": "AGRI",
+      "unit": "৯টি কৃষি ও কৃষিপ্রধান বিশ্ববিদ্যালয় — একক ভর্তি পরীক্ষা",
+      "exam_type": "MCQ",
+      "exam_date": "২ বা ৩ জানুয়ারি ২০২৭ — সূত্রে মতভেদ",
+      "exam_time": null,
+      "apply_start": "২৫ নভেম্বর ২০২৬",
+      "apply_end": "১৫ ডিসেম্বর ২০২৬",
+      "apply_window": "২৫ নভেম্বর – ১৫ ডিসেম্বর ২০২৬ (সংবাদ ও অনুলিপি)",
+      "marks": "১৫০ (পরীক্ষা ১০০ + এসএসসি ২৫ + এইচএসসি ২৫)",
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "সারাদেশ (সমন্বয়ে শেরেবাংলা কৃষি বিশ্ববিদ্যালয়)",
+      "fee": null,
+      "elig_label": "বিষয় ও যোগ্যতার শর্ত পোর্টালে যাচাই করুন।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "acas.edu.bd",
+      "note": "পরীক্ষার দিন, ফি ও আসনে দুই সূত্রে মতভেদ; অফিসিয়াল নোটিশ যাচাই করুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "lime",
+      "unit_list": null,
+      "unit_last_label": null,
+      "list_blocks": [
+        {
+          "title": "গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "২৫ নভেম্বর–১৫ ডিসেম্বর আবেদনের কথা দুটি সূত্রেই আছে; নির্দিষ্ট সময় পোর্টালে যাচাই করুন।",
+            "পরীক্ষার তারিখে বিরোধ: একটি বিজ্ঞপ্তির অনুলিপিতে ২ জানুয়ারি, সমকালের প্রতিবেদনে ৩ জানুয়ারি; চূড়ান্তটি অফিসিয়াল পোর্টালে মিলিয়ে নিন।",
+            "আসন ও আবেদন ফিতেও প্রতিবেদনের মধ্যে মতভেদ রয়েছে; নিশ্চিত না হওয়া পর্যন্ত দেখানো হচ্ছে না।"
+          ]
+        }
+      ],
+      "elig_rules": [],
+      "switch_note": "বিষয় ও যোগ্যতার বিশেষ শর্ত সরকারি পোর্টালে যাচাই করুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "প্রকাশিত বিজ্ঞপ্তির অনুলিপি",
+        "url": "https://bdgovtguide.com/gst-admission/",
+        "text": "এক সূত্রে ২ জানুয়ারি, অন্য প্রতিবেদনে ৩ জানুয়ারি; আসন ও ফিতেও অমিল।",
+        "as_of": "১৯–২০ নভেম্বরের সূত্র",
+        "extra": "সমকালের ভিন্ন প্রতিবেদন",
+        "extra_url": "https://samakal.com/education/article/384119"
+      },
+      "details_page": "agri-admission.html",
+      "elig_summary": "SSC ২০২২–২৪ ও HSC ২০২৫/২৬ বিজ্ঞান, উভয়ে GPA ৪.০০ — সংবাদভিত্তিক; বিশেষ শর্ত পোর্টালে দেখুন।",
+      "exam_sort_date": null,
+      "application_schedule": {
+        "start": "2026-11-25T00:00:00+06:00",
+        "end": "2026-12-15T23:59:59+06:00",
+        "date_only": true
+      },
+      "references": {
+        "schedule_basis": "conflict",
+        "source_date": "১৯–২০ নভেম্বর ২০২৬",
+        "official_url": "https://acas.edu.bd/",
+        "news_url": "https://bdgovtguide.com/gst-admission/"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "বিষয় ও যোগ্যতার বিশেষ শর্ত সরকারি পোর্টালে যাচাই করুন।",
+      "checker_name_bn": "কৃষি গুচ্ছভুক্ত বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "ঢাকা বিশ্ববিদ্যালয়",
+      "name_en": "UNIVERSITY OF DHAKA",
+      "short": "DU",
+      "unit": "আইবিএ, বিজ্ঞান, কলা-আইন-সামাজিক বিজ্ঞান, চারুকলা, ব্যবসায় শিক্ষা — ৫ ইউনিট",
+      "exam_type": "MCQ + লিখিত",
+      "exam_date": "৫–২৬ ডিসেম্বর ২০২৬",
+      "exam_time": null,
+      "apply_start": "১১ নভেম্বর ২০২৬ · দুপুর ১২টা",
+      "apply_end": "২৫ নভেম্বর ২০২৬ · রাত ১১:৫৯",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "ঢাকাসহ ৮টি বিভাগীয় শহর (চারুকলা ও আইবিএ ছাড়া অন্য ৩ ইউনিটের পরীক্ষা)",
+      "fee": null,
+      "elig_label": "বিজ্ঞান, কলা ও ব্যবসায় ইউনিটে শাখাভেদে GPA; চারুকলা মোট ৬.৫০। আইবিএর পূর্ণ শর্ত নির্দেশিকায় দেখুন।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "admission.eis.du.ac.bd",
+      "note": "আবেদন ফি ১৫০ টাকা বৃদ্ধি · সূচি অপরিবর্তিত · শিক্ষামন্ত্রী আবেদনের সময় বাড়ানোর অনুরোধ করেছেন (১৪ নভে)",
+      "year_label": "২০২৬-২৭",
+      "palette": "sky",
+      "unit_list": [
+        {
+          "name": "আইবিএ ইউনিট",
+          "exam_date": "৫ ডিসেম্বর, শনিবার",
+          "exam_time": "সকাল ১০:০০–১২:০০",
+          "fee": "১,৫০০"
+        },
+        {
+          "name": "বিজ্ঞান ইউনিট",
+          "exam_date": "১২ ডিসেম্বর, শনিবার",
+          "exam_time": "সকাল ১১:০০–১২:৩০",
+          "fee": "১,২০০"
+        },
+        {
+          "name": "কলা, আইন ও সামাজিক বিজ্ঞান",
+          "exam_date": "১৯ ডিসেম্বর, শনিবার",
+          "exam_time": "সকাল ১১:০০–১২:৩০",
+          "fee": "১,২০০"
+        },
+        {
+          "name": "চারুকলা ইউনিট",
+          "exam_date": "২২ ডিসেম্বর, মঙ্গলবার",
+          "exam_time": "সকাল ১১:০০–১২:৩০",
+          "fee": "১,৪০০"
+        },
+        {
+          "name": "ব্যবসায় শিক্ষা ইউনিট",
+          "exam_date": "২৬ ডিসেম্বর, শনিবার",
+          "exam_time": "সকাল ১১:০০–১২:৩০",
+          "fee": "১,২০০"
+        }
+      ],
+      "unit_last_label": "পরীক্ষার সময়",
+      "apply_window": null,
+      "class_start": "২৮ মার্চ ২০২৭",
+      "list_blocks": [
+        {
+          "title": "মানবণ্টন",
+          "items": [
+            "বিজ্ঞান / কলা / ব্যবসায়: MCQ ৬০ + লিখিত ৪০ (৪৫ + ৪৫ মিনিট)",
+            "চারুকলা: MCQ ৪০ + অঙ্কন ৬০",
+            "আইবিএ: MCQ ৭০ + বর্ণনামূলক ৩০",
+            "মোট ১২০ = পরীক্ষা ১০০ + SSC ও HSC ফলাফল ২০"
+          ]
+        },
+        {
+          "title": "সর্বশেষ (১১ নভেম্বর ২০২৬)",
+          "items": [
+            "আবেদন ফি ১৫০ টাকা বেড়েছে — বিজ্ঞান, কলা ও ব্যবসায় ১,০৫০ → ১,২০০; চারুকলা ১,২৫০ → ১,৪০০; আইবিএ ১,৫০০ অপরিবর্তিত",
+            "ইউজিসির অনুরোধ সত্ত্বেও ঢাবি পূর্বঘোষিত সূচিতেই — ফলে সাপ্লিমেন্টারিতে পাস করা শিক্ষার্থীরা এবার ঢাবিতে আবেদনের সুযোগ পাচ্ছেন না",
+            "ফি দেওয়া যাবে সোনালী/জনতা/অগ্রণী/রূপালী ব্যাংক, ডেবিট-ক্রেডিট কার্ড ও মোবাইল ব্যাংকিংয়ে (বিকাশ, নগদ)"
+          ]
+        }
+      ],
+      "elig_items": [
+        "SSC ২০২১–২০২৪, HSC ২০২৬",
+        "বিজ্ঞান, কলা ও ব্যবসায় ইউনিটে বিজ্ঞান শাখা: মোট GPA ≥ ৮.০, প্রতিটিতে ≥ ৩.৫",
+        "মানবিক/ব্যবসায় শাখা: মোট GPA ≥ ৭.৫, প্রতিটিতে ≥ ৩.০",
+        "চারুকলা: মোট GPA ≥ ৬.৫, প্রতিটিতে ≥ ৩.০",
+        "আইবিএর যোগ্যতা ইউনিট নির্দেশিকায় দেখুন।"
+      ],
+      "elig_rules": [
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "বিজ্ঞান ইউনিট",
+          "groups": [
+            "বিজ্ঞান",
+            "কৃষিশিক্ষা"
+          ],
+          "each_min": 3.5,
+          "combined_min": 8.0,
+          "extra": "২০২৫–২৬ শিক্ষাবর্ষে আবেদনকারীরা অযোগ্য; বিভাগভিত্তিক শর্ত এই যাচাইয়ে ধরা হয় না।"
+        },
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "বিজ্ঞান ইউনিট (মানবিক/ব্যবসায় শিক্ষা)",
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়"
+          ],
+          "each_min": 3.0,
+          "combined_min": 7.5,
+          "extra": "২০২৫–২৬ শিক্ষাবর্ষে আবেদনকারীরা অযোগ্য; বিভাগভিত্তিক শর্ত এই যাচাইয়ে ধরা হয় না।"
+        },
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "কলা, আইন ও সামাজিক বিজ্ঞান",
+          "groups": [
+            "বিজ্ঞান",
+            "কৃষিশিক্ষা"
+          ],
+          "each_min": 3.5,
+          "combined_min": 8.0
+        },
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "কলা, আইন ও সামাজিক বিজ্ঞান",
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়"
+          ],
+          "each_min": 3.0,
+          "combined_min": 7.5
+        },
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "ব্যবসায় শিক্ষা ইউনিট",
+          "groups": [
+            "বিজ্ঞান",
+            "কৃষিশিক্ষা"
+          ],
+          "each_min": 3.5,
+          "combined_min": 8.0
+        },
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "ব্যবসায় শিক্ষা ইউনিট",
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়"
+          ],
+          "each_min": 3.0,
+          "combined_min": 7.5
+        },
+        {
+          "ssc_years": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "unit": "চারুকলা ইউনিট",
+          "groups": null,
+          "each_min": 3.0,
+          "combined_min": 6.5
+        }
+      ],
+      "switch_note": "বিজ্ঞানীরা কলা, আইন ও সামাজিক বিজ্ঞান ইউনিটেও আবেদন করতে পারেন — তবে মোট ৮.০০ (আলাদাভাবে ৩.৫০), ৭.৫০ নয়",
+      "source_url": {
+        "kind": "official",
+        "label": "ঢাবি ভর্তি পোর্টাল (অফিসিয়াল)",
+        "url": "https://admission.eis.du.ac.bd/",
+        "text": "Online application will start on 11 November 2026 at 12:00 PM and will end on 25 November 2026 at 11:59 PM — আইবিএ ৫ ডিসে · বিজ্ঞান ১২ ডিসে · কলা ১৯ ডিসে · চারুকলা ২২ ডিসে · ব্যবসায় ২৬ ডিসে, ২০২৬",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "ইউনিটভিত্তিক সময়সূচি ও আবেদন ফি পোর্টালের হোমপেজেই আছে",
+        "extra_url": ""
+      },
+      "science_unit_details": {
+        "source": "ব্যবহারকারীর দেওয়া বিজ্ঞান ইউনিট নির্দেশিকা, পৃষ্ঠা ৪–৯; প্রথম দিকের তথ্যের জন্য অনলাইন অনুলিপি",
+        "notice_url": "https://students.bd/en/notice/du-science-unit-admission-circular-2026-2027",
+        "details_page": "du-science.html",
+        "exam_date": "১২ ডিসেম্বর ২০২৬ · সকাল ১১:০০–দুপুর ১২:৩০",
+        "admit_card": "২ ডিসেম্বর ২০২৬ থেকে পরীক্ষা শুরুর ১ ঘণ্টা আগে পর্যন্ত",
+        "result": "পরীক্ষার পর ৪ সপ্তাহের মধ্যে",
+        "exam_format": "৪ বিষয়; প্রতি বিষয় MCQ ১৫ + লিখিত ১০। MCQ ৬০ ও লিখিত ৪০; প্রতিটিতে ৪৫ মিনিট।",
+        "pass": "MCQ ২৪/৬০; লিখিত ১২/৪০; সম্মিলিত ৪০/১০০। MCQ উত্তীর্ণদের মধ্যে অন্তত আসনের ৫ গুণ প্রার্থীর লিখিত উত্তরপত্র মূল্যায়ন।",
+        "negative": "MCQ ভুল উত্তরে ০.২৫ নম্বর কর্তন, বিষয়ভিত্তিক সমন্বয়",
+        "merit": "ভর্তি পরীক্ষা ১০০ + SSC GPA × ২ + HSC GPA × ২ = মোট ১২০",
+        "quota": "মুক্তিযোদ্ধার সন্তান ৫%, ক্ষুদ্র নৃগোষ্ঠী ১%, হরিজন ও দলিত ১%, প্রতিবন্ধী ও হিজড়া ১%।",
+        "eligibility_warning": "২০২৫–২৬ শিক্ষাবর্ষে আবেদনকারীরা অযোগ্য; বিভাগভিত্তিক শর্ত এই যাচাইয়ে ধরা হয় না।",
+        "seats": "১৮৯১ (বিজ্ঞান ইউনিট, অনলাইন অনুলিপি অনুযায়ী)"
+      },
+      "details_pages": [
+        "du-science.html",
+        "du-arts.html",
+        "du-business.html",
+        "du-fine-arts.html",
+        "du-iba.html"
+      ],
+      "elig_summary": "SSC ২০২১–২৪, HSC ২০২৬। বিজ্ঞান শাখা: মোট ৮.০০ ও পৃথক ৩.৫০; মানবিক/ব্যবসায়: ৭.৫০ ও ৩.০০; চারুকলা ৬.৫০ ও ৩.০০। আইবিএর নিয়ম আলাদা।",
+      "exam_sort_date": "2026-12-05",
+      "application_schedule": {
+        "start": "2026-11-11T12:00:00+06:00",
+        "end": "2026-11-25T23:59:59+06:00",
+        "date_only": false
+      },
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://admission.eis.du.ac.bd/",
+        "news_url": "https://www.risingbd.com/campus/dhaka-university/669649"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "বিজ্ঞানীরা কলা, আইন ও সামাজিক বিজ্ঞান ইউনিটেও আবেদন করতে পারেন — তবে মোট ৮.০০ (আলাদাভাবে ৩.৫০), ৭.৫০ নয়",
+      "checker_name_bn": "ঢাকা বিশ্ববিদ্যালয়",
+      "details_page": "du-admission.html"
+    },
+    {
+      "name_bn": "বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়",
+      "name_en": "BANGLADESH UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+      "short": "BUET",
+      "unit": "স্নাতক ভর্তি পরীক্ষা",
+      "exam_type": "লিখিত",
+      "exam_date": "১ ফেব্রুয়ারি ২০২৭",
+      "exam_time": "মডিউল A সকাল ৯টা–১২টা; B বিকাল ২:৩০–৪টা",
+      "apply_start": "১ ডিসেম্বর ২০২৬ সকাল ১০টা",
+      "apply_end": "৭ জানুয়ারি ২০২৭ বিকাল ৫টা (আগে শুরু করা আবেদন)",
+      "apply_window": "১ ডিসেম্বর ২০২৬ সকাল ১০টা – ৭ জানুয়ারি বিকাল ৫টা; নতুন আবেদন শুরু শেষ বিকাল ৩টা",
+      "class_start": null,
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": "১,৩০৫টি + ক্ষুদ্র নৃগোষ্ঠীর জন্য সংরক্ষিত ৪টি",
+      "centers": null,
+      "fee": "ক ১,৫০০ টাকা · খ ২,০০০ টাকা",
+      "elig_label": "SSC বিজ্ঞানে GPA ৪.০০; HSC GPA ৫.০০ এবং উচ্চতর গণিত, পদার্থ ও রসায়নে প্রতিটিতে GP ৫.০০। পাসের বছর ও বিশেষ শর্ত দেখুন।",
+      "elig_items": null,
+      "shortlist_date": "১৬ জানুয়ারি ২০২৭ (সম্ভাব্য)",
+      "result_date": "২৮ ফেব্রুয়ারি ২০২৭ (সম্ভাব্য)",
+      "site": "buet.ac.bd",
+      "note": "৭ জানুয়ারি বিকাল ৩টার পর নতুন আবেদন শুরু নয়; আগে শুরু করা আবেদন জমা শেষ বিকাল ৫টা। ফি ৮ জানুয়ারি বিকাল ৩টা পর্যন্ত।",
+      "year_label": "২০২৬-২৭",
+      "palette": "steel",
+      "unit_list": null,
+      "unit_last_label": null,
+      "list_blocks": [
+        {
+          "title": "বিজ্ঞপ্তির গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "ক: সকাল ৯টা–১২টা (৬০০ নম্বর); খ: অতিরিক্ত বিকাল ২:৩০–৪টা (৪০০ নম্বর)।",
+            "৭ জানুয়ারি বিকাল ৩টার পর নতুন আবেদন শুরু নয়; আগে শুরু করা আবেদন জমা শেষ বিকাল ৫টা। ফি ৮ জানুয়ারি বিকাল ৩টা পর্যন্ত।",
+            "আসন ১,৩০৫ + সংরক্ষিত ৪; ফি ক ১,৫০০ ও খ ২,০০০ টাকা।",
+            "সাধারণত SSC ২০২৩/২৪, HSC ২০২৬; সংশোধিত ফলের বিশেষ ব্যতিক্রম নির্দেশিকায়।",
+            "যোগ্য প্রার্থীর তালিকা ১৬ জানুয়ারি এবং ফল ২৮ ফেব্রুয়ারি — সম্ভাব্য।"
+          ]
+        }
+      ],
+      "elig_rules": [],
+      "switch_note": "বিজ্ঞান বিভাগের শর্ত ও সংশোধিত ফলের বিশেষ ব্যতিক্রম নির্দেশিকায় দেখুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "প্রদত্ত ভর্তি নির্দেশিকার অনুলিপি",
+        "url": "https://drive.google.com/file/d/1JRJN1ADd45BBdf7m5F_cNtSkgdJ4iQrh/view",
+        "text": "পরীক্ষা ১ ফেব্রুয়ারি; আবেদন ১ ডিসেম্বর–৭ জানুয়ারি। নির্দেশিকাটি বিশ্ববিদ্যালয়ের সাইটে পুনরায় যাচাই করুন।",
+        "extra": "পরীক্ষা পেছানোর সংবাদ",
+        "extra_url": "https://sangbad.net/news/23631/",
+        "as_of": "প্রদত্ত নির্দেশিকার অনুলিপি"
+      },
+      "details_page": "buet-admission.html",
+      "elig_summary": "SSC বিজ্ঞানে GPA ৪.০০; HSC GPA ৫.০০ এবং উচ্চতর গণিত, পদার্থ ও রসায়নে প্রতিটিতে GP ৫.০০। পাসের বছর ও বিশেষ শর্ত দেখুন।",
+      "exam_sort_date": "2027-02-01",
+      "application_schedule": {
+        "start": "2026-12-01T10:00:00+06:00",
+        "end": "2027-01-07T17:00:00+06:00",
+        "date_only": false,
+        "new_application_cutoff": "2027-01-07T15:00:00+06:00"
+      },
+      "references": {
+        "schedule_basis": "provided",
+        "source_date": null,
+        "official_url": "https://www.buet.ac.bd/web/#/",
+        "news_url": "https://sangbad.net/news/23631/"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "বিজ্ঞান বিভাগের শর্ত ও সংশোধিত ফলের বিশেষ ব্যতিক্রম নির্দেশিকায় দেখুন।",
+      "checker_name_bn": "বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "KHULNA UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+      "short": "KUET",
+      "unit": "আন্ডারগ্র্যাজুয়েট প্রোগ্রাম (২০২৬-২৭)",
+      "exam_type": "MCQ",
+      "exam_date": "৮ জানুয়ারি ২০২৭",
+      "exam_time": "৩ ঘণ্টা",
+      "apply_start": "১০ নভেম্বর ২০২৬ · সকাল ১০টা",
+      "apply_end": "১০ ডিসেম্বর ২০২৬ · বিকাল ৫টা",
+      "apply_window": null,
+      "class_start": null,
+      "marks": null,
+      "subjects": [
+        {
+          "name": "গণিত",
+          "questions": "২৫",
+          "marks": "১৫০",
+          "total": "৫০০"
+        },
+        {
+          "name": "পদার্থবিজ্ঞান",
+          "questions": "২৫",
+          "marks": "১৫০"
+        },
+        {
+          "name": "রসায়ন",
+          "questions": "২৫",
+          "marks": "১৫০"
+        },
+        {
+          "name": "ইংরেজি",
+          "questions": "২৫",
+          "marks": "৫০"
+        }
+      ],
+      "negative": "প্রতি ভুলে সংশ্লিষ্ট প্রশ্নের নম্বরের ২৫%",
+      "seats": "১,১০৫টি (সংরক্ষিত ৫টি আসনসহ)",
+      "centers": "খুলনা, ঢাকা ও রাজশাহী",
+      "fee": "খুলনা কেন্দ্র: ১,৫০০ টাকা · ঢাকা ও রাজশাহী কেন্দ্র: ১,৮০০ টাকা",
+      "elig_label": "SSC-তে ন্যূনতম GPA ৪.০ এবং HSC-তে গণিত, পদার্থবিজ্ঞান, রসায়ন ও ইংরেজি — চার বিষয়ে মোট ন্যূনতম GPA ১৬ পেতে হবে।",
+      "elig_items": null,
+      "shortlist_date": "২০ ডিসেম্বর ২০২৬",
+      "result_date": "২১ জানুয়ারি ২০২৭",
+      "site": "kuet.ac.bd",
+      "note": "অফিসিয়াল ১১ নভেম্বরের নির্দেশিকা অনুযায়ী; ভুল উত্তরে প্রশ্নের নম্বরের ২৫% কর্তন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "mint",
+      "unit_list": null,
+      "unit_last_label": null,
+      "list_blocks": null,
+      "elig_rules": [
+        {
+          "unit": "একক (প্রকৌশল)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_year": 2026,
+          "groups": null,
+          "each_min": null,
+          "combined_min": null,
+          "ssc_gpa_min": 4.0,
+          "subject_sum": {
+            "subjects": [
+              "গণিত",
+              "পদার্থবিজ্ঞান",
+              "রসায়ন",
+              "ইংরেজি"
+            ],
+            "min": 16.0
+          },
+          "extra": "জাতীয় বোর্ডের শর্ত; বায়োমেডিক্যালে জীববিজ্ঞান ≥ ৪.০। O/A-Level ও অন্যান্য শর্ত অফিসিয়াল নির্দেশিকায় দেখুন।"
+        }
+      ],
+      "switch_note": "বিষয়ভিত্তিক শর্ত প্রযোজ্য; নির্দেশিকা দেখুন।",
+      "source_url": {
+        "kind": "official",
+        "label": "কুয়েট ভর্তি নির্দেশিকা (১১ নভেম্বর)",
+        "url": "https://admission.kuet.ac.bd/notices/2.Prospectus-Ban.pdf",
+        "text": "পরীক্ষা ৮ জানুয়ারি ২০২৭ সকাল ৯:৩০–১২:৩০; ফল ২১ জানুয়ারি।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "পূর্বের সংবাদে ভিন্ন তথ্য থাকলেও অফিসিয়াল নির্দেশিকার সূচি অনুসৃত।",
+        "extra_url": "https://admission.kuet.ac.bd/notices/1.UG-Admission-2026-Circular.pdf"
+      },
+      "details_page": "kuet-admission.html",
+      "elig_summary": "SSC ২০২৩/২৪-এ GPA ৪.০০; HSC ২০২৬-এ গণিত, পদার্থ, রসায়ন ও ইংরেজির মোট GP ১৬.০০। বায়োমেডিক্যালে জীববিজ্ঞানে ৪.০০।",
+      "exam_sort_date": "2027-01-08",
+      "application_schedule": {
+        "start": "2026-11-10T10:00:00+06:00",
+        "end": "2026-12-10T17:00:00+06:00",
+        "date_only": false
+      },
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://admission.kuet.ac.bd/notices/2.Prospectus-Ban.pdf",
+        "news_url": "https://www.teachers.gov.bd/blog/details/853787"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "নেই — বিজ্ঞান বিভাগ বাধ্যতামূলক",
+      "checker_name_bn": "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "রাজশাহী বিশ্ববিদ্যালয়",
+      "name_en": "UNIVERSITY OF RAJSHAHI",
+      "short": "RU",
+      "unit": "A, B, C — ৩ ইউনিট",
+      "exam_type": "MCQ",
+      "exam_date": "১২–২০ ফেব্রুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": "১৫ নভেম্বর ২০২৬ · দুপুর ১২টা",
+      "apply_end": "৩০ নভেম্বর ২০২৬ · রাত ১১:৫৯",
+      "apply_window": null,
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "বিশ্ববিদ্যালয়ের নির্দেশিকায় কেন্দ্র যাচাই করুন",
+      "fee": null,
+      "elig_label": "এইচএসসির শাখাভেদে: বিজ্ঞান মোট ৭.৫০ ও পৃথক ৩.৫০; মানবিক/বাণিজ্য মোট ৬.৫০ ও পৃথক ৩.০০।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "admission.ru.ac.bd",
+      "note": "এইচএসসি ২০২৫ বা ২০২৬; সম্পূরক পরীক্ষায় উত্তীর্ণরা ফল প্রকাশের পর ৭ দিন আবেদন করতে পারবেন। বিভাগভিত্তিক শর্ত প্রযোজ্য।",
+      "year_label": "২০২৬-২৭",
+      "palette": "apricot",
+      "unit_list": [
+        {
+          "name": "B ইউনিট (বাণিজ্য)",
+          "exam_date": "১২ ফেব্রুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "C ইউনিট (বিজ্ঞান)",
+          "exam_date": "১৩ ফেব্রুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "A ইউনিট (মানবিক)",
+          "exam_date": "২০ ফেব্রুয়ারি",
+          "detail": null
+        }
+      ],
+      "unit_last_label": null,
+      "elig_rules": [
+        {
+          "unit": "সকল ইউনিট — বিজ্ঞান শাখা (প্রাথমিক)",
+          "ssc_years": null,
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "groups": [
+            "বিজ্ঞান"
+          ],
+          "each_min": 3.5,
+          "combined_min": 7.5,
+          "extra": "শুধু সাধারণ GPA ও HSC বছর যাচাই; বিভাগ/ইউনিটভিত্তিক শর্ত, ডিপ্লোমা ও ইংলিশ মিডিয়াম বা সম্পূরক পরীক্ষার শর্ত যাচাই করা হয় না।"
+        },
+        {
+          "unit": "সকল ইউনিট — মানবিক/বাণিজ্য (প্রাথমিক)",
+          "ssc_years": null,
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়"
+          ],
+          "each_min": 3.0,
+          "combined_min": 6.5,
+          "extra": "শুধু সাধারণ GPA ও HSC বছর যাচাই; বিভাগ/ইউনিটভিত্তিক শর্ত, ডিপ্লোমা ও ইংলিশ মিডিয়াম বা সম্পূরক পরীক্ষার শর্ত যাচাই করা হয় না।"
+        }
+      ],
+      "switch_note": "যে ইউনিটেই আবেদন হোক, এইচএসসির নিজ শাখার GPA শর্ত প্রযোজ্য; বিভাগভিত্তিক শর্তও দেখুন।",
+      "source_url": {
+        "kind": "official",
+        "label": "রাজশাহী বিশ্ববিদ্যালয় ভর্তি পোর্টাল",
+        "url": "https://admission.ru.ac.bd/",
+        "text": "আবেদন ১৫–৩০ নভেম্বর; বি, সি ও এ পরীক্ষা ১২, ১৩ ও ২০ ফেব্রুয়ারি। শাখাভিত্তিক ন্যূনতম GPA পোর্টালে প্রকাশিত।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "সম্পূরক পরীক্ষার্থীদের সময়সীমা বিশ্ববিদ্যালয়ের সংবাদ বিজ্ঞপ্তির প্রতিবেদন অনুযায়ী।",
+        "extra_url": "https://www.prothomalo.com/education/admission/syafosa3pv"
+      },
+      "details_page": "ru-admission.html",
+      "elig_summary": "HSC ২০২৫/২৬। বিজ্ঞান: মোট GPA ৭.৫০, পৃথক ৩.৫০; মানবিক/বাণিজ্য: মোট ৬.৫০, পৃথক ৩.০০। বিভাগভিত্তিক শর্ত আছে।",
+      "exam_sort_date": "2027-02-12",
+      "application_schedule": {
+        "start": "2026-11-15T12:00:00+06:00",
+        "end": "2026-11-30T23:59:59+06:00",
+        "date_only": false
+      },
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://admission.ru.ac.bd/",
+        "news_url": "https://www.prothomalo.com/education/admission/syafosa3pv"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "যে ইউনিটেই আবেদন হোক, এইচএসসির নিজ শাখার GPA শর্ত প্রযোজ্য; বিভাগভিত্তিক শর্তও দেখুন।",
+      "checker_name_bn": "রাজশাহী বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "চট্টগ্রাম বিশ্ববিদ্যালয়",
+      "name_en": "UNIVERSITY OF CHITTAGONG",
+      "short": "CU",
+      "unit": "A, B, B1, B2, C, D, D1 — ৭ ইউনিট",
+      "exam_type": "MCQ",
+      "exam_date": "২৯ জানুয়ারি – ৮ ফেব্রুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "১০ ডিসেম্বর ২০২৬ – ১০ জানুয়ারি ২০২৭",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": null,
+      "elig_label": "SSC + HSC মোট GPA: এ ৮.০০ · বি ৬.৫০/৭.০০ · সি ৭.০০/৭.৫০ · ডি ৭.৫০ · ডি১ ৫.৫০ (বিভাগভেদে আলাদা)।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "cu.ac.bd",
+      "note": "আবেদন ফি জমা ১২ জানুয়ারি ২০২৭ পর্যন্ত · ৫ ফেব্রুয়ারি চবির বি ইউনিট ও খুবির সি ইউনিট একই দিনে।",
+      "year_label": "২০২৬-২৭",
+      "palette": "butter",
+      "unit_list": [
+        {
+          "name": "C ইউনিট",
+          "exam_date": "২৯ জানুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "A ইউনিট",
+          "exam_date": "৩০ জানুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "B1 ইউনিট",
+          "exam_date": "৩ ফেব্রুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "B2 ইউনিট",
+          "exam_date": "৪ ফেব্রুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "B ইউনিট",
+          "exam_date": "৫ ফেব্রুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "D ইউনিট",
+          "exam_date": "৬ ফেব্রুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "D1 ইউনিট",
+          "exam_date": "৮ ফেব্রুয়ারি",
+          "detail": null
+        }
+      ],
+      "unit_last_label": null,
+      "elig_rules": [],
+      "switch_note": "২০২৬–২৭-এর যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত পূর্ণাঙ্গ বিজ্ঞপ্তিতে দেখুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "সংবাদ — চবির নতুন সূচি",
+        "url": "https://sangbad.net/news/23111",
+        "text": "আবেদন ১০ ডিসেম্বর ২০২৬ থেকে ১০ জানুয়ারি ২০২৭; পরীক্ষা ২৯ জানুয়ারি–৮ ফেব্রুয়ারি।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "আবেদন ফি জমা ১২ জানুয়ারি ২০২৭ পর্যন্ত।",
+        "extra_url": "https://thedailycampus.com/admission-updates/281628"
+      },
+      "details_page": "cu-admission.html",
+      "elig_summary": "আগের তথ্য: মোট GPA এ ৮.০০; বি ৬.৫০–৭.০০; সি ৭.০০–৭.৫০; ডি ৭.৫০; ডি১ ৫.৫০। বর্তমান শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+      "exam_sort_date": "2027-01-29",
+      "application_schedule": {
+        "start": "2026-12-10T00:00:00+06:00",
+        "end": "2027-01-10T23:59:59+06:00",
+        "date_only": true
+      },
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://admission.cu.ac.bd/",
+        "news_url": "https://sangbad.net/news/23111"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "চট্টগ্রাম বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "জগন্নাথ বিশ্ববিদ্যালয়",
+      "name_en": "JAGANNATH UNIVERSITY",
+      "short": "JnU",
+      "unit": "A, B, C, D, E — ৫ ইউনিট",
+      "exam_type": "MCQ",
+      "exam_date": "১–২৩ জানুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "২৫ নভেম্বর ২০২৬ দুপুর ১২টা – ১০ ডিসেম্বর ২০২৬ রাত ১১:৫৯",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": "A, B, C, D: প্রতিটি ১,২০০ টাকা · E: ১,৫০০ টাকা",
+      "elig_label": "SSC + HSC মোট GPA: এ ৭.০০ (প্রত্যেকে ≥ ৩.০০) · বি ও ডি ৬.০০ (≥ ২.৭৫) · সি ৬.৫০ (≥ ৩.০০) · ই ৫.৫০ (≥ ২.৫০)।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "jnu.ac.bd",
+      "note": "১১ নভেম্বরের ভর্তি বিজ্ঞপ্তিতে আবেদন ২৫ নভেম্বর থেকে · বিশ্ববিদ্যালয়ের ওয়েবসাইটে ৯ আগস্টের একাডেমিক কাউন্সিলের পুরোনো সিদ্ধান্তে ১৫ নভেম্বর লেখা আছে — পোর্টাল ১৫ নভেম্বর না-ও খুলতে পারে · সাপ্লিমেন্টারি ও পুনঃনিরীক্ষণের প্রার্থীরা শর্তসাপেক্ষে আবেদন করতে পারবেন · GPA শর্ত আগের সংবাদ অনুযায়ী।",
+      "year_label": "২০২৬-২৭",
+      "palette": "lilac",
+      "unit_list": [
+        {
+          "name": "ইউনিট A",
+          "exam_date": "১ জানুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "ইউনিট E",
+          "exam_date": "৮ জানুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "ইউনিট B",
+          "exam_date": "১৫ জানুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "ইউনিট C",
+          "exam_date": "২২ জানুয়ারি",
+          "detail": null
+        },
+        {
+          "name": "ইউনিট D",
+          "exam_date": "২৩ জানুয়ারি",
+          "detail": null
+        }
+      ],
+      "unit_last_label": null,
+      "elig_rules": [],
+      "switch_note": "২০২৬–২৭-এর যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত পূর্ণাঙ্গ বিজ্ঞপ্তিতে দেখুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "আজকের পত্রিকা — জবির বিজ্ঞপ্তি",
+        "url": "https://www.ajkerpatrika.com/education/ajpink9mr69jx",
+        "text": "আবেদন ২৫ নভেম্বর–১০ ডিসেম্বর ২০২৬; পরীক্ষা ১–২৩ জানুয়ারি ২০২৭।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "ভর্তি কমিটি (১১ নভে): এইচএসসিতে সর্বোচ্চ দুই বিষয়ে অকৃতকার্য শিক্ষার্থীরাও নির্ধারিত ফি দিয়ে আবেদন করতে পারবেন, তবে শর্তের জিপিএ অর্জন করতে হবে। বিশ্ববিদ্যালয়ের ওয়েবসাইটে ৯ আগস্টের সিদ্ধান্ত (আবেদন ১৫ নভেম্বর) এখনো আছে; ১১ নভেম্বরের বিজ্ঞপ্তিতে ২৫ নভেম্বর।",
+        "extra_url": "https://jnu.ac.bd/newsite/newsdetails/138749"
+      },
+      "details_page": "jnu-admission.html",
+      "elig_summary": "SSC ২০২৩/২৪, HSC ২০২৬। আগের তথ্য: এ মোট ৭ ও পৃথক ৩; বি/ডি ৬ ও ২.৭৫; সি ৬.৫০ ও ৩; ই ৫.৫০ ও ২.৫০। পূর্ণ শর্ত যাচাই করুন।",
+      "exam_sort_date": "2027-01-01",
+      "application_schedule": {
+        "start": "2026-11-25T12:00:00+06:00",
+        "end": "2026-12-10T23:59:59+06:00",
+        "date_only": false
+      },
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://admission.jnu.ac.bd/",
+        "news_url": "https://www.ajkerpatrika.com/education/ajpink9mr69jx"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "জগন্নাথ বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "খুলনা বিশ্ববিদ্যালয়",
+      "name_en": "KHULNA UNIVERSITY",
+      "short": "KhU",
+      "unit": "এ, বি, সি, ডি — ৪ ইউনিট",
+      "exam_type": "MCQ",
+      "exam_date": "৪–৫ ফেব্রুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "আবেদনের সময়সূচি পরে জানানো হবে",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": null,
+      "elig_label": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "ku.ac.bd",
+      "note": "পরীক্ষা ৪ ও ৫ ফেব্রুয়ারি ২০২৭; আবেদনের সময়সূচি ও যোগ্যতা পরবর্তী বিজ্ঞপ্তিতে।",
+      "year_label": "২০২৬-২৭",
+      "palette": "teal",
+      "unit_list": [
+        {
+          "name": "সি ইউনিট",
+          "exam_date": "৫ ফেব্রুয়ারি",
+          "detail": "কলা ও মানবিক স্কুল, সামাজিক বিজ্ঞান স্কুল, আইন স্কুল, শিক্ষা স্কুল, চারুকলা স্কুল"
+        },
+        {
+          "name": "ডি ইউনিট",
+          "exam_date": "৫ ফেব্রুয়ারি",
+          "detail": "ব্যবস্থাপনা ও ব্যবসায় প্রশাসন স্কুল"
+        },
+        {
+          "name": "এ ইউনিট",
+          "exam_date": "৪ ফেব্রুয়ারি",
+          "detail": "বিজ্ঞান, প্রকৌশল ও প্রযুক্তিবিদ্যা স্কুল"
+        },
+        {
+          "name": "বি ইউনিট",
+          "exam_date": "৪ ফেব্রুয়ারি",
+          "detail": "জীববিজ্ঞান স্কুল"
+        }
+      ],
+      "unit_last_label": "অনুষদসমূহ",
+      "elig_rules": [],
+      "switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "source_url": {
+        "kind": "news",
+        "label": "প্রথম আলো — খুবির নতুন সূচি",
+        "url": "https://www.prothomalo.com/education/admission/hgpvg1h5jx",
+        "text": "৪ ফেব্রুয়ারি এ ও বি; ৫ ফেব্রুয়ারি সি ও ডি ইউনিটের পরীক্ষা। আবেদন ও যোগ্যতার বিস্তারিত পরে জানানো হবে।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "আবেদনের সময়সূচি ও যোগ্যতা পরে জানানো হবে।",
+        "extra_url": "https://ku.ac.bd/"
+      },
+      "details_page": "khulna-admission.html",
+      "elig_summary": "২০২৬–২৭-এর ইউনিটভিত্তিক যোগ্যতা বিজ্ঞপ্তিতে জানানো হবে।",
+      "exam_sort_date": "2027-02-04",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://ku.ac.bd/",
+        "news_url": "https://www.prothomalo.com/education/admission/hgpvg1h5jx"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "checker_name_bn": "খুলনা বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "কুমিল্লা বিশ্ববিদ্যালয়",
+      "name_en": "COMILLA UNIVERSITY",
+      "short": "CoU",
+      "unit": "A, B, C — ৩ ইউনিট",
+      "exam_type": "MCQ",
+      "exam_date": "৫–৭ ফেব্রুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "১০–৩১ ডিসেম্বর ২০২৬",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "কুমিল্লা বিশ্ববিদ্যালয়, চট্টগ্রাম বিশ্ববিদ্যালয় ও রাজশাহী বিশ্ববিদ্যালয়",
+      "fee": null,
+      "elig_label": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "cou.ac.bd",
+      "note": "কেন্দ্রীয় ভর্তি কমিটির ১১ নভেম্বরের সিদ্ধান্তে আবেদন পিছিয়ে ১০–৩১ ডিসেম্বর ২০২৬ (আগে ১৫ নভে–১০ ডিসে) · পরীক্ষার সূচি অপরিবর্তিত · সাপ্লিমেন্টারি পরীক্ষার্থীরাও আবেদন করতে পারবেন। প্রদত্ত ১৭ নভেম্বরের সারসংক্ষেপে ৩০ ডিসেম্বর আছে; শেষ তারিখ অফিসিয়াল বিজ্ঞপ্তিতে যাচাই করুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "sand",
+      "unit_list": [
+        {
+          "name": "A ইউনিট (বিজ্ঞান ও প্রকৌশল)",
+          "exam_date": "৫ ফেব্রুয়ারি",
+          "exam_time": "সকাল ১১:০০"
+        },
+        {
+          "name": "B ইউনিট (কলা, সামাজিক বিজ্ঞান ও আইন)",
+          "exam_date": "৬ ফেব্রুয়ারি",
+          "exam_time": "বিকেল ৩:০০"
+        },
+        {
+          "name": "C ইউনিট (ব্যবসায় শিক্ষা)",
+          "exam_date": "৭ ফেব্রুয়ারি",
+          "exam_time": "সকাল ১১:০০"
+        }
+      ],
+      "unit_last_label": "সময়সূচি",
+      "switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "source_url": {
+        "kind": "news",
+        "label": "কালের কণ্ঠ — কুবির আবেদন ১০ ডিসেম্বর থেকে",
+        "url": "https://www.kalerkantho.com/online/campus-online/2026/11/11/1766162",
+        "text": "১০ ডিসেম্বর থেকে ৩১ ডিসেম্বর পর্যন্ত আবেদন করা যাবে; ২০২৬ সালের এইচএসসি সাপ্লিমেন্টারি পরীক্ষায় অংশগ্রহণকারীরাও আবেদন করতে পারবেন।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "কেন্দ্র হিসেবে কুমিল্লার পাশাপাশি এবার চট্টগ্রাম ও রাজশাহী বিশ্ববিদ্যালয়ও থাকবে; ভর্তি পরীক্ষার সূচি অপরিবর্তিত।",
+        "extra_url": "https://www.kalerkantho.com/online/campus-online/2026/11/11/1766162"
+      },
+      "details_page": "cou-admission.html",
+      "elig_summary": "২০২৬–২৭-এর যোগ্যতা ও ইউনিটভিত্তিক শর্ত বিজ্ঞপ্তিতে জানানো হবে।",
+      "exam_sort_date": "2027-02-05",
+      "application_schedule": {
+        "start": "2026-12-10T00:00:00+06:00",
+        "end": "2026-12-31T23:59:59+06:00",
+        "date_only": true
+      },
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১১ নভেম্বর ২০২৬",
+        "official_url": "https://cou.ac.bd/",
+        "news_url": "https://www.kalerkantho.com/online/campus-online/2026/11/11/1766162"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "checker_name_bn": "কুমিল্লা বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "জাতীয় বিশ্ববিদ্যালয়",
+      "name_en": "NATIONAL UNIVERSITY",
+      "short": "NU",
+      "unit": "স্নাতক সম্মান ভর্তি",
+      "exam_type": "বিজ্ঞপ্তি অপেক্ষমাণ",
+      "exam_date": "পরীক্ষার তারিখ বিজ্ঞপ্তিতে জানানো হবে",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "২০২৬-২৭ শিক্ষাবর্ষ — তারিখ পরবর্তীতে জানানো হবে",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": null,
+      "elig_label": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা বিজ্ঞপ্তিতে জানানো হবে।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "nu.ac.bd",
+      "note": null,
+      "year_label": "২০২৬-২৭",
+      "palette": "fern",
+      "unit_list": null,
+      "unit_last_label": null,
+      "elig_rules": [],
+      "switch_note": "যোগ্যতা ও বিভাগ পরিবর্তনের নিয়ম বিজ্ঞপ্তিতে দেখুন।",
+      "details_page": "nu-admission.html",
+      "elig_summary": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা বিজ্ঞপ্তিতে জানানো হবে।",
+      "exam_sort_date": null,
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "unknown",
+        "source_date": null,
+        "official_url": "https://www.nu.ac.bd/",
+        "news_url": null
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬–২৭ শিক্ষাবর্ষের যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "জাতীয় বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়",
+      "name_en": "JAHANGIRNAGAR UNIVERSITY",
+      "short": "JU",
+      "unit": "এ, বি, সি, সি১, ডি, ই ও আইবিএ — ৭ ইউনিট",
+      "exam_type": "MCQ (OMR)",
+      "exam_date": "১০–২১ জানুয়ারি ২০২৭ (সম্ভাব্য)",
+      "exam_time": "৫৫ মিনিট + OMR পূরণ ৫ মিনিট",
+      "apply_start": "২২ নভেম্বর ২০২৬ সকাল ১০টা",
+      "apply_end": "১৫ ডিসেম্বর ২০২৬ রাত ১১:৫৯",
+      "apply_window": "২২ নভেম্বর ২০২৬ সকাল ১০টা – ১৫ ডিসেম্বর ২০২৬ রাত ১১:৫৯",
+      "marks": "MCQ ৯০ নম্বর, ৮০ প্রশ্ন",
+      "subjects": null,
+      "negative": "প্রতি ভুলে ০.২০ নম্বর",
+      "seats": "১,৮৪৮টি",
+      "centers": null,
+      "fee": "A/B/C/D ৮০০ · E ৭০০ · C1/IBA ৬০০ টাকা; সঙ্গে ১.২% চার্জ",
+      "elig_label": "SSC ২০২৩/২৪, HSC ২০২৫/২৬; ইউনিট ও শাখাভেদে মোট GPA ৬.৫০–৮.০০ ও পৃথক ৩.০০–৩.৫০; বিভাগীয় শর্ত প্রযোজ্য।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "juniv.edu",
+      "note": "পরীক্ষার চূড়ান্ত দিন ও সিটপ্ল্যান পরে; শুক্রবার, শনিবার ও সরকারি ছুটি বাদ।",
+      "year_label": "২০২৬-২৭",
+      "palette": "lime",
+      "unit_list": null,
+      "unit_last_label": null,
+      "elig_rules": [
+        {
+          "unit": "A ইউনিট",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3.5,
+          "combined_min": 7.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।"
+        },
+        {
+          "unit": "B ইউনিট (বিজ্ঞান)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3.5,
+          "combined_min": 7.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "বিজ্ঞান"
+          ]
+        },
+        {
+          "unit": "B ইউনিট (মানবিক/ব্যবসায়)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3,
+          "combined_min": 6.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়",
+            "কৃষিশিক্ষা"
+          ]
+        },
+        {
+          "unit": "C ইউনিট (বিজ্ঞান/ব্যবসায়)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3.5,
+          "combined_min": 7.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "বিজ্ঞান",
+            "কৃষিশিক্ষা",
+            "ব্যবসায়"
+          ]
+        },
+        {
+          "unit": "C ইউনিট (মানবিক)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3,
+          "combined_min": 6.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "মানবিক"
+          ]
+        },
+        {
+          "unit": "C1 ইউনিট",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3,
+          "combined_min": 6.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।"
+        },
+        {
+          "unit": "D ইউনিট",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3.5,
+          "combined_min": 8,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।"
+        },
+        {
+          "unit": "E ইউনিট (বিজ্ঞান)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3.5,
+          "combined_min": 7.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "বিজ্ঞান"
+          ]
+        },
+        {
+          "unit": "E ইউনিট (মানবিক/ব্যবসায়)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3,
+          "combined_min": 6.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়",
+            "কৃষিশিক্ষা"
+          ]
+        },
+        {
+          "unit": "IBA-JU (বিজ্ঞান)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3.5,
+          "combined_min": 7.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "বিজ্ঞান"
+          ]
+        },
+        {
+          "unit": "IBA-JU (মানবিক/ব্যবসায়)",
+          "ssc_years": [
+            2023,
+            2024
+          ],
+          "hsc_years": [
+            2025,
+            2026
+          ],
+          "each_min": 3,
+          "combined_min": 6.5,
+          "partial": true,
+          "extra": "এটি শুধু সাধারণ GPA ও পাসের বছর যাচাই; বিভাগভিত্তিক বিষয়, গ্রেড ও অন্যান্য শর্ত বিজ্ঞপ্তিতে যাচাই করুন।",
+          "groups": [
+            "মানবিক",
+            "ব্যবসায়",
+            "কৃষিশিক্ষা"
+          ]
+        }
+      ],
+      "switch_note": "ন্যূনতম শর্ত পূরণে যেকোনো ইউনিটে আবেদন করা যায়; বিভাগভিত্তিক শর্ত আলাদা।",
+      "source_url": {
+        "kind": "official",
+        "label": "জাবির ভর্তি বিজ্ঞপ্তি",
+        "url": "https://www.juniv.edu/discussion/18670",
+        "text": "২২ নভেম্বর–১৫ ডিসেম্বর আবেদন; পরীক্ষা ১০–২১ জানুয়ারি সম্ভাব্য।",
+        "as_of": "১৬ নভেম্বর ২০২৬",
+        "extra": "প্রদত্ত বিজ্ঞপ্তির ছবি ও আসন তালিকা বিস্তারিত পাতায়",
+        "extra_url": ""
+      },
+      "details_page": "ju-admission.html",
+      "elig_summary": "SSC ২০২৩/২৪, HSC ২০২৫/২৬; ইউনিট ও শাখাভেদে মোট GPA ৬.৫০–৮.০০ ও পৃথক ৩.০০–৩.৫০; বিভাগীয় শর্ত প্রযোজ্য।",
+      "exam_sort_date": "2027-01-10",
+      "application_schedule": {
+        "start": "2026-11-22T10:00:00+06:00",
+        "end": "2026-12-15T23:59:59+06:00",
+        "date_only": false
+      },
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১৬ নভেম্বর ২০২৬",
+        "official_url": "https://www.juniv.edu/discussion/18670",
+        "news_url": "https://www.tbsnews.net/bangla/bangladesh/news-details-566466"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "list_blocks": [
+        {
+          "title": "বিজ্ঞপ্তির গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "A ৭.৫০/৩.৫০; B বিজ্ঞান ৭.৫০/৩.৫০, অন্য শাখা ৬.৫০/৩.০০; C বিজ্ঞান ও ব্যবসায় ৭.৫০/৩.৫০, মানবিক ৬.৫০/৩.০০।",
+            "C1 ৬.৫০/৩.০০; D ৮.০০/৩.৫০; E ও IBA বিজ্ঞান ৭.৫০/৩.৫০, অন্য শাখা ৬.৫০/৩.০০ (মোট/পৃথক)।",
+            "আসন ১,৮৪৮; A/B/C/D ফি ৮০০, E ৭০০, C1/IBA ৬০০ টাকা; সঙ্গে ১.২% সার্ভিস চার্জ।",
+            "৮০ প্রশ্নে ৯০ নম্বর; ভুলে ০.২০ কর্তন, পাস ৪০; পরীক্ষা ৫৫ মিনিট ও OMR পূরণে আরও ৫ মিনিট।",
+            "২৫ ডিসেম্বর থেকে প্রবেশপত্র; বিভাগভিত্তিক শর্ত বিস্তারিত বিজ্ঞপ্তিতে দেখুন।"
+          ]
+        }
+      ],
+      "checker_switch_note": "ন্যূনতম শর্ত পূরণে যেকোনো ইউনিটে আবেদন করা যায়; বিভাগভিত্তিক শর্ত আলাদা।",
+      "checker_name_bn": "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস",
+      "name_en": "BANGLADESH UNIVERSITY OF PROFESSIONALS",
+      "short": "BUP",
+      "unit": "৬ অনুষদ",
+      "exam_type": "MCQ",
+      "exam_date": "১৬, ২২ ও ২৩ জানুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": "১ ডিসেম্বর ২০২৬",
+      "apply_end": "৫ জানুয়ারি ২০২৭",
+      "apply_window": "১ ডিসেম্বর ২০২৬ – ৫ জানুয়ারি ২০২৭",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "ঢাকা শহর",
+      "fee": "প্রতি অনুষদে ১,২০০ টাকা; BBA-General আলাদা ফি; FST/FET/FMS এক ফি",
+      "elig_label": "HSC ২০২৫/২০২৬ ও অনুষদভেদে GPA ও বিষয়ভিত্তিক শর্ত প্রযোজ্য।",
+      "shortlist_date": "১০ জানুয়ারি ২০২৭",
+      "result_date": null,
+      "site": "bup.edu.bd",
+      "note": "অফিসিয়াল অনুলিপি অনুযায়ী FMS ২২ জানুয়ারি সকালে; সংবাদে ভিন্ন সময় আছে, কর্তৃপক্ষের সংশোধনী দেখুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "rose",
+      "unit_list": [
+        {
+          "name": "FASS",
+          "exam_date": "১৬ জানুয়ারি",
+          "exam_time": "সকাল ১০:৩০–১১:৩০"
+        },
+        {
+          "name": "FST / FET / FMS",
+          "exam_date": "২২ জানুয়ারি",
+          "exam_time": "সকাল ১০:৩০–১১:৩০"
+        },
+        {
+          "name": "FSSS",
+          "exam_date": "২২ জানুয়ারি",
+          "exam_time": "বিকাল ৩:৩০–৪:৩০"
+        },
+        {
+          "name": "FBS (বিভাগসমূহ)",
+          "exam_date": "২৩ জানুয়ারি",
+          "exam_time": "সকাল ১০:৩০–১১:৩০"
+        },
+        {
+          "name": "FBS (BBA-General)",
+          "exam_date": "২৩ জানুয়ারি",
+          "exam_time": "বিকাল ৩:৩০–৪:৩০"
+        }
+      ],
+      "unit_last_label": "পরীক্ষার সময়",
+      "elig_rules": [],
+      "switch_note": "২০২৬–২৭-এর যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত পূর্ণাঙ্গ বিজ্ঞপ্তিতে দেখুন।",
+      "source_url": {
+        "kind": "official",
+        "label": "বিইউপি অফিসিয়াল ভর্তি বিজ্ঞপ্তি",
+        "url": "https://admission.bup.edu.bd/Upload/Notices/BUP%20Admission%20Advertisement%202026-2027.pdf",
+        "text": "আবেদন ১ ডিসেম্বর–৫ জানুয়ারি; পরীক্ষা ১৬, ২২ ও ২৩ জানুয়ারি।",
+        "as_of": "১৭ নভেম্বর ২০২৬",
+        "extra": "FMS সময় নিয়ে সংবাদ ও বিজ্ঞপ্তিতে অমিল; অফিসিয়াল সংশোধনী দেখুন।",
+        "extra_url": "https://www.prothomalo.com/education/admission/51fpiu173w"
+      },
+      "details_page": "bup-admission.html",
+      "elig_summary": "HSC ২০২৫/২০২৬; FASS/FBS/FSSS-এ শাখাভেদে মোট GPA ৭.৫০–৮.৫০; FST/FET/FMS-এ বিজ্ঞান শাখায় ৯.০০ ও বিষয়ভিত্তিক শর্ত।",
+      "exam_sort_date": "2027-01-16",
+      "application_schedule": {
+        "start": "2026-12-01T00:00:00+06:00",
+        "end": "2027-01-05T23:59:59+06:00",
+        "date_only": true
+      },
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১৭ নভেম্বর ২০২৬",
+        "official_url": "https://admission.bup.edu.bd/Upload/Notices/BUP%20Admission%20Advertisement%202026-2027.pdf",
+        "news_url": "https://www.prothomalo.com/education/admission/51fpiu173w"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "list_blocks": [
+        {
+          "title": "গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "FASS: ১৬ জানুয়ারি সকাল ১০:৩০–১১:৩০; FST/FET/FMS: ২২ জানুয়ারি সকাল ১০:৩০–১১:৩০।",
+            "FSSS: ২২ জানুয়ারি বিকাল ৩:৩০–৪:৩০; FBS বিভাগসমূহ ২৩ জানুয়ারি সকাল ১০:৩০–১১:৩০ এবং BBA-General বিকাল ৩:৩০–৪:৩০।",
+            "যোগ্য প্রার্থীর তালিকা ১০ জানুয়ারি, প্রবেশপত্র ১১ জানুয়ারি থেকে; পরীক্ষা কেবল ঢাকা শহরে।",
+            "ফি প্রতি অনুষদ ১,২০০ টাকা; BBA-General-এর জন্য আলাদা ফি, FST/FET/FMS-এর জন্য এক ফি; ভুল উত্তরে ০.৫০ নম্বর কর্তন।",
+            "HSC ২০২৫ ও ২০২৬ এবং ২০২৬-এর সম্পূরক/মানোন্নয়নে পাসকারীরা শর্তসাপেক্ষে আবেদন করতে পারবেন।"
+          ]
+        }
+      ],
+      "checker_switch_note": "২০২৬–২৭-এর যোগ্যতা ও বিভাগ পরিবর্তনের শর্ত পূর্ণাঙ্গ বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস"
+    },
+    {
+      "name_bn": "যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "JASHORE UNIVERSITY OF SCIENCE & TECHNOLOGY",
+      "short": "JUST",
+      "unit": "জিএসটি গুচ্ছ ভর্তি",
+      "exam_type": "MCQ",
+      "exam_date": "১৯–২৭ মার্চ ২০২৭ (জিএসটি সূচি)",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": null,
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": null,
+      "elig_label": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "just.edu.bd",
+      "note": "সংবাদ অনুযায়ী যবিপ্রবি জিএসটি গুচ্ছে থাকছে; চূড়ান্ত বিজ্ঞপ্তি দেখুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "sky",
+      "unit_list": null,
+      "unit_last_label": null,
+      "elig_rules": [],
+      "switch_note": "২০২৬-২৭-এর নিয়ম এখনো যাচাই হয়নি",
+      "source_url": {
+        "kind": "news",
+        "label": "শিক্ষা সংবাদ — যবিপ্রবি গুচ্ছে থাকছে",
+        "url": "https://shikshasangbad.com/admission/25430/",
+        "text": "সংবাদ অনুযায়ী যবিপ্রবি জিএসটি গুচ্ছে থাকছে; গুচ্ছের পূর্বঘোষিত পরীক্ষা ১৯, ২০ ও ২৭ মার্চ ২০২৭।",
+        "as_of": "১১ নভেম্বর ২০২৬",
+        "extra": "সর্বশেষ বিশ্ববিদ্যালয় বা ভর্তি কর্তৃপক্ষের বিজ্ঞপ্তি অনুসরণ করুন।",
+        "extra_url": ""
+      },
+      "details_page": "just-admission.html",
+      "elig_summary": "GST গুচ্ছের ভর্তি বিজ্ঞপ্তিতে প্রযোজ্য ইউনিটের যোগ্যতা দেখুন।",
+      "exam_sort_date": "2027-03-19",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১৯ সেপ্টেম্বর ২০২৬",
+        "official_url": "https://just.edu.bd/",
+        "news_url": "https://shikshasangbad.com/admission/20059/"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬-২৭-এর নিয়ম এখনো যাচাই হয়নি",
+      "checker_name_bn": "যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "SHAHJALAL UNIVERSITY OF SCIENCE & TECHNOLOGY",
+      "short": "SUST",
+      "unit": "সমন্বিত ভর্তি",
+      "exam_type": "MCQ",
+      "exam_date": "১৭ ও ১৮ জানুয়ারি ২০২৭ (সংক্ষিপ্ত)",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": null,
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": null,
+      "fee": null,
+      "elig_label": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "sust.edu.bd",
+      "note": "পরীক্ষা ১৭ ও ১৮ জানুয়ারি ২০২৭ (পুনর্নির্ধারিত) · সাপ্লিমেন্টারি প্রার্থীদের সুযোগ নিয়ে ভর্তি কমিটি চূড়ান্ত সিদ্ধান্ত দেবে · ২০২৬-২৭-এর যোগ্যতা এখনো প্রকাশিত হয়নি।",
+      "year_label": "২০২৬-২৭",
+      "palette": "apricot",
+      "unit_list": null,
+      "unit_last_label": null,
+      "elig_rules": [],
+      "switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "source_url": {
+        "kind": "news",
+        "label": "শিক্ষা সংবাদ — শাবিপ্রবির পুনর্নির্ধারিত সূচি",
+        "url": "https://shikshasangbad.com/others/25092/",
+        "text": "পূর্বঘোষিত ২৬–২৭ জানুয়ারির পরিবর্তে পরীক্ষা ১৭ ও ১৮ জানুয়ারি ২০২৭।",
+        "as_of": "৩ নভেম্বর ২০২৬",
+        "extra": "সর্বশেষ ভর্তি বিজ্ঞপ্তি অনুসরণ করুন।",
+        "extra_url": ""
+      },
+      "details_page": "sust-admission.html",
+      "elig_summary": "২০২৬–২৭-এর যোগ্যতা ও ইউনিটভিত্তিক শর্ত বিজ্ঞপ্তিতে জানানো হবে।",
+      "exam_sort_date": "2027-01-17",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১ নভেম্বর ২০২৬",
+        "official_url": "https://www.sust.edu/",
+        "news_url": "https://dailybanglapost.com/campus/68860"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "checker_name_bn": "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "HAJEE MOHAMMAD DANESH SCIENCE &amp; TECHNOLOGY UNIVERSITY",
+      "short": "HSTU",
+      "unit": "স্নাতক (সম্মান) প্রথম বর্ষ — ইউনিটভিত্তিক",
+      "exam_type": "বিজ্ঞপ্তিতে",
+      "exam_date": "২৪–২৮ জানুয়ারি ২০২৭",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "বিজ্ঞপ্তি অপেক্ষমাণ",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "হাবিপ্রবি ক্যাম্পাস, দিনাজপুর",
+      "fee": null,
+      "elig_label": null,
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "hstu.ac.bd",
+      "note": "রেজিস্ট্রার ও ভর্তি পরীক্ষা কমিটির সচিবের স্বাক্ষরিত বিজ্ঞপ্তিতে পরীক্ষার তারিখ জানানো হয়েছে; আবেদন, ফি, আসন ও ইউনিটভিত্তিক সূচি পরবর্তী বিজ্ঞপ্তিতে।",
+      "year_label": "২০২৬-২৭",
+      "palette": "fern",
+      "unit_list": null,
+      "unit_last_label": null,
+      "list_blocks": [
+        {
+          "title": "যা জানা গেছে",
+          "items": [
+            "২০২৬-২৭ শিক্ষাবর্ষের স্নাতক ভর্তি পরীক্ষা ২৪ থেকে ২৮ জানুয়ারি ২০২৭",
+            "বিস্তারিত সময়সূচি, আবেদনের তারিখ ও ফি বিশ্ববিদ্যালয়ের ওয়েবসাইটে প্রকাশ করা হবে",
+            "আবেদন হয় বিশ্ববিদ্যালয়ের নিজস্ব ভর্তি পোর্টালে — hstu.ac.bd/admission"
+          ]
+        }
+      ],
+      "elig_rules": [],
+      "switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "source_url": {
+        "kind": "news",
+        "label": "রাইজিংবিডি — হাবিপ্রবির ভর্তি পরীক্ষা ২৪–২৮ জানুয়ারি",
+        "url": "https://www.risingbd.com/campus/news/662002",
+        "text": "হাবিপ্রবিতে ২০২৬-২৭ শিক্ষাবর্ষের স্নাতক ভর্তি পরীক্ষা ২৪ থেকে ২৮ জানুয়ারি ২০২৭ পর্যন্ত অনুষ্ঠিত হবে।",
+        "as_of": "৬ সেপ্টেম্বর ২০২৬",
+        "extra": "আবেদন শুরুর তারিখ ও ফি এখনো ঘোষণা হয়নি — বিশ্ববিদ্যালয়ের ওয়েবসাইটের বিজ্ঞপ্তি দেখুন।",
+        "extra_url": "https://hstu.ac.bd/"
+      },
+      "details_page": "hstu-admission.html",
+      "elig_summary": "২০২৬–২৭-এর যোগ্যতা ও ইউনিটভিত্তিক শর্ত বিজ্ঞপ্তিতে জানানো হবে।",
+      "exam_sort_date": "2027-01-24",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "৬ সেপ্টেম্বর ২০২৬",
+        "official_url": "https://hstu.ac.bd/",
+        "news_url": "https://www.risingbd.com/campus/news/662002"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "checker_name_bn": "হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "মিলিটারি ইনস্টিটিউট অব সায়েন্স অ্যান্ড টেকনোলজি",
+      "name_en": "MILITARY INSTITUTE OF SCIENCE & TECHNOLOGY",
+      "short": "MIST",
+      "unit": "এ ইউনিট (ইঞ্জিনিয়ারিং), বি ইউনিট (আর্কিটেকচার), সি ইউনিট (সায়েন্স) — ৩ ইউনিট",
+      "exam_type": "A/B লিখিত · C MCQ",
+      "exam_date": "৫–৬ ফেব্রুয়ারি ২০২৭",
+      "exam_time": "C: সকাল ১০টা–১১টা; A: সকাল ৯টা–১২টা; B: বিকাল ২টা–৪টা",
+      "apply_start": "৫ জানুয়ারি ২০২৭ সকাল ১০টা",
+      "apply_end": "২১ জানুয়ারি ২০২৭ রাত ১১:৫৯",
+      "apply_window": "৫ জানুয়ারি ২০২৭ সকাল ১০টা – ২১ জানুয়ারি ২০২৭ রাত ১১:৫৯",
+      "class_start": null,
+      "marks": null,
+      "subjects": [
+        {
+          "name": "গণিত",
+          "questions": "",
+          "marks": "৮০",
+          "total": "২০০"
+        },
+        {
+          "name": "পদার্থবিজ্ঞান",
+          "questions": "",
+          "marks": "৬০"
+        },
+        {
+          "name": "রসায়ন",
+          "questions": "",
+          "marks": "৪০"
+        },
+        {
+          "name": "ইংরেজি",
+          "questions": "",
+          "marks": "২০"
+        }
+      ],
+      "negative": null,
+      "seats": null,
+      "centers": "ঢাকায়; কেন্দ্রের বিস্তারিত পরে",
+      "fee": "A ১,৩০০ · A+B ১,৫০০ · C ১,১০০ টাকা",
+      "elig_label": "A/B: SSC বিজ্ঞানে ৪র্থ বিষয় বাদে GPA ৪.০০; HSC গণিত, পদার্থ ও রসায়নে মোট GP ১২.০০, প্রতিটিতে ৩.৫০। C: SSC ও HSC পৃথক ৩.৫০।",
+      "elig_items": null,
+      "shortlist_date": "২৫ জানুয়ারি ২০২৭",
+      "result_date": null,
+      "site": "admission.mist.ac.bd",
+      "note": "সূচিতে মতভেদ: প্রদত্ত অনুলিপিতে আবেদন ৫–২১ জানুয়ারি ও পরীক্ষা ৫–৬ ফেব্রুয়ারি; MIST-এর ওয়েব নোটিশে আবেদন ২০ ডিসেম্বর–৫ জানুয়ারি, C ১৫ জানুয়ারি এবং A/B ২২ জানুয়ারি। কোনটি সর্বশেষ তা নিশ্চিত নয়; ভর্তি কর্তৃপক্ষের সঙ্গে যাচাই করুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "sand",
+      "unit_list": [
+        {
+          "name": "সি ইউনিট (সায়েন্স)",
+          "exam_date": "৫ ফেব্রুয়ারি ২০২৭, শুক্রবার",
+          "exam_time": "সকাল ১০টা–১১টা",
+          "fee": "১,১০০ টাকা"
+        },
+        {
+          "name": "এ ইউনিট (ইঞ্জিনিয়ারিং ও URP)",
+          "exam_date": "৬ ফেব্রুয়ারি ২০২৭, শনিবার",
+          "exam_time": "সকাল ৯টা–১২টা",
+          "fee": "১,৩০০ টাকা"
+        },
+        {
+          "name": "বি ইউনিট (আর্কিটেকচার)",
+          "exam_date": "৬ ফেব্রুয়ারি ২০২৭, শনিবার",
+          "exam_time": "বিকাল ২টা–৪টা",
+          "fee": "এ+বি ১,৫০০ টাকা"
+        }
+      ],
+      "unit_last_label": "পরীক্ষার সময়",
+      "list_blocks": [
+        {
+          "title": "বিজ্ঞপ্তির গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "A লিখিত: গণিত ৮০, পদার্থ ৬০, রসায়ন ৪০, ইংরেজি ২০; B অতিরিক্ত অঙ্কন ও স্থানিক দক্ষতা ২০০।",
+            "C MCQ: গণিত ২৫, পদার্থ ২০, রসায়ন ২৫, ইংরেজি ১০ = ৮০; প্রতি ইউনিটে পাস ৪০%।",
+            "B প্রার্থীকে A ও B উভয় পরীক্ষা দিতে হবে; কেন্দ্র ঢাকায়।",
+            "ফি A ১,৩০০, A+B ১,৫০০, C ১,১০০ টাকা; যোগ্য পরীক্ষার্থীর তালিকা ২৫ জানুয়ারি।",
+            "A/B: SSC ২০২৩/২৪ বিজ্ঞান, ৪র্থ বিষয় ছাড়া GPA ৪.০০; HSC ২০২৫/২৬, তিন বিষয়ে GP মোট ১২ এবং প্রতিটিতে ৩.৫০।",
+            "C: বিজ্ঞান, HSC ২০২৫/২৬; SSC ও HSC প্রতিটিতে GPA ৩.৫০।"
+          ]
+        }
+      ],
+      "elig_rules": [],
+      "switch_note": "বিজ্ঞান শাখা ও SSC-র চতুর্থ বিষয় বাদে GPA-সহ পূর্ণ শর্ত বিজ্ঞপ্তিতে দেখুন।",
+      "source_url": {
+        "kind": "news",
+        "label": "প্রদত্ত এমআইএসটি বিজ্ঞপ্তির অনুলিপি",
+        "url": "https://students.bd/en/notice/mist-undergraduate-admission-circular-2026-27",
+        "text": "প্রদত্ত বিজ্ঞপ্তির অনুলিপি অনুযায়ী ৫–২১ জানুয়ারি আবেদন ও ৫–৬ ফেব্রুয়ারি পরীক্ষা।",
+        "as_of": "প্রদত্ত বিজ্ঞপ্তির অনুলিপি",
+        "extra": "সূচিতে মতভেদ: প্রদত্ত অনুলিপিতে আবেদন ৫–২১ জানুয়ারি ও পরীক্ষা ৫–৬ ফেব্রুয়ারি; MIST-এর ওয়েব নোটিশে আবেদন ২০ ডিসেম্বর–৫ জানুয়ারি, C ১৫ জানুয়ারি এবং A/B ২২ জানুয়ারি। কোনটি সর্বশেষ তা নিশ্চিত নয়; ভর্তি কর্তৃপক্ষের সঙ্গে যাচাই করুন।",
+        "extra_url": "https://mist.ac.bd/notice/details/mist-undergraduate-admission-test-202627-rescheduled"
+      },
+      "details_page": "mist-admission.html",
+      "elig_summary": "A/B: SSC বিজ্ঞানে ৪র্থ বিষয় বাদে GPA ৪.০০; HSC গণিত, পদার্থ ও রসায়নে মোট GP ১২.০০, প্রতিটিতে ৩.৫০। C: SSC ও HSC পৃথক ৩.৫০।",
+      "exam_sort_date": null,
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "provided",
+        "source_date": null,
+        "official_url": "https://admission.mist.ac.bd/",
+        "news_url": "https://students.bd/en/notice/mist-undergraduate-admission-circular-2026-27"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "বিজ্ঞান শাখা ও SSC-র চতুর্থ বিষয় বাদে GPA-সহ পূর্ণ শর্ত বিজ্ঞপ্তিতে দেখুন।",
+      "checker_name_bn": "মিলিটারি ইনস্টিটিউট অব সায়েন্স অ্যান্ড টেকনোলজি"
+    },
+    {
+      "name_bn": "অ্যাভিয়েশন অ্যান্ড অ্যারোস্পেস বিশ্ববিদ্যালয়, বাংলাদেশ",
+      "name_en": "AVIATION AND AEROSPACE UNIVERSITY, BANGLADESH",
+      "short": "AAUB",
+      "unit": "স্নাতক (বিএসসি) ও স্নাতকোত্তর",
+      "exam_type": "MCQ + লিখিত (পোর্টালে লিংক করা নির্দেশিকা)",
+      "exam_date": "৩০ জানুয়ারি ২০২৭ (শনিবার)",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "বিশ্ববিদ্যালয়ের বিজ্ঞপ্তি অনুযায়ী",
+      "marks": null,
+      "subjects": null,
+      "negative": null,
+      "seats": null,
+      "centers": "বিএএফ শাহীন কলেজ, ঢাকা ও লালমনিরহাট ক্যাম্পাস",
+      "fee": "১,০০০ টাকা (পোর্টালে লিংক করা নির্দেশিকা; সার্ভিস চার্জ ছাড়া)",
+      "elig_label": "পোর্টালে লিংক করা স্নাতক যোগ্যতা নির্দেশিকায় GPA ৪.৫০ করে; শিক্ষাবর্ষের প্রযোজ্যতা বিশ্ববিদ্যালয়ে যাচাই করুন।",
+      "shortlist_date": null,
+      "result_date": null,
+      "site": "aaub.edu.bd",
+      "note": "স্নাতক পরীক্ষা ৩০ জানুয়ারি; পোর্টালে লিংক করা যোগ্যতার PDF-এ শিক্ষাবর্ষ উল্লেখ নেই — সর্বশেষ বিজ্ঞপ্তি যাচাই করুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "rose",
+      "unit_list": null,
+      "unit_last_label": null,
+      "list_blocks": [
+        {
+          "title": "যা জানা গেছে",
+          "items": [
+            "স্নাতক (বিএসসি) ভর্তি পরীক্ষা: ৩০ জানুয়ারি ২০২৭, শনিবার",
+            "কেন্দ্র: বিএএফ শাহীন কলেজ, ঢাকা এবং বিশ্ববিদ্যালয়ের লালমনিরহাট ক্যাম্পাস",
+            "এইচএসসির ফল, পুনঃনিরীক্ষণ ও সাপ্লিমেন্টারি পরীক্ষার কারণে সূচি পেছানো হয়েছে",
+            "আবেদন সাধারণত টেলিটকের পোর্টালে (aaub.teletalk.com.bd) — তারিখ ও ফি বিজ্ঞপ্তিতে"
+          ]
+        }
+      ],
+      "elig_rules": [],
+      "switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "source_url": {
+        "kind": "official",
+        "label": "এএইউবি — ভর্তি সংক্রান্ত তথ্য (অফিসিয়াল)",
+        "url": "https://aaub.edu.bd/content/admission-info",
+        "text": "২০২৬-২০২৭ শিক্ষাবর্ষে স্নাতক ও স্নাতকোত্তর পর্যায়ে ভর্তি পরীক্ষা সংক্রান্ত নোটিশ (প্রকাশ: ০৯ নভেম্বর ২০২৬) — স্নাতক: ৩০ জানুয়ারি ২০২৭, শনিবার; বিএএফ শাহীন কলেজ, ঢাকা এবং বিশ্ববিদ্যালয়ের লালমনিরহাট ক্যাম্পাস।",
+        "as_of": "৯ নভেম্বর ২০২৬",
+        "extra": "আবেদনের তারিখ, ফি ও যোগ্যতার বিস্তারিত বিশ্ববিদ্যালয়ের নোটিশে দেখুন।",
+        "extra_url": "https://aaub.edu.bd/"
+      },
+      "details_page": "aaub-admission.html",
+      "elig_summary": "পোর্টালের স্নাতক নির্দেশিকায় বিজ্ঞান বিভাগে SSC ২০২৩/২৪ ও HSC ২০২৫/২৬-এ পৃথক GPA ৪.৫০; নির্দেশিকার শিক্ষাবর্ষ নিশ্চিত করুন।",
+      "exam_sort_date": "2027-01-30",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "৯ নভেম্বর ২০২৬",
+        "official_url": "https://aaub.edu.bd/content/admission-info",
+        "news_url": "https://www.prothomalo.com/education/efvc67ppop"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": "২০২৬-২৭-এর নিয়ম এখনো প্রকাশিত হয়নি",
+      "checker_name_bn": "অ্যাভিয়েশন অ্যান্ড অ্যারোস্পেস বিশ্ববিদ্যালয়, বাংলাদেশ"
+    },
+    {
+      "name_bn": "রাজশাহী প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "RAJSHAHI UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+      "short": "RUET",
+      "unit": "স্নাতক ভর্তি ২০২৬–২৭",
+      "exam_type": "MCQ",
+      "exam_date": "২৮ জানুয়ারি ২০২৭ (সংবাদ)",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "আবেদনের সময় ও ফি বিজ্ঞপ্তিতে",
+      "subjects": null,
+      "seats": null,
+      "note": "সূত্রে প্রকাশিত তারিখ; পূর্ণাঙ্গ ভর্তি বিজ্ঞপ্তি ও সর্বশেষ পরিবর্তন বিশ্ববিদ্যালয়ের সাইটে যাচাই করুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "lilac",
+      "elig_rules": [],
+      "switch_note": "পূর্ণাঙ্গ যোগ্যতা অপেক্ষমাণ।",
+      "details_page": "ruet-admission.html",
+      "source_url": {
+        "kind": "news",
+        "label": "প্রথম আলো — রুয়েটের ভর্তি কমিটির সিদ্ধান্ত",
+        "url": "https://www.prothomalo.com/education/admission/tn51a1m5no",
+        "text": "১৮ নভেম্বরের সভার সিদ্ধান্ত অনুযায়ী পরীক্ষা ২৮ জানুয়ারি; দুই কেন্দ্রে MCQ।",
+        "as_of": "১৯ নভেম্বর ২০২৬",
+        "extra": "পূর্ণাঙ্গ অফিসিয়াল বিজ্ঞপ্তি পোর্টালে যাচাই করুন।",
+        "extra_url": "https://admission.ruet.ac.bd/"
+      },
+      "elig_summary": "সংবাদ অনুযায়ী SSC ২০২৩/২৪ GPA ৪.০০; HSC ২০২৬-এ গণিত, পদার্থ, রসায়নে মোট GP ১৩.০০ ও প্রতিটিতে ৪.০০।",
+      "exam_sort_date": "2027-01-28",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "news",
+        "source_date": "১৯ নভেম্বর ২০২৬",
+        "official_url": "https://admission.ruet.ac.bd/",
+        "news_url": "https://www.prothomalo.com/education/admission/tn51a1m5no"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "elig_label": "সংবাদভিত্তিক শর্ত; পূর্ণাঙ্গ বিজ্ঞপ্তি যাচাই করুন।",
+      "centers": "রুয়েট ও বুয়েট কেন্দ্র (সংবাদ)",
+      "list_blocks": [
+        {
+          "title": "গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "পরীক্ষা ২৮ জানুয়ারি ২০২৭ — ১৮ নভেম্বরের ভর্তি কমিটির সিদ্ধান্তের সংবাদ; MCQ পদ্ধতি।",
+            "SSC ২০২৩/২৪, GPA অন্তত ৪.০০; HSC ২০২৬: গণিত, পদার্থ ও রসায়নে মোট GP ১৩, প্রতিটিতে অন্তত ৪.০০।",
+            "আবেদনকারীদের থেকে বাছাই করে ১৮,০০০ জন; রুয়েট ও বুয়েট কেন্দ্রে পরীক্ষা। আবেদনের সময় ও ফি বিজ্ঞপ্তিতে দেখুন।"
+          ]
+        }
+      ],
+      "checker_switch_note": "পূর্ণাঙ্গ যোগ্যতা অপেক্ষমাণ।",
+      "checker_name_bn": "রাজশাহী প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "name_en": "CHITTAGONG UNIVERSITY OF ENGINEERING & TECHNOLOGY",
+      "short": "CUET",
+      "unit": "স্নাতক ভর্তি ২০২৬–২৭",
+      "exam_type": "বিজ্ঞপ্তি অপেক্ষমাণ",
+      "exam_date": "২৩ জানুয়ারি ২০২৭ (সম্ভাব্য)",
+      "exam_time": null,
+      "apply_start": null,
+      "apply_end": null,
+      "apply_window": "আবেদন, ফি ও যোগ্যতা পূর্ণাঙ্গ বিজ্ঞপ্তিতে",
+      "subjects": null,
+      "seats": null,
+      "note": "সূত্রে প্রকাশিত তারিখ; পূর্ণাঙ্গ ভর্তি বিজ্ঞপ্তি ও সর্বশেষ পরিবর্তন বিশ্ববিদ্যালয়ের সাইটে যাচাই করুন।",
+      "year_label": "২০২৬-২৭",
+      "palette": "sky",
+      "elig_rules": [],
+      "switch_note": "পূর্ণাঙ্গ যোগ্যতা অপেক্ষমাণ।",
+      "details_page": "cuet-admission.html",
+      "source_url": {
+        "kind": "official",
+        "label": "চুয়েট — ভর্তি কমিটির সম্ভাব্য তারিখ",
+        "url": "https://cuet.ac.bd/news/208",
+        "text": "ভর্তি পরীক্ষার সম্ভাব্য তারিখ ২৩ জানুয়ারি ২০২৭।",
+        "as_of": "১৯ সেপ্টেম্বর ২০২৬",
+        "extra": "পূর্ণাঙ্গ ভর্তি বিজ্ঞপ্তিতে আবেদন, যোগ্যতা ও সময় নিশ্চিত হবে।",
+        "extra_url": "https://www.prothomalo.com/education/admission/m95710lnqg"
+      },
+      "elig_summary": "পূর্ণাঙ্গ বিজ্ঞপ্তিতে যোগ্যতা ও বিষয়ভিত্তিক শর্ত জানানো হবে।",
+      "exam_sort_date": "2027-01-23",
+      "application_schedule": null,
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১৯ সেপ্টেম্বর ২০২৬",
+        "official_url": "https://cuet.ac.bd/news/208",
+        "news_url": "https://www.prothomalo.com/education/admission/m95710lnqg"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "checker_switch_note": null,
+      "checker_name_bn": "চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়"
+    },
+    {
+      "name_bn": "বাংলাদেশ টেক্সটাইল বিশ্ববিদ্যালয়",
+      "name_en": "BANGLADESH UNIVERSITY OF TEXTILES",
+      "short": "BUTEX",
+      "unit": "স্নাতক ভর্তি ২০২৬–২৭",
+      "exam_type": "লিখিত",
+      "exam_date": "২৯ জানুয়ারি ২০২৭",
+      "exam_time": "সকাল ১০টা–দুপুর ১২টা",
+      "apply_start": "১ ডিসেম্বর ২০২৬ সকাল ১০টা",
+      "apply_end": "১০ জানুয়ারি ২০২৭ রাত ১১:৫৯",
+      "apply_window": "১ ডিসেম্বর ২০২৬ সকাল ১০টা – ১০ জানুয়ারি ২০২৭ রাত ১১:৫৯",
+      "subjects": null,
+      "seats": "৬৩০টি",
+      "note": "নির্দেশিকায় জাতীয় বোর্ড ও GCE-র পৃথক শর্ত প্রযোজ্য।",
+      "year_label": "২০২৬-২৭",
+      "palette": "fern",
+      "elig_rules": [
+        {
+          "unit": "টেক্সটাইল ইঞ্জিনিয়ারিং",
+          "hsc_year": 2026,
+          "groups": [
+            "বিজ্ঞান"
+          ],
+          "ssc_min": 4,
+          "hsc_min": 4,
+          "subject_sum": {
+            "subjects": [
+              "গণিত",
+              "পদার্থবিজ্ঞান",
+              "রসায়ন",
+              "ইংরেজি"
+            ],
+            "min": 16.5
+          },
+          "subject_each_min": {
+            "subjects": [
+              "গণিত",
+              "পদার্থবিজ্ঞান",
+              "রসায়ন",
+              "ইংরেজি"
+            ],
+            "min": 3.5
+          },
+          "partial": true,
+          "extra": "জাতীয় বোর্ডের শর্তের প্রাথমিক হিসাব; নাগরিকত্ব, সমমান, ১৪,০০০ জনের বাছাই ও অন্যান্য শর্ত নির্দেশিকায় যাচাই করুন।"
+        }
+      ],
+      "switch_note": "বিজ্ঞান শাখা ও অন্যান্য শর্ত ভর্তি নির্দেশিকায় দেখুন।",
+      "details_page": "butex-admission.html",
+      "source_url": {
+        "kind": "official",
+        "label": "বুটেক্স ২০২৬–২৭ ভর্তি বিজ্ঞপ্তি",
+        "url": "https://www.butex.edu.bd/wp-content/uploads/2026/11/20261119_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF.pdf",
+        "text": "আবেদন ১ ডিসেম্বর–১০ জানুয়ারি; পরীক্ষা ২৯ জানুয়ারি সকাল ১০টা–১২টা।",
+        "as_of": "১৯ নভেম্বর ২০২৬",
+        "extra": "সাপ্লিমেন্টারি পরীক্ষার্থী নিয়ে সংবাদ",
+        "extra_url": "https://www.prothomalo.com/education/admission/a3ujgzdwfw"
+      },
+      "elig_summary": "SSC ও HSC পৃথক GPA ৪.০০; HSC ২০২৬ বিজ্ঞান: গণিত, পদার্থ, রসায়ন ও ইংরেজিতে মোট GP ১৬.৫০, প্রতিটিতে ৩.৫০।",
+      "exam_sort_date": "2027-01-29",
+      "application_schedule": {
+        "start": "2026-12-01T10:00:00+06:00",
+        "end": "2027-01-10T23:59:59+06:00",
+        "date_only": false
+      },
+      "references": {
+        "schedule_basis": "official",
+        "source_date": "১৯ নভেম্বর ২০২৬",
+        "official_url": "https://www.butex.edu.bd/wp-content/uploads/2026/11/20261119_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BF.pdf",
+        "news_url": "https://www.prothomalo.com/education/admission/a3ujgzdwfw"
+      },
+      "card_updated": "১১ নভেম্বর ২০২৬",
+      "fee": "প্রাথমিক ৩০০ টাকা; নির্বাচিতদের পরীক্ষার ফি ১,২০০ টাকা",
+      "shortlist_date": "১৫ জানুয়ারি ২০২৭",
+      "result_date": "১৫ ফেব্রুয়ারি ২০২৭ (সম্ভাব্য)",
+      "list_blocks": [
+        {
+          "title": "গুরুত্বপূর্ণ তথ্য",
+          "items": [
+            "আসন ৬৩০টি; প্রাথমিক আবেদন ফি ৩০০ টাকা, নির্বাচিত প্রার্থীর পরীক্ষার ফি ১,২০০ টাকা।",
+            "যোগ্য প্রার্থীর তালিকা ১৫ জানুয়ারি; প্রবেশপত্র ১৭ জানুয়ারি সকাল ১০টা–২৪ জানুয়ারি রাত ১১:৫৯। ফল ১৫ ফেব্রুয়ারি সম্ভাব্য।",
+            "লিখিত পরীক্ষা ২০০ নম্বর: গণিত ৬০, পদার্থ ৬০, রসায়ন ৬০ ও ইংরেজি ২০।",
+            "HSC গণিত, পদার্থ, রসায়নের নম্বরে বাছাই করে ১৪,০০০ জন পরীক্ষায় অংশ নেবে।",
+            "২০২৬ সালের সাপ্লিমেন্টারি পাসকারীদের সুযোগের কথা সংবাদে বলা হয়েছে; চূড়ান্ত প্রক্রিয়া পোর্টালে দেখুন।"
+          ]
+        }
+      ],
+      "elig_label": "SSC ও HSC পৃথক GPA ৪.০০; HSC ২০২৬ বিজ্ঞান: গণিত, পদার্থ, রসায়ন ও ইংরেজিতে মোট GP ১৬.৫০, প্রতিটিতে ৩.৫০।",
+      "marks": "২০০ (গণিত ৬০, পদার্থ ৬০, রসায়ন ৬০, ইংরেজি ২০)",
+      "checker_switch_note": "বিজ্ঞান শাখা ও অন্যান্য শর্ত ভর্তি নির্দেশিকায় দেখুন।",
+      "checker_name_bn": "বাংলাদেশ টেক্সটাইল বিশ্ববিদ্যালয়"
+    }
+  ]
+}

@@ -6,9 +6,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / 'index.html').read_text(encoding='utf-8')
-CALENDAR = (ROOT / 'calendar.html').read_text(encoding='utf-8')
+CALENDAR = (ROOT / 'calendar.html').read_text(encoding='utf-8') + (ROOT / 'data/calendar.json').read_text(encoding='utf-8')
 ELIG = (ROOT / 'eligibility.html').read_text(encoding='utf-8')
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 
 
 class Notices(unittest.TestCase):
@@ -38,7 +38,7 @@ class Notices(unittest.TestCase):
         self.assertEqual(sum(nums), 1100)
         self.assertIn('সংরক্ষিত', page)
         self.assertIn('অফিসিয়াল নির্দেশিকা · সকাল ৯:৩০–১২:৩০', CALENDAR)
-        self.assertNotIn('"কুয়েট (KUET)"', re.search(r'var VER=\[(.*?)\]', CALENDAR).group(1))
+        self.assertNotIn('কুয়েট (KUET)', json.loads((ROOT / 'data/calendar.json').read_text())['verified'])
 
     def test_jnu_notice_versus_older_gpa_report(self):
         page = (ROOT / 'jnu-admission.html').read_text(encoding='utf-8')

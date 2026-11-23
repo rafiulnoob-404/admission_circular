@@ -9,11 +9,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / 'index.html').read_text()
 ELIG = (ROOT / 'eligibility.html').read_text()
-CAL = (ROOT / 'calendar.html').read_text()
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+CAL = (ROOT / 'calendar.html').read_text() + (ROOT / 'data/calendar.json').read_text()
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 UNIS = {u['short']: u for u in DATA['universities']}
-CHECKER = {u['short']: u for u in json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIG).group(1))}
-APPS = {a['u']: a for a in json.loads(re.search(r'var APPLICATIONS = (\[.*?\]);', CAL).group(1))}
+CHECKER = {u['short']: u for u in [{'short':u['short'], 'name_bn':u.get('checker_name_bn',u['name_bn']), 'rules':u.get('elig_rules',[])} for u in json.loads((ROOT / 'data/universities.json').read_text())['universities']]}
+APPS = {a['u']: a for a in json.loads((ROOT / 'data/calendar.json').read_text())['applications']}
 
 def card(k):
     return re.search(r'<article\b[^>]*data-file="' + k + r'"[^>]*>.*?</article>', INDEX, re.S).group()
@@ -25,11 +25,11 @@ class ProvidedNotices(unittest.TestCase):
         self.assertEqual((APPS['বুয়েট (BUET)']['s'], APPS['বুয়েট (BUET)']['e']), ('2026-12-01', '2027-01-07'))
         self.assertEqual(u['application_schedule']['new_application_cutoff'], '2027-01-07T15:00:00+06:00')
         self.assertEqual(u['application_schedule']['end'], '2027-01-07T17:00:00+06:00')
-        self.assertIn('৭ জানুয়ারি বিকাল ৩টার পর নতুন আবেদন শুরু নয়', card('BUET'))
-        self.assertIn('জমা শেষ বিকাল ৫টা', card('BUET'))
+        self.assertIn('নতুন আবেদন শুরু শেষ বিকাল ৩টা', card('BUET'))
+        self.assertIn('৭ জানুয়ারি বিকাল ৫টা', card('BUET'))
         self.assertNotIn('সূচি পেছানো হয়নি', card('BUET'))
-        self.assertNotIn('2027-01-16",u:"বুয়েট', CAL)
-        self.assertIn('2027-02-01",u:"বুয়েট', CAL)
+        self.assertFalse(any(e['s']=='2027-01-16' and e['u']=='বুয়েট (BUET)' for e in json.loads((ROOT / 'data/calendar.json').read_text())['events']))
+        self.assertTrue(any(e['s']=='2027-02-01' and e['u']=='বুয়েট (BUET)' for e in json.loads((ROOT / 'data/calendar.json').read_text())['events']))
         self.assertIn('২ ডিসেম্বর ২০২৫-এর পরে', (ROOT / 'buet-admission.html').read_text())
         self.assertEqual(CHECKER['BUET']['rules'], [])  # Cannot model exceptions safely.
 
@@ -39,7 +39,7 @@ class ProvidedNotices(unittest.TestCase):
         self.assertEqual([x['exam_time'] for x in u['unit_list']], ['সকাল ১০টা–১১টা', 'সকাল ৯টা–১২টা', 'বিকাল ২টা–৪টা'])
         self.assertIsNone(u['application_schedule'])  # Disputed; do not compute misleading application status.
         for item in ('১,৩০০', '১,৫০০', '১,১০০', 'গণিত ২৫', 'প্রতিটিতে ৩.৫০'):
-            self.assertIn(item, card('MIST'))
+            self.assertIn(item, (ROOT / 'mist-admission.html').read_text())
         self.assertIn('MIST ওয়েব নোটিশে ২২ জানুয়ারি', CAL)
         self.assertIn('SSC-র চতুর্থ বিষয় বাদে', (ROOT / 'mist-admission.html').read_text())
         self.assertEqual(CHECKER['MIST']['rules'], [])

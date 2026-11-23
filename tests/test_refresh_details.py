@@ -9,15 +9,15 @@ from html.parser import HTMLParser
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / 'index.html').read_text()
 ELIG = (ROOT / 'eligibility.html').read_text()
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 UNIS = {u['short']: u for u in DATA['universities']}
-CHECKER = {u['short']: u for u in json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIG).group(1))}
+CHECKER = {u['short']: u for u in [{'short':u['short'], 'name_bn':u.get('checker_name_bn',u['name_bn']), 'rules':u.get('elig_rules',[])} for u in json.loads((ROOT / 'data/universities.json').read_text())['universities']]}
 
 class Refresh(unittest.TestCase):
     def test_all_card_detail_links_resolve(self):
         for u in DATA['universities']:
             card = re.search(r'<article\b[^>]*data-file="' + u['short'] + r'"[^>]*>.*?</article>', INDEX, re.S).group()
-            links = re.search(r'<div class="notice-links">(.*?)</div></div>', card, re.S).group(1)
+            links = re.search(r'<div class="notice-links">(.*?)</div>', card, re.S).group(1)
             paths = re.findall(r'href="([^"]+\.html)"', links)
             self.assertTrue(paths, u['short'])
             for path in paths:
@@ -25,8 +25,7 @@ class Refresh(unittest.TestCase):
                 page = (ROOT / path).read_text()
                 self.assertIn('href="notice.css"', page)
                 self.assertIn('href="index.html"', page)
-            if u['short'] != 'DU':
-                self.assertIn(u['details_page'], paths)
+            self.assertIn(u['details_page'], paths)
 
     def test_ru_official_rules_and_actual_checker(self):
         ru = UNIS['RU']['elig_rules']
