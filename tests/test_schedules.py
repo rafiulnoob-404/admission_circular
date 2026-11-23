@@ -76,7 +76,7 @@ class Schedules(unittest.TestCase):
         self.assertEqual(UNIS['AAUB']['source_url']['kind'], 'official')
         self.assertIsNone(UNIS['KhU']['apply_start'])
         self.assertIn('আবেদনের সময়সূচি পরে জানানো হবে', card('KhU'))
-        self.assertIn('১৬,০৯৩', card('GST'))
+        self.assertIn('অংশগ্রহণ ইউজিসির অনুমোদনসাপেক্ষ', card('GST'))
         self.assertIn('১,২০০', card('DU'))
         for page in [INDEX, CALENDAR, ELIGIBILITY]:
             self.assertIn('সর্বশেষ আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span>', page)
