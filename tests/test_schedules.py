@@ -79,7 +79,7 @@ class Schedules(unittest.TestCase):
         self.assertIn('অংশগ্রহণ ইউজিসির অনুমোদনসাপেক্ষ', card('GST'))
         self.assertIn('১,২০০', card('DU'))
         for page in [INDEX, CALENDAR, ELIGIBILITY]:
-            self.assertIn('সাইটের আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span>', page)
+            self.assertNotIn('সাইটের আপডেট:', page)
             self.assertIn('সাম্প্রতিক সংশোধন:', page)
             self.assertIn('data-bd-today', page)
 
