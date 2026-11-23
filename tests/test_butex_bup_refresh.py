@@ -30,6 +30,20 @@ d.subj['ইংরেজি']=3.5;d.subj['গণিত']=3.5; if(check(rule,d).st
 '''
         subprocess.run(['node', '-e', js], check=True, capture_output=True, text=True)
 
+    def test_butex_notice_and_header(self):
+        detail = (ROOT / 'butex-admission.html').read_text()
+        self.assertIn('বিজ্ঞপ্তির তারিখ: ১৯ নভেম্বর ২০২৬', detail)
+        self.assertIn('BUT YES PIN', detail)
+        self.assertIn('notices/2026-27/butex-3.jpg">পৃষ্ঠা ২', detail)
+        self.assertIn('notices/2026-27/butex-2.jpg">পৃষ্ঠা ৩', detail)
+        self.assertIn('butex-admission.html', INDEX)
+        self.assertIn('buet-admission.html', INDEX)
+        for path in ROOT.glob('*.html'):
+            page = path.read_text()
+            self.assertNotIn('সর্বশেষ আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span>', page)
+            if 'data-bd-today' in page:
+                self.assertIn('src="today.js"', page)
+
     def test_bup_and_ruet_calendar(self):
         self.assertEqual(UNIS['BUP']['application_schedule']['end'][:10], '2027-01-05')
         for day in ['2027-01-16', '2027-01-22', '2027-01-23', '2027-01-28']:
@@ -48,7 +62,7 @@ d.subj['ইংরেজি']=3.5;d.subj['গণিত']=3.5; if(check(rule,d).st
         for name in ['index.html', 'calendar.html', 'eligibility.html']:
             page = (ROOT / name).read_text()
             self.assertIn('data-bd-today', page)
-            self.assertIn('সাইটের আপডেট:', page)
+            self.assertNotIn('সাইটের আপডেট:', page)
             self.assertIn('today.js', page)
         self.assertIn("timeZone: 'Asia/Dhaka'", (ROOT / 'today.js').read_text())
 
