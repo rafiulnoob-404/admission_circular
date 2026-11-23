@@ -41,11 +41,12 @@ for(const [i,g,y,s,h,expected] of [[0,'বিজ্ঞান',2025,3.5,4,'pass']
         subprocess.run(['node', '-e', script], check=True, capture_output=True)
 
     def test_unconfirmed_ju_and_aaub_rules_are_not_judged(self):
-        for name in ['JU', 'AAUB']:
+        for name in ['AAUB']:
             self.assertEqual(UNIS[name]['elig_rules'], [])
             self.assertEqual(CHECKER[name]['rules'], [])
         self.assertIn('PDF-এ শিক্ষাবর্ষ স্পষ্ট নেই', (ROOT / 'aaub-admission.html').read_text())
-        self.assertIn('২০২৬–২৭ শিক্ষাবর্ষের ইউনিটভিত্তিক GPA', INDEX)
+        self.assertEqual(UNIS['JU']['elig_rules'], CHECKER['JU']['rules'])
+        self.assertTrue(all(rule['partial'] for rule in UNIS['JU']['elig_rules']))
 
     def test_kuet_source_and_du_provided_notice(self):
         kuet = (ROOT / 'kuet-admission.html').read_text()
