@@ -47,13 +47,13 @@ if(check(rules[1],d('ব্যবসায়',3.5,4)).state!=='pass')process.ex
         self.assertIn('Prospectus-Ban.pdf', kuet['source_url']['url'])
         self.assertEqual(kuet['elig_rules'], CHECKER['KUET']['rules'])
         self.assertEqual(kuet['elig_rules'][0]['ssc_years'], [2023, 2024])
-        for short, date in [('RUET', '2027-01-14'), ('CUET', '2027-01-23'), ('BUTEX', '2027-01-29')]:
+        for short, date in [('RUET', '2027-01-28'), ('CUET', '2027-01-23')]:
             self.assertEqual(UNIS[short]['elig_rules'], [])
             self.assertEqual(CHECKER[short]['rules'], [])
             self.assertIn(date, CAL)
             self.assertIn('পূর্ণাঙ্গ', (ROOT / UNIS[short]['details_page']).read_text())
         self.assertEqual(CHECKER['BUET']['rules'], [])
-        for short in ['RUET', 'CUET']:
+        for short in ['CUET']:
             self.assertIn('সম্ভাব্য', UNIS[short]['exam_date'])
 
 

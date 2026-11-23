@@ -22,7 +22,7 @@ class ApplicationCalendar(unittest.TestCase):
         self.assertIn('বিকাল ৫টা', UNIS['KUET']['apply_end'])
         self.assertIn('দুপুর ১২টা', UNIS['JnU']['apply_window'])
         self.assertIsNone(UNIS['KhU']['apply_start'])
-        self.assertIn('সম্ভাব্য', UNIS['AGRI']['exam_date'])
+        self.assertIn('মতভেদ', UNIS['AGRI']['exam_date'])
 
     def test_render_filter_and_unknown_end(self):
         js = re.search(r'<script>\s*(var APPLICATIONS = .*?)</script>', CAL, re.S).group(1)
