@@ -1,0 +1,68 @@
+/* Card controls use explicit admission dates, not numbers parsed from prose. */
+(function () {
+  'use strict';
+  var grid = document.querySelector('.cards');
+  var data = JSON.parse(document.getElementById('card-data').textContent).universities;
+  var byId = {};
+  data.forEach(function (u) { byId[u.short] = u; });
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('article.card'));
+  var search = document.getElementById('cardSearch');
+  var sort = document.getElementById('cardSort');
+  var count = document.getElementById('cardCount');
+  var empty = document.getElementById('noCards');
+  cards.forEach(function (card, i) {
+    card.dataset.originalOrder = i;
+    var badge = document.createElement('span');
+    badge.className = 'application-status';
+    badge.setAttribute('aria-label', 'আবেদনের অবস্থা');
+    card.querySelector('.chips').appendChild(badge);
+  });
+
+  function appState(schedule, now) {
+    if (!schedule || !schedule.start) return {rank: 3, label: 'আবেদনের তারিখ অপেক্ষমাণ', kind: 'unknown'};
+    var start = Date.parse(schedule.start), end = schedule.end ? Date.parse(schedule.end) : NaN;
+    if (!isFinite(start) || (schedule.end && !isFinite(end))) return {rank: 3, label: 'আবেদনের তারিখ অপেক্ষমাণ', kind: 'unknown'};
+    if (now < start) return {rank: 1, label: 'আবেদন আসন্ন', kind: 'upcoming', date: start};
+    if (!isFinite(end)) return {rank: 3, label: 'শেষ সময় নিশ্চিত নয়', kind: 'unknown'};
+    if (now > end) return {rank: 2, label: 'আবেদনের সময় শেষ', kind: 'closed', date: end};
+    return {rank: 0, label: schedule.date_only ? 'সূচি অনুযায়ী আবেদনকাল' : 'আবেদন চলছে', kind: 'open', date: end};
+  }
+  function render() {
+    var now = Date.now(), query = search.value.trim().toLocaleLowerCase('bn');
+    var ordered = cards.slice();
+    ordered.forEach(function (card) {
+      var uni = byId[card.dataset.file] || {};
+      var state = appState(uni.application_schedule, now);
+      card._appState = state;
+      var badge = card.querySelector('.application-status');
+      badge.textContent = state.label;
+      badge.dataset.state = state.kind;
+      card.hidden = !!query && (card.textContent + ' ' + card.dataset.file).toLocaleLowerCase('bn').indexOf(query) < 0;
+    });
+    ordered.sort(function (a, b) {
+      var ua = byId[a.dataset.file] || {}, ub = byId[b.dataset.file] || {}, n = 0;
+      if (sort.value === 'application') {
+        n = a._appState.rank - b._appState.rank;
+        if (!n) n = (a._appState.date || Infinity) - (b._appState.date || Infinity);
+      } else if (sort.value === 'exam') {
+        n = (ua.exam_sort_date || '9999').localeCompare(ub.exam_sort_date || '9999');
+      } else if (sort.value === 'name') {
+        n = (ua.name_bn || '').localeCompare(ub.name_bn || '', 'bn');
+      }
+      return n || Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+    });
+    var current = Array.prototype.slice.call(grid.querySelectorAll('article.card'));
+    if (ordered.some(function (card, i) { return card !== current[i]; })) {
+      ordered.forEach(function (card) { grid.appendChild(card); });
+    }
+    if (window.refreshCardLayout) window.refreshCardLayout();
+    var shown = cards.filter(function (card) { return !card.hidden; }).length;
+    count.textContent = shown.toLocaleString('bn-BD') + 'টি কার্ড';
+    empty.hidden = shown !== 0;
+  }
+  search.addEventListener('input', render);
+  sort.addEventListener('change', render);
+  render();
+  /* Re-evaluate the status when a tab is left open across a deadline. */
+  setInterval(render, 60000);
+})();
