@@ -37,10 +37,10 @@ class ProvidedNotices(unittest.TestCase):
         u = UNIS['MIST']
         self.assertIsNone(u['seats'])
         self.assertEqual([x['exam_time'] for x in u['unit_list']], ['সকাল ১০টা–১১টা', 'সকাল ৯টা–১২টা', 'বিকাল ২টা–৪টা'])
-        self.assertEqual(u['application_schedule']['start'], '2027-01-05T10:00:00+06:00')
+        self.assertIsNone(u['application_schedule'])  # Disputed; do not compute misleading application status.
         for item in ('১,৩০০', '১,৫০০', '১,১০০', 'গণিত ২৫', 'প্রতিটিতে ৩.৫০'):
             self.assertIn(item, card('MIST'))
-        self.assertIn('এ: সকাল ৯টা–১২টা · বি: বিকাল ২টা–৪টা', CAL)
+        self.assertIn('MIST ওয়েব নোটিশে ২২ জানুয়ারি', CAL)
         self.assertIn('SSC-র চতুর্থ বিষয় বাদে', (ROOT / 'mist-admission.html').read_text())
         self.assertEqual(CHECKER['MIST']['rules'], [])
 

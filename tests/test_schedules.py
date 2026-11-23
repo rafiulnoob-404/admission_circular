@@ -35,7 +35,7 @@ class Schedules(unittest.TestCase):
     def test_moved_events_and_removed_dates(self):
         for university, dates in {'রাজশাহী বিশ্ববিদ্যালয়': ['2027-02-12', '2027-02-13', '2027-02-20'],
                                   'খুলনা বিশ্ববিদ্যালয়': ['2027-02-04', '2027-02-05'],
-                                  'মিস্ট (MIST)': ['2027-02-05', '2027-02-06']}.items():
+                                  'মিস্ট (MIST)': ['2027-01-15', '2027-01-22', '2027-02-05', '2027-02-06']}.items():
             events = re.findall(r'\{s:"(\d{4}-\d\d-\d\d)"[^\n]*u:"' + re.escape(university) + r'"', CALENDAR)
             self.assertEqual(sorted(events), dates)
         self.assertNotIn('2027-01-24",e:"2027-01-26",u:"যশোর', CALENDAR)
@@ -79,8 +79,9 @@ class Schedules(unittest.TestCase):
         self.assertIn('অংশগ্রহণ ইউজিসির অনুমোদনসাপেক্ষ', card('GST'))
         self.assertIn('১,২০০', card('DU'))
         for page in [INDEX, CALENDAR, ELIGIBILITY]:
-            self.assertIn('সর্বশেষ আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span>', page)
-            self.assertIn('সর্বশেষ (১১ নভেম্বর ২০২৬):', page)
+            self.assertIn('সাইটের আপডেট: <span class="bd">১১ নভেম্বর ২০২৬</span>', page)
+            self.assertIn('সাম্প্রতিক সংশোধন:', page)
+            self.assertIn('data-bd-today', page)
 
 
 if __name__ == '__main__':
