@@ -25,6 +25,8 @@
     if (now < start) return {rank: 1, label: 'আবেদন আসন্ন', kind: 'upcoming', date: start};
     if (!isFinite(end)) return {rank: 3, label: 'শেষ সময় নিশ্চিত নয়', kind: 'unknown'};
     if (now > end) return {rank: 2, label: 'আবেদনের সময় শেষ', kind: 'closed', date: end};
+    var cutoff = schedule.new_application_cutoff ? Date.parse(schedule.new_application_cutoff) : NaN;
+    if (isFinite(cutoff) && now > cutoff) return {rank: 0, label: 'নতুন আবেদন শুরু শেষ; জমা চলছে', kind: 'open', date: end};
     return {rank: 0, label: schedule.date_only ? 'সূচি অনুযায়ী আবেদনকাল' : 'আবেদন চলছে', kind: 'open', date: end};
   }
   function render() {

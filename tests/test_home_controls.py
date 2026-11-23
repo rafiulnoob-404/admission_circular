@@ -51,7 +51,9 @@ controls.cardSort.value='original';controls.cardSort.fn();if(visible()[0]!=='MED
 controls.cardSearch.value='KUET';controls.cardSearch.fn();if(visible().join()!=='KUET')throw Error('search');
 controls.cardSearch.value='no-such-university';controls.cardSearch.fn();if(visible().length||controls.noCards.hidden)throw Error('empty');
 controls.cardSearch.value='';now=Date.parse('2026-12-10T17:00:01+06:00');controls.cardSearch.fn();
-if(badge('KUET')!=='আবেদনের সময় শেষ'||badge('BUET')!=='শেষ সময় নিশ্চিত নয়'||badge('CU')!=='সূচি অনুযায়ী আবেদনকাল')throw Error('boundaries');
+if(badge('KUET')!=='আবেদনের সময় শেষ'||badge('BUET')!=='আবেদন চলছে'||badge('CU')!=='সূচি অনুযায়ী আবেদনকাল')throw Error('boundaries');
+now=Date.parse('2027-01-07T15:00:01+06:00');controls.cardSearch.fn();if(badge('BUET')!=='নতুন আবেদন শুরু শেষ; জমা চলছে')throw Error('cutoff');
+now=Date.parse('2027-01-07T17:00:01+06:00');controls.cardSearch.fn();if(badge('BUET')!=='আবেদনের সময় শেষ')throw Error('submission end');
 '''
         import os
         env = dict(os.environ, DATA=json.dumps(DATA, ensure_ascii=False))

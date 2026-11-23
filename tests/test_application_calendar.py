@@ -16,7 +16,8 @@ class ApplicationCalendar(unittest.TestCase):
         entries = {a['u']:a for a in APPS}
         for u,start,end in [('ঢাকা বিশ্ববিদ্যালয়','2026-11-11','2026-11-25'),('কুয়েট (KUET)','2026-11-10','2026-12-10'),('রাজশাহী বিশ্ববিদ্যালয়','2026-11-15','2026-11-30'),('জগন্নাথ বিশ্ববিদ্যালয়','2026-11-25','2026-12-10'),('চট্টগ্রাম বিশ্ববিদ্যালয়','2026-12-10','2027-01-10'),('কুমিল্লা বিশ্ববিদ্যালয়','2026-12-10','2026-12-31'),('মিস্ট (MIST)','2027-01-05','2027-01-21')]:
             self.assertEqual((entries[u]['s'],entries[u]['e']),(start,end))
-        self.assertIsNone(entries['বুয়েট (BUET)']['e'])
+        self.assertEqual(entries['বুয়েট (BUET)']['e'], '2027-01-07')
+        self.assertEqual((entries['জাহাঙ্গীরনগর বিশ্ববিদ্যালয়']['s'], entries['জাহাঙ্গীরনগর বিশ্ববিদ্যালয়']['e']), ('2026-11-22', '2026-12-15'))
         self.assertIn('বিকাল ৫টা', entries['কুয়েট (KUET)']['end'])
         self.assertIn('বিকাল ৫টা', UNIS['KUET']['apply_end'])
         self.assertIn('দুপুর ১২টা', UNIS['JnU']['apply_window'])
@@ -33,7 +34,7 @@ global.document={getElementById:node,createElement(){return {}}};
 if(!node('applications').innerHTML.includes('আবেদনের সময়সূচি'))throw Error('missing');
 node('q').value='কুয়েট';render();if(!node('applications').innerHTML.includes('বিকাল ৫টা')||node('applications').innerHTML.includes('জগন্নাথ'))throw Error('search');
 node('q').value='';node('uni').value='জগন্নাথ বিশ্ববিদ্যালয়';render();if(!node('applications').innerHTML.includes('দুপুর ১২টা')||node('applications').innerHTML.includes('কুয়েট'))throw Error('filter');
-today=new Date(2028,0,1);node('uni').value='';node('hp').checked=true;render();if(!node('applications').innerHTML.includes('বুয়েট')||node('applications').innerHTML.includes('কুয়েট'))throw Error('past');
+today=new Date(2028,0,1);node('uni').value='';node('hp').checked=true;render();if(node('applications').innerHTML.includes('বুয়েট')||node('applications').innerHTML.includes('কুয়েট'))throw Error('past');
 '''
         subprocess.run(['node','-e',stub+js+test],check=True,capture_output=True,text=True)
 
