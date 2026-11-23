@@ -1308,8 +1308,8 @@
         "url": "https://www.juniv.edu/discussion/18670",
         "text": "২২ নভেম্বর–১৫ ডিসেম্বর আবেদন; পরীক্ষা ১০–২১ জানুয়ারি সম্ভাব্য।",
         "as_of": "১৬ নভেম্বর ২০২৬",
-        "extra": "প্রদত্ত বিজ্ঞপ্তির ছবি ও আসন তালিকা বিস্তারিত পাতায়",
-        "extra_url": ""
+        "extra": "ব্যবহারকারীর দেওয়া সম্পূর্ণ সাত পৃষ্ঠার বিজ্ঞপ্তি ও আসন তালিকা",
+        "extra_url": "notices/2026-27/ju-admission-circular-2026-27.pdf"
       },
       "details_page": "ju-admission.html",
       "elig_summary": "SSC ২০২৩/২৪, HSC ২০২৫/২৬; ইউনিট ও শাখাভেদে মোট GPA ৬.৫০–৮.০০ ও পৃথক ৩.০০–৩.৫০; বিভাগীয় শর্ত প্রযোজ্য।",
@@ -1339,7 +1339,14 @@
         }
       ],
       "checker_switch_note": "ন্যূনতম শর্ত পূরণে যেকোনো ইউনিটে আবেদন করা যায়; বিভাগভিত্তিক শর্ত আলাদা।",
-      "checker_name_bn": "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়"
+      "checker_name_bn": "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়",
+      "admit_card_date": "২৫ ডিসেম্বর ২০২৬ থেকে",
+      "department_count": 37,
+      "exam_questions": 80,
+      "exam_marks": 90,
+      "pass_marks": 40,
+      "negative_mark_per_wrong": 0.2,
+      "admission_notice_copy": "notices/2026-27/ju-admission-circular-2026-27.pdf"
     },
     {
       "name_bn": "বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস",
