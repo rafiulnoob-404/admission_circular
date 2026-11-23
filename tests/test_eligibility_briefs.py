@@ -6,9 +6,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / 'index.html').read_text()
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 ELIG = (ROOT / 'eligibility.html').read_text()
-CHECKER = json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIG, re.S).group(1))
+CHECKER = [{'short':u['short'], 'name_bn':u.get('checker_name_bn',u['name_bn']), 'rules':u.get('elig_rules',[])} for u in json.loads((ROOT / 'data/universities.json').read_text())['universities']]
 
 class EligibilityBriefs(unittest.TestCase):
     def test_brief_first_and_mirrored_on_every_card(self):

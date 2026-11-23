@@ -5,11 +5,11 @@ import subprocess
 import unittest
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-CAL = (ROOT / 'calendar.html').read_text()
+CAL = (ROOT / 'calendar.html').read_text() + (ROOT / 'data/calendar.json').read_text()
 INDEX = (ROOT / 'index.html').read_text()
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 UNIS = {u['short']: u for u in DATA['universities']}
-APPS = json.loads(re.search(r'var APPLICATIONS = (\[.*?\]);', CAL).group(1))
+APPS = json.loads((ROOT / 'data/calendar.json').read_text())['applications']
 
 class ApplicationCalendar(unittest.TestCase):
     def test_windows_and_uncertain_dates(self):
@@ -29,6 +29,7 @@ class ApplicationCalendar(unittest.TestCase):
         stub = '''
 const nodes={}; function node(id){return nodes[id] ||= {value:'',checked:false,innerHTML:'',children:[],appendChild(x){this.children.push(x)},addEventListener(){}}}
 global.document={getElementById:node,createElement(){return {}}};
+global.fetch=()=>Promise.resolve({ok:true,json:()=>Promise.resolve(JSON.parse(process.env.CALDATA))});
 '''
         test = '''
 if(!node('applications').innerHTML.includes('আবেদনের সময়সূচি'))throw Error('missing');
@@ -36,6 +37,8 @@ node('q').value='কুয়েট';render();if(!node('applications').innerHTML
 node('q').value='';node('uni').value='জগন্নাথ বিশ্ববিদ্যালয়';render();if(!node('applications').innerHTML.includes('দুপুর ১২টা')||node('applications').innerHTML.includes('কুয়েট'))throw Error('filter');
 today=new Date(2028,0,1);node('uni').value='';node('hp').checked=true;render();if(node('applications').innerHTML.includes('বুয়েট')||node('applications').innerHTML.includes('কুয়েট'))throw Error('past');
 '''
-        subprocess.run(['node','-e',stub+js+test],check=True,capture_output=True,text=True)
+        import os
+        env = dict(os.environ, CALDATA=(ROOT / 'data/calendar.json').read_text())
+        subprocess.run(['node','-e',stub+js+'setImmediate(()=>{'+test+'});'],check=True,capture_output=True,text=True,env=env)
 
 if __name__=='__main__':unittest.main()

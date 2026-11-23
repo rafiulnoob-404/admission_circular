@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var grid = document.querySelector('.cards');
-  var data = JSON.parse(document.getElementById('card-data').textContent).universities;
+  function init(data, loadFailed) {
   var byId = {};
   data.forEach(function (u) { byId[u.short] = u; });
   var cards = Array.prototype.slice.call(grid.querySelectorAll('article.card'));
@@ -34,7 +34,7 @@
     var ordered = cards.slice();
     ordered.forEach(function (card) {
       var uni = byId[card.dataset.file] || {};
-      var state = appState(uni.application_schedule, now);
+      var state = loadFailed ? {rank: 3, label: 'তথ্য লোড হয়নি', kind: 'unknown'} : appState(uni.application_schedule, now);
       card._appState = state;
       var badge = card.querySelector('.application-status');
       badge.textContent = state.label;
@@ -49,7 +49,7 @@
       } else if (sort.value === 'exam') {
         n = (ua.exam_sort_date || '9999').localeCompare(ub.exam_sort_date || '9999');
       } else if (sort.value === 'name') {
-        n = (ua.name_bn || '').localeCompare(ub.name_bn || '', 'bn');
+        n = (ua.name_bn || a.dataset.uni || '').localeCompare(ub.name_bn || b.dataset.uni || '', 'bn');
       }
       return n || Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
     });
@@ -67,4 +67,20 @@
   render();
   /* Re-evaluate the status when a tab is left open across a deadline. */
   setInterval(render, 60000);
+  }
+  fetch('data/universities.json').then(function (response) {
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return response.json();
+  }).then(function (data) {
+    if (!Array.isArray(data.universities)) throw new Error('Invalid university data');
+    document.getElementById('homeDataStatus').textContent = '';
+    init(data.universities, false);
+  }).catch(function (err) {
+    console.error('Admission data could not be loaded', err);
+    var status = document.getElementById('homeDataStatus');
+    status.textContent = 'আবেদনের অবস্থা ও তারিখ অনুযায়ী সাজানোর তথ্য লোড করা যায়নি। সংযোগ পরীক্ষা করে রিফ্রেশ করুন।';
+    document.getElementById('cardSort').querySelectorAll('option[value="application"], option[value="exam"]').forEach(function (option) { option.disabled = true; });
+    document.getElementById('cardSort').value = 'original';
+    init([], true);
+  });
 })();

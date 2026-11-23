@@ -1,0 +1,41 @@
+/* Minimum on-screen reading size across all three tools and detail pages. */
+@media screen {
+  body, body :where(p, li, td, th, label, input, select, button, a, span, div, small, b, em, summary) {
+    font-size: 18px !important;
+    line-height: 1.55;
+  }
+  body :where(h1,h2,h3){font-size:22px !important;line-height:1.4;overflow-wrap:anywhere}
+  body :where(p,li,td,th,a,span){overflow-wrap:anywhere}
+  .card-controls input,.card-controls select{min-height:48px}
+  .flash-summary{padding:12px 20px;background:#fff}
+  .flash-row + .flash-row{border-top:1px solid var(--edge);margin-top:10px;padding-top:10px}
+  .flash-row b{display:block;color:var(--bar);font-family:'KS',sans-serif}
+  .flash-row p{margin:4px 0 0;color:var(--ink)}
+  .flash-caveat{margin:0;padding:12px 20px;background:#fff6e5;color:#6a4300;border-top:1px solid #f0d6a1}
+  .flash-meta{padding:10px 20px;color:#685051;background:#fff;line-height:1.5}
+  .notice-links a{display:inline-block;color:#822f3d;font-weight:700;padding:4px 0}
+  .card-history :is(.lists,.grid,.strip,.srcbox,.source-meta,.dstrip,.hero-date){margin:14px 0;padding:12px;border:1px solid #efd9db;border-radius:10px;overflow-x:auto}
+  .card-history :is(.lbl,.lb-title,.strip-head,.dlab,.src-h){font-weight:700;color:#8c2f3b}
+  .card-history .f{margin:10px 0}
+  .card-history .ic svg{width:18px;height:18px}
+  .card-history .unit-table,.card-history .sub-table{min-width:600px}
+  .card-history .src-a,.card-history .source-meta span{display:block;margin-top:8px}
+  .card-history :is(a,.src-a){overflow-wrap:anywhere}
+  .toolbar,.card-controls,.headnav,.notice,.meta{min-width:0}
+  @media (max-width:700px){
+    .flash-summary,.flash-caveat,.flash-meta{padding-left:14px;padding-right:14px}
+    .drow,.hero-date{flex-wrap:wrap}
+    .pagehead .headnav,.toolbar{flex-wrap:wrap}
+    .notice .nl{white-space:normal}
+  }
+}
+@media screen {
+  .table-scroll {max-width:100%;overflow-x:auto}
+  .table-scroll .unit-table {min-width:680px}
+  .card-history .unit-table,.card-history .sub-table{min-width:600px}
+}
+@media screen {
+  .card .seal {width:68px;height:68px;min-width:68px}
+  .card .names {min-width:0}
+  .card .refpill {white-space:nowrap}
+}

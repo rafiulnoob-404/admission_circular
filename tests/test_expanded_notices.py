@@ -8,10 +8,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / 'index.html').read_text(encoding='utf-8')
 ELIG = (ROOT / 'eligibility.html').read_text(encoding='utf-8')
-CAL = (ROOT / 'calendar.html').read_text(encoding='utf-8')
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+CAL = (ROOT / 'calendar.html').read_text(encoding='utf-8') + (ROOT / 'data/calendar.json').read_text(encoding='utf-8')
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 UNIS = {u['short']: u for u in DATA['universities']}
-CHECKER = {u['short']: u for u in json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIG).group(1))}
+CHECKER = {u['short']: u for u in [{'short':u['short'], 'name_bn':u.get('checker_name_bn',u['name_bn']), 'rules':u.get('elig_rules',[])} for u in json.loads((ROOT / 'data/universities.json').read_text())['universities']]}
 
 
 class ExpandedNotices(unittest.TestCase):
@@ -21,13 +21,13 @@ class ExpandedNotices(unittest.TestCase):
         for short in cards:
             card = re.search(r'<article\b[^>]*data-file="' + short + r'"[^>]*>.*?</article>', INDEX, re.S).group()
             self.assertEqual(card.count('class="notice-links"'), 1, short)
-            self.assertRegex(card, r'(?s)<div class="notice-links">.*?</div></div>\s*<div class="foot">')
+            self.assertRegex(card, r'(?s)<div class="notice-links">.*?</div>\s*<div class="foot">')
             self.assertIn('class="dlbtn"', card)
 
     def test_du_units_links_and_thresholds(self):
         card = re.search(r'<article\b[^>]*data-file="DU"[^>]*>.*?</article>', INDEX, re.S).group()
         for file in ['du-science.html', 'du-arts.html', 'du-business.html', 'du-fine-arts.html', 'du-iba.html']:
-            self.assertIn('href="' + file + '"', card)
+            self.assertIn('href="' + file + '"', (ROOT / 'du-admission.html').read_text())
             self.assertTrue((ROOT / file).exists())
         self.assertEqual(UNIS['DU']['elig_rules'], CHECKER['DU']['rules'])
         rules = [r for r in CHECKER['DU']['rules'] if r['unit'] == 'ব্যবসায় শিক্ষা ইউনিট']

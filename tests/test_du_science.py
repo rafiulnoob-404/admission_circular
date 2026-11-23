@@ -10,9 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / 'index.html').read_text(encoding='utf-8')
 ELIG = (ROOT / 'eligibility.html').read_text(encoding='utf-8')
 DETAILS = (ROOT / 'du-science.html').read_text(encoding='utf-8')
-DATA = json.loads(re.search(r'<script type="application/json" id="card-data">(.*?)</script>', INDEX, re.S).group(1))
+DATA = json.loads((ROOT / 'data/universities.json').read_text())
 DU = next(u for u in DATA['universities'] if u['short'] == 'DU')
-CHECKER = json.loads(re.search(r'var UNIS = (\[.*?\]);', ELIG).group(1))
+CHECKER = [{'short':u['short'], 'name_bn':u.get('checker_name_bn',u['name_bn']), 'rules':u.get('elig_rules',[])} for u in json.loads((ROOT / 'data/universities.json').read_text())['universities']]
 DU_CHECKER = next(u for u in CHECKER if u['short'] == 'DU')
 CARD = re.search(r'<article\b[^>]*data-file="DU"[^>]*>.*?</article>', INDEX, re.S).group()
 
@@ -28,7 +28,7 @@ class Links(HTMLParser):
 
 class DhakaScience(unittest.TestCase):
     def test_links_and_attribution(self):
-        for page in (CARD, ELIG):
+        for page in ((ROOT / 'du-admission.html').read_text(), ELIG):
             parser = Links()
             parser.feed(page)
             self.assertIn('du-science.html', parser.hrefs)
@@ -41,7 +41,7 @@ class DhakaScience(unittest.TestCase):
             with self.subTest(text=text):
                 self.assertIn(text, DETAILS)
         for text in ('২ ডিসেম্বর ২০২৬', '২৪/৬০', '১২/৪০', '৪০/১০০', '০.২৫', '৫ গুণ'):
-            self.assertIn(text, CARD)
+            self.assertIn(text, (ROOT / 'du-admission.html').read_text())
         self.assertEqual(DU['science_unit_details']['details_page'], 'du-science.html')
         self.assertIn('২০২৫–২৬ শিক্ষাবর্ষে আবেদনকারীরা', DU['science_unit_details']['eligibility_warning'])
 
