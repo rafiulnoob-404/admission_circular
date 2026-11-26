@@ -18,7 +18,7 @@ class HomeControls(unittest.TestCase):
             with self.subTest(short=short):
                 card = re.search(r'<article\b[^>]*data-file="' + short + r'"[^>]*>.*?</article>', INDEX, re.S).group()
                 ref = uni['references']
-                self.assertIn('কার্ড আপডেট: ১১ নভেম্বর ২০২৬', card)
+                self.assertIn('কার্ড আপডেট: ' + uni['card_updated'], card)
                 detail = html.unescape((ROOT / uni['details_page']).read_text())
                 self.assertIn(ref['official_url'], detail)
                 if ref['news_url']:

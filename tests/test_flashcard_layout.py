@@ -37,9 +37,10 @@ class FlashCards(unittest.TestCase):
         for unit in ['du-science.html','du-arts.html','du-business.html','du-fine-arts.html','du-iba.html']:
             self.assertIn(unit, du)
 
-    def test_18px_shared_styles_and_mobile_calendar(self):
+    def test_14px_shared_styles_and_mobile_calendar(self):
         css = (ROOT / 'readable.css').read_text()
-        self.assertIn('font-size: 18px !important', css)
+        self.assertGreaterEqual(css.count('font-size: 14px !important'), 2)
+        self.assertIn('@media print', css)
         self.assertIn('.table-scroll', css)
         for page in list(ROOT.glob('*.html')):
             self.assertIn('href="readable.css"', page.read_text(), str(page))
