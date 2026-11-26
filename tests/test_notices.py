@@ -43,7 +43,7 @@ class Notices(unittest.TestCase):
     def test_jnu_notice_versus_older_gpa_report(self):
         page = (ROOT / 'jnu-admission.html').read_text(encoding='utf-8')
         for phrase in ['২৫ নভেম্বর ২০২৬', '১০ ডিসেম্বর ২০২৬', '১,২০০ টাকা', '১,৫০০ টাকা',
-                       'সর্বোচ্চ দুই বিষয়ে', 'আগে প্রকাশিত', 'পূর্ণ শর্ত', '১১:৩০',
+                       'সর্বোচ্চ দুই বিষয়ে', 'আগের সংবাদে', 'পূর্ণ শর্ত', '১১:৩০',
                        'https://admission.jnu.ac.bd/']:
             self.assertIn(phrase, page)
         for date in ['১ জানুয়ারি', '৮ জানুয়ারি', '১৫ জানুয়ারি', '২২ জানুয়ারি', '২৩ জানুয়ারি']:

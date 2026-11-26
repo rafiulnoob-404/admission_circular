@@ -1,10 +1,10 @@
-/* Minimum on-screen reading size across all three tools and detail pages. */
+/* Minimum text size across tools and detail pages. */
 @media screen {
-  body, body :where(p, li, td, th, label, input, select, button, a, span, div, small, b, em, summary) {
-    font-size: 18px !important;
+  body, body * {
+    font-size: 14px !important;
     line-height: 1.55;
   }
-  body :where(h1,h2,h3){font-size:22px !important;line-height:1.4;overflow-wrap:anywhere}
+  body :where(h1,h2,h3), body :where(h1,h2,h3) *{font-size:20px !important;line-height:1.4;overflow-wrap:anywhere}
   body :where(p,li,td,th,a,span){overflow-wrap:anywhere}
   .card-controls input,.card-controls select{min-height:48px}
   .flash-summary{padding:12px 20px;background:#fff}
@@ -38,4 +38,9 @@
   .card .seal {width:68px;height:68px;min-width:68px}
   .card .names {min-width:0}
   .card .refpill {white-space:nowrap}
+}
+
+@media print {
+  body, body * { font-size: 14px !important; }
+  body :where(h1,h2,h3), body :where(h1,h2,h3) * { font-size: 20px !important; }
 }
